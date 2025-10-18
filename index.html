@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+      *{
+        background-color: #333;
+        font-weight: bold;
+        user-select: none;
+      }
+      .pergunta{
+        background-color: #666;
+        color: aliceblue;
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .justificativa{
+        background-color: #666;
+        color: aliceblue;
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .alternativa{
+        background-color: #666;
+        color: aliceblue;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 5px;
+      }
+      .errada{
+        background-color: rgb(190, 88, 88); 
+      }
+      .certa{
+        background-color: rgb(134, 169, 124); 
+      }
+      .fonte-errada{
+        color: rgb(190, 88, 88); 
+        background-color: #666;
+      }
+      .fonte-certa{
+        color: rgb(134, 169, 124); 
+        background-color: #666;
+      }
+       
+      button{
+        width: 100%;
+        background-color: rgb(61, 103, 61);
+        border-radius: 10px;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: aliceblue;
+      }
+
+       summary{ 
+        border-radius: 10px;
+        background-color: #666;
+        color: #590b0b;
+        padding: 5px;
+       } 
+       details{ 
+        border-radius: 10px;
+        background-color: #666;
+        color: #ffffff; 
+       }
+       details p{ 
+        border-radius: 10px;
+        background-color: #666;
+        color: #ffffff; 
+        margin-left: 5px;
+       }
+       
+    </style>
+    <body>
+        <div id="pergunta" class="pergunta">
+            1: Qual a cor do cavalo branco de Napoleão?
+        </div>
+        <div id="alternativa1" class="alternativa">A: Branco</div>
+        <div id="alternativa2" class="alternativa">B: Vermelho</div>
+        <div id="alternativa3" class="alternativa">C: Amarelo</div>
+        <div id="alternativa4" class="alternativa">D: Preto</div>
+        <div id="justificativa" class="justificativa">
+            Justificativa:
+            <br>
+            <br>
+            O cavalo era branco porque era muito frio e ele congelou
+        </div>
+
+        <details id="details">
+          <summary>Respondidas Incorretamente:</summary>
+          <b id="local"></b>
+        </details>
+        <br>
+
+        <button id="proxima">Próxima</button>
+    </body>
+    <script src="perguntas.js"></script>
+    <script>
+ 
+      _ocultar('details')
+
+
+      function salvarPerguntas(p,respostaSelecionada,respostaCerta){
+
+        var arraia;
+
+        if(!localStorage.getItem('respostasErradas')){
+          arraia = {
+            'pergunta1':p,
+            'selecionada1':respostaSelecionada,
+            'correta1':respostaCerta,
+          }
+          localStorage.setItem('respostasErradas', JSON.stringify(arraia))
+        }
+        else{
+
+          arraia = JSON.parse(localStorage.getItem('respostasErradas'));
+          var ultimo = 1
+          while(arraia['pergunta'+ultimo]){
+            ultimo++
+          }
+          console.log(ultimo)
+          arraia['pergunta'+ultimo] = p;
+          arraia['selecionada'+ultimo] = respostaSelecionada;
+          arraia['correta'+ultimo] = respostaCerta;
+
+          localStorage.setItem('respostasErradas', JSON.stringify(arraia))
+        }
+        console.log(localStorage.getItem('respostasErradas'))
+
+      }
+
+      //pega o index--------------------------
+      const params = new URLSearchParams(window.location.search);
+      var index = 1;
+      var pontuacao = 0;
+      if(params.get("index")){
+        index = params.get("index"); 
+        pontuacao = params.get("pontuacao"); 
+      } 
+
+      //Finalizou------------------------------------
+      if(!perguntas['pergunta_'+index]){
+        
+        getID('justificativa').innerHTML = 'Sua pontuaçao foi de '+pontuacao + ''
+        getID('justificativa').style.textAlign = 'center'
+
+        _ocultar('pergunta')
+        _ocultar('alternativa1')
+        _ocultar('alternativa2')
+        _ocultar('alternativa3')
+        _ocultar('alternativa4')
+
+        //--------------------------------
+        _exibir('details')
+        
+        var __ = 1
+        var s = ''
+        var arraia = JSON.parse(localStorage.getItem('respostasErradas'));
+        while(arraia['pergunta'+__]){
+
+          s += '<hr>';
+          s += '<p>Pergunta: ' + arraia['pergunta'+__] + '</p>';
+          s += '<p>Assinalada: <font class="fonte-errada">' + arraia['selecionada'+__] + '</font></p>';
+          s += '<p>Correta: <font class="fonte-certa">' + arraia['correta'+__] + '</font></p>';
+          
+          __++
+        }
+         
+        getID('local').innerHTML = s
+        //---------------------------
+        _exibir('proxima')
+        getID('proxima').innerHTML = "Reiniciar"
+        addClick('proxima',()=>{
+          localStorage.removeItem('respostasErradas')
+          window.location.href = 'index.html?index=1&pontuacao=0'
+        })
+         
+        throw new Error("Parando execução manualmente");
+      }
+
+
+      //Percorre o array------------------------------
+      for (const chave in perguntas) {
+
+        
+        if(chave == 'pergunta_'+index) {
+          getID('pergunta').innerHTML = perguntas['pergunta_'+index];
+          
+          getID('alternativa1').innerHTML = perguntas['pergunta_'+index+'_alternativa_1'];
+          getID('alternativa2').innerHTML = perguntas['pergunta_'+index+'_alternativa_2'];
+          getID('alternativa3').innerHTML = perguntas['pergunta_'+index+'_alternativa_3'];
+          getID('alternativa4').innerHTML = perguntas['pergunta_'+index+'_alternativa_4'];
+          
+          getID('justificativa').innerHTML = 'Justificativa: <br><br>' + perguntas['pergunta_'+index+'_justificativa'];
+        
+        
+        
+          addClick('alternativa1',()=>{ 
+
+            selecionar('alternativa1');
+
+            if(getID('alternativa1').innerHTML == perguntas['pergunta_'+index+'_resposta_correta']){
+              pontuacao++
+              addCerto('alternativa1');
+              _exibir('justificativa')
+              _exibir('proxima')
+            }
+            else{
+              addErrada('alternativa1');
+              _exibir('justificativa')
+              _exibir('proxima')
+              buscarAlternativaCorreta(perguntas['pergunta_'+index+'_resposta_correta'])
+
+              salvarPerguntas(
+                getID('pergunta').innerHTML,
+                getID('alternativa1').innerHTML,
+                perguntas['pergunta_'+index+'_resposta_correta']
+                )
+            }
+
+          });
+          addClick('alternativa2',()=>{
+
+            selecionar('alternativa2');
+
+            if(getID('alternativa2').innerHTML == perguntas['pergunta_'+index+'_resposta_correta']){
+              pontuacao++
+              addCerto('alternativa2');
+              _exibir('justificativa')
+              _exibir('proxima')
+            }
+            else{
+              addErrada('alternativa2');
+              _exibir('justificativa')
+              _exibir('proxima')
+              buscarAlternativaCorreta(perguntas['pergunta_'+index+'_resposta_correta'])
+
+              salvarPerguntas(
+                getID('pergunta').innerHTML,
+                getID('alternativa2').innerHTML,
+                perguntas['pergunta_'+index+'_resposta_correta']
+                )
+            }
+
+          });
+          addClick('alternativa3',()=>{
+
+            selecionar('alternativa3');
+
+            if(getID('alternativa3').innerHTML == perguntas['pergunta_'+index+'_resposta_correta']){
+              pontuacao++
+              addCerto('alternativa3');
+              _exibir('justificativa')
+              _exibir('proxima')
+            }
+            else{
+              addErrada('alternativa3');
+              _exibir('justificativa')
+              _exibir('proxima')
+              buscarAlternativaCorreta(perguntas['pergunta_'+index+'_resposta_correta'])
+
+              salvarPerguntas(
+                getID('pergunta').innerHTML,
+                getID('alternativa3').innerHTML,
+                perguntas['pergunta_'+index+'_resposta_correta']
+                )
+            }
+
+          });
+          addClick('alternativa4',()=>{
+
+            selecionar('alternativa4');
+
+            if(getID('alternativa4').innerHTML == perguntas['pergunta_'+index+'_resposta_correta']){
+              pontuacao++
+              addCerto('alternativa4');
+              _exibir('justificativa')
+              _exibir('proxima')
+            }
+            else{
+              addErrada('alternativa4');
+              _exibir('justificativa')
+              _exibir('proxima')
+              buscarAlternativaCorreta(perguntas['pergunta_'+index+'_resposta_correta'])
+
+              salvarPerguntas(
+                getID('pergunta').innerHTML,
+                getID('alternativa4').innerHTML,
+                perguntas['pergunta_'+index+'_resposta_correta']
+                )
+            }
+
+          });
+        
+        
+        
+        
+        }
+  
+      }
+
+
+      addClick('proxima',()=>{
+        index++;
+        window.location.href = 'index.html?index='+index+'&pontuacao='+pontuacao
+      })
+
+      
+      function buscarAlternativaCorreta(resposta){
+        /*
+         getID('alternativa1').innerHTML = perguntas['pergunta_'+index+'_alternativa_1'];
+          getID('alternativa2').innerHTML = perguntas['pergunta_'+index+'_alternativa_2'];
+          getID('alternativa3').innerHTML = perguntas['pergunta_'+index+'_alternativa_3'];
+          getID('alternativa4').innerHTML = perguntas['pergunta_'+index+'_alternativa_4']; 
+          */
+         if(getID('alternativa1').innerHTML == resposta){
+          addCerto('alternativa1');
+         }
+         if(getID('alternativa2').innerHTML == resposta){
+          addCerto('alternativa2');
+         }
+         if(getID('alternativa3').innerHTML == resposta){
+          addCerto('alternativa3');
+         }
+         if(getID('alternativa4').innerHTML == resposta){
+          addCerto('alternativa4');
+         } 
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+      function addClick(id, func){
+        getID(id).addEventListener('click',()=>{
+          func();
+        })
+      }
+      function getID(id){
+        return document.getElementById(id)
+      }
+     
+
+       
+     
+
+
+      function _ocultar(id){
+        getID(id).style.display = 'none';
+      }
+      function _exibir(id){
+        getID(id).style.display = 'block'; 
+      }
+
+      function addErrada(id){
+        getID(id).style.backgroundColor = 'rgb(190, 88, 88)';
+      }
+
+      function addCerto(id){
+        getID(id).style.backgroundColor = 'rgb(134, 169, 124)';
+      }
+      function selecionar(id){
+        getID(id).style.backgroundColor = "rgb(140, 172, 172)"
+      }
+
+      _ocultar('proxima')
+      _ocultar('justificativa')
+      _ocultar('details')
+    </script>
+</html>
