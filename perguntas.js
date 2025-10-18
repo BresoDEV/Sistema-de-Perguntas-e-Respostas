@@ -7,7 +7,7 @@
     'pergunta_1_alternativa_4':'Amarelo',
     'pergunta_1_resposta_correta':'Azul',
     'pergunta_1_justificativa':'O céu é azul por causa da dispersão da luz do sol nas moléculas de ar da atmosfera',
-    //----------------------------------
+    //-
     'pergunta_2':'Quem foi a primeira pessoa a viajar no Espaço?',
     'pergunta_2_alternativa_1':'Yuri Gagarin',
     'pergunta_2_alternativa_2':'A cadela Laika',
@@ -15,7 +15,7 @@
     'pergunta_2_alternativa_4':'Buzz Aldrin',
     'pergunta_2_resposta_correta':'Yuri Gagarin',
     'pergunta_2_justificativa':'O russo Yuri Gagarin (1934-1968) foi a primeira pessoa a viajar para o espaço, o que aconteceu em 12 de abril de 1961.',
-    //----------------------------------
+    //-
     
   }
 
@@ -1637,7 +1637,7 @@
           'pergunta_201_alternativa_4':'O conjunto de atribuições delegadas por portaria do Prefeito',
           'pergunta_201_resposta_correta':'O criado por lei, em número certo, remunerado pelos cofres municipais, com atribuições e responsabilidades cometidas ao servidor',
           'pergunta_201_justificativa':'Conforme artigo 3º da Lei Complementar 3.673/1991, cargo público é o criado por lei, em número certo, remunerado pelos cofres municipais, ao qual corresponde um conjunto de atribuições e responsabilidades cometidas ao servidor público.',
-          //----------------------------------
+          //-
           'pergunta_202':'Qual o prazo de validade do concurso público segundo o Estatuto dos Servidores?',
           'pergunta_202_alternativa_1':'Até 1 ano, prorrogável por mais 1 ano',
           'pergunta_202_alternativa_2':'Até 2 anos, prorrogável uma vez por igual período',
@@ -1645,7 +1645,7 @@
           'pergunta_202_alternativa_4':'Até 4 anos, prorrogável por mais 2 anos',
           'pergunta_202_resposta_correta':'Até 2 anos, prorrogável uma vez por igual período',
           'pergunta_202_justificativa':'Conforme artigo 15, III, da Lei Complementar 3.673/1991, o prazo de validade do concurso público será de até dois anos, prorrogável uma vez, por igual período.',
-          //----------------------------------
+          //-
           'pergunta_203':'Quais são os requisitos básicos para ingresso no serviço público municipal?',
           'pergunta_203_alternativa_1':'Nacionalidade brasileira, idade mínima de 21 anos, quitação eleitoral',
           'pergunta_203_alternativa_2':'Nacionalidade brasileira, idade mínima de 18 anos, quitação militar e eleitoral, boa conduta',
@@ -1653,7 +1653,7 @@
           'pergunta_203_alternativa_4':'Nacionalidade brasileira, ensino superior completo, idade mínima de 25 anos',
           'pergunta_203_resposta_correta':'Nacionalidade brasileira, idade mínima de 18 anos, quitação militar e eleitoral, boa conduta',
           'pergunta_203_justificativa':'Conforme artigo 8º da Lei Complementar 3.673/1991, são requisitos: nacionalidade brasileira, gozo dos direitos políticos, quitação com obrigações militares e eleitorais, idade mínima de 18 anos, ter boa conduta, boa saúde física e mental, aptidão e vocação para o cargo.',
-          //----------------------------------
+          //-
           'pergunta_204':'Qual a duração do estágio probatório para servidores nomeados para cargo de provimento efetivo?',
           'pergunta_204_alternativa_1':'1 ano',
           'pergunta_204_alternativa_2':'2 anos',
@@ -1661,7 +1661,7 @@
           'pergunta_204_alternativa_4':'6 meses',
           'pergunta_204_resposta_correta':'3 anos',
           'pergunta_204_justificativa':'Conforme artigo 42 com redação dada pela Lei Complementar nº 78/1998, o estágio probatório tem duração de três anos.',
-          //----------------------------------
+          //-
           'pergunta_205':'Quais fatores são considerados na avaliação do estágio probatório?',
           'pergunta_205_alternativa_1':'Apenas assiduidade e produtividade',
           'pergunta_205_alternativa_2':'Apenas disciplina e eficiência',
@@ -1669,7 +1669,7 @@
           'pergunta_205_alternativa_4':'Apenas capacidade técnica e formação acadêmica',
           'pergunta_205_resposta_correta':'Assiduidade, pontualidade, disciplina, relacionamento interpessoal, responsabilidade, produtividade, dedicação ao serviço, eficiência e iniciativa',
           'pergunta_205_justificativa':'Conforme artigo 42 da Lei Complementar 3.673/1991 com as alterações posteriores, são fatores de avaliação: assiduidade, pontualidade, disciplina, relacionamento interpessoal, responsabilidade, produtividade, dedicação ao serviço, eficiência e iniciativa.',
-          //----------------------------------
+          //-
           'pergunta_206':'Quando o servidor adquire estabilidade no serviço público municipal?',
           'pergunta_206_alternativa_1':'Após 1 ano de efetivo exercício',
           'pergunta_206_alternativa_2':'Após 2 anos de efetivo exercício',
@@ -1677,7 +1677,7 @@
           'pergunta_206_alternativa_4':'Imediatamente após a posse',
           'pergunta_206_resposta_correta':'Após 3 anos de efetivo exercício',
           'pergunta_206_justificativa':'Conforme artigo 32 com redação dada pela Lei Complementar nº 78/1998, os servidores nomeados para cargos de provimento efetivo adquirem estabilidade após três anos de efetivo exercício.',
-          //----------------------------------
+          //-
           'pergunta_207':'Qual a diferença entre vencimento e remuneração segundo o Estatuto?',
           'pergunta_207_alternativa_1':'São conceitos sinônimos',
           'pergunta_207_alternativa_2':'Vencimento é a retribuição pecuniária pelo exercício do cargo, remuneração é o vencimento acrescido de adicionais e gratificações',
@@ -1685,7 +1685,7 @@
           'pergunta_207_alternativa_4':'Vencimento é pago mensalmente, remuneração é paga anualmente',
           'pergunta_207_resposta_correta':'Vencimento é a retribuição pecuniária pelo exercício do cargo, remuneração é o vencimento acrescido de adicionais e gratificações',
           'pergunta_207_justificativa':'Conforme artigo 97, §1º da Lei Complementar 3.673/1991, vencimento é a retribuição pecuniária pelo efetivo exercício do cargo, enquanto remuneração é o vencimento acrescido dos adicionais e gratificações diversas.',
-          //----------------------------------
+          //-
           'pergunta_208':'Qual o prazo para o servidor entrar em exercício após a posse?',
           'pergunta_208_alternativa_1':'5 dias',
           'pergunta_208_alternativa_2':'10 dias',
@@ -1693,7 +1693,7 @@
           'pergunta_208_alternativa_4':'30 dias',
           'pergunta_208_resposta_correta':'15 dias',
           'pergunta_208_justificativa':'Conforme artigo 22 da Lei Complementar 3.673/1991, o exercício no cargo terá início no prazo de quinze dias contados da data da posse.',
-          //----------------------------------
+          //-
           'pergunta_209':'Quais são as formas de provimento em cargo público previstas no Estatuto?',
           'pergunta_209_alternativa_1':'Apenas nomeação e promoção',
           'pergunta_209_alternativa_2':'Nomeação, readaptação, reversão, aproveitamento, reintegração e recondução',
@@ -1701,7 +1701,7 @@
           'pergunta_209_alternativa_4':'Nomeação, eleição e indicação',
           'pergunta_209_resposta_correta':'Nomeação, readaptação, reversão, aproveitamento, reintegração e recondução',
           'pergunta_209_justificativa':'Conforme artigo 11 da Lei Complementar 3.673/1991, as formas de provimento são: nomeação, readaptação, reversão, aproveitamento, reintegração e recondução.',
-          //----------------------------------
+          //-
           'pergunta_210':'O que é readaptação de servidor?',
           'pergunta_210_alternativa_1':'Promoção para cargo de maior remuneração',
           'pergunta_210_alternativa_2':'Transferência para outro município',
@@ -1709,7 +1709,7 @@
           'pergunta_210_alternativa_4':'Aposentadoria compulsória',
           'pergunta_210_resposta_correta':'Investidura em cargo de igual padrão mais compatível com sua aptidão ou vocação',
           'pergunta_210_justificativa':'Conforme artigo 34 da Lei Complementar 3.673/1991, readaptação é a investidura do servidor em cargo de igual padrão, mais compatível com sua aptidão ou vocação.',
-          //----------------------------------
+          //-
           'pergunta_211':'Quais as hipóteses de vacância do cargo público?',
           'pergunta_211_alternativa_1':'Apenas exoneração e demissão',
           'pergunta_211_alternativa_2':'Exoneração, demissão, promoção, posse em outro cargo inacumulável, readaptação e falecimento',
@@ -1717,7 +1717,7 @@
           'pergunta_211_alternativa_4':'Apenas transferência e promoção',
           'pergunta_211_resposta_correta':'Exoneração, demissão, promoção, posse em outro cargo inacumulável, readaptação e falecimento',
           'pergunta_211_justificativa':'Conforme artigo 58 da Lei Complementar 3.673/1991, a vacância decorre de: exoneração, demissão, promoção, posse em outro cargo inacumulável, readaptação e falecimento.',
-          //----------------------------------
+          //-
           'pergunta_212':'Qual a duração das férias anuais do servidor público municipal?',
           'pergunta_212_alternativa_1':'15 dias',
           'pergunta_212_alternativa_2':'20 dias',
@@ -1725,7 +1725,7 @@
           'pergunta_212_alternativa_4':'45 dias',
           'pergunta_212_resposta_correta':'30 dias',
           'pergunta_212_justificativa':'Conforme artigo 163 da Lei Complementar 3.673/1991, o servidor gozará, obrigatoriamente, por ano, trinta dias de férias.',
-          //----------------------------------
+          //-
           'pergunta_213':'Em que casos o servidor perde o direito às férias?',
           'pergunta_213_alternativa_1':'Quando tiver mais de 10 faltas não justificadas no ano anterior',
           'pergunta_213_alternativa_2':'Quando tiver mais de 30 faltas não justificadas no ano antecedente',
@@ -1733,7 +1733,7 @@
           'pergunta_213_alternativa_4':'Quando tiver menos de 6 meses de serviço',
           'pergunta_213_resposta_correta':'Quando tiver mais de 30 faltas não justificadas no ano antecedente',
           'pergunta_213_justificativa':'Conforme artigo 171 da Lei Complementar 3.673/1991, perderá o direito a férias o servidor que, no ano antecedente àquele em que deveria gozá-las, tiver mais de trinta faltas não justificadas.',
-          //----------------------------------
+          //-
           'pergunta_214':'Qual o adicional mínimo previsto para serviço extraordinário?',
           'pergunta_214_alternativa_1':'25%',
           'pergunta_214_alternativa_2':'50%',
@@ -1741,7 +1741,7 @@
           'pergunta_214_alternativa_4':'100%',
           'pergunta_214_resposta_correta':'50%',
           'pergunta_214_justificativa':'Conforme artigo 141 da Lei Complementar 3.673/1991, o serviço extraordinário perceberá adicional correspondente à retribuição devida pelo trabalho cumprido em horário normal, acrescida, no mínimo, de cinquenta por cento.',
-          //----------------------------------
+          //-
           'pergunta_215':'Quais as penalidades disciplinares previstas no Estatuto?',
           'pergunta_215_alternativa_1':'Advertência, suspensão e demissão',
           'pergunta_215_alternativa_2':'Advertência, repreensão, suspensão ou multa, destituição de função gratificada, demissão, cassação de disponibilidade, cassação de aposentadoria',
@@ -1749,7 +1749,7 @@
           'pergunta_215_alternativa_4':'Multa, suspensão e exoneração',
           'pergunta_215_resposta_correta':'Advertência, repreensão, suspensão ou multa, destituição de função gratificada, demissão, cassação de disponibilidade, cassação de aposentadoria',
           'pergunta_215_justificativa':'Conforme artigo 253 da Lei Complementar 3.673/1991, as penas disciplinares são: advertência, repreensão, suspensão ou multa, destituição de função gratificada, demissão, cassação de disponibilidade e cassação de aposentadoria.',
-          //----------------------------------
+          //-
           'pergunta_216':'Qual o prazo máximo de suspensão que pode ser aplicada ao servidor?',
           'pergunta_216_alternativa_1':'30 dias',
           'pergunta_216_alternativa_2':'60 dias',
@@ -1757,7 +1757,7 @@
           'pergunta_216_alternativa_4':'180 dias',
           'pergunta_216_resposta_correta':'60 dias',
           'pergunta_216_justificativa':'Conforme artigo 255 da Lei Complementar 3.673/1991, a suspensão não poderá exceder de sessenta dias consecutivos.',
-          //----------------------------------
+          //-
           'pergunta_217':'Em que casos é cabível a demissão do servidor?',
           'pergunta_217_alternativa_1':'Apenas em caso de abandono de cargo',
           'pergunta_217_alternativa_2':'Indisciplina ou insubordinação graves, abandono de cargo, acumulação proibida, corrupção passiva, entre outros',
@@ -1765,7 +1765,7 @@
           'pergunta_217_alternativa_4':'Apenas por motivo de saúde',
           'pergunta_217_resposta_correta':'Indisciplina ou insubordinação graves, abandono de cargo, acumulação proibida, corrupção passiva, entre outros',
           'pergunta_217_justificativa':'Conforme artigo 257 da Lei Complementar 3.673/1991, a demissão será aplicada nos casos de indisciplina ou insubordinação graves, abandono de cargo, ausência excessiva, acumulação proibida, corrupção passiva, entre outros.',
-          //----------------------------------
+          //-
           'pergunta_218':'Qual a composição da comissão de processo administrativo disciplinar?',
           'pergunta_218_alternativa_1':'2 servidores estáveis',
           'pergunta_218_alternativa_2':'3 servidores titulares e 3 suplentes, estáveis, sendo um bacharel em Ciências Jurídicas e Sociais',
@@ -1773,7 +1773,7 @@
           'pergunta_218_alternativa_4':'1 representante da administração e 1 do servidor',
           'pergunta_218_resposta_correta':'3 servidores titulares e 3 suplentes, estáveis, sendo um bacharel em Ciências Jurídicas e Sociais',
           'pergunta_218_justificativa':'Conforme artigo 278 da Lei Complementar 3.673/1991, o inquérito administrativo disciplinar será realizado por comissão constituída de três servidores titulares e três suplentes, estáveis, dos quais pelo menos um Bacharel em Ciências Jurídicas e Sociais.',
-          //----------------------------------
+          //-
           'pergunta_219':'Qual o prazo para conclusão da instrução do processo administrativo disciplinar?',
           'pergunta_219_alternativa_1':'30 dias',
           'pergunta_219_alternativa_2':'60 dias',
@@ -1781,7 +1781,7 @@
           'pergunta_219_alternativa_4':'120 dias',
           'pergunta_219_resposta_correta':'90 dias, prorrogável por até 60 dias',
           'pergunta_219_justificativa':'Conforme artigo 282 da Lei Complementar 3.673/1991, o procedimento administrativo disciplinar deverá ter ultimada sua instrução em noventa dias, prorrogável por até sessenta dias.',
-          //----------------------------------
+          //-
           'pergunta_220':'Quais as licenças previstas no Estatuto dos Servidores?',
           'pergunta_220_alternativa_1':'Apenas licença saúde e licença prêmio',
           'pergunta_220_alternativa_2':'Tratamento de saúde, à gestante, adotante e paternidade, para cargo eletivo, serviço militar, interesses particulares, acompanhar cônjuge, licença-prêmio, acidente em serviço, mandato classista, servir a outro órgão',
@@ -1789,7 +1789,7 @@
           'pergunta_220_alternativa_4':'Apenas licença para tratamento de saúde',
           'pergunta_220_resposta_correta':'Tratamento de saúde, à gestante, adotante e paternidade, para cargo eletivo, serviço militar, interesses particulares, acompanhar cônjuge, licença-prêmio, acidente em serviço, mandato classista, servir a outro órgão',
           'pergunta_220_justificativa':'Conforme artigo 188 da Lei Complementar 3.673/1991, as licenças previstas são: tratamento de saúde; à gestante, adotante e paternidade; para cargo eletivo; serviço militar; interesses particulares; acompanhar cônjuge; licença-prêmio; acidente em serviço; mandato classista; servir a outro órgão.',
-          //----------------------------------
+          //-
           'pergunta_221':'Qual a duração da licença-maternidade conforme o Estatuto?',
           'pergunta_221_alternativa_1':'90 dias',
           'pergunta_221_alternativa_2':'120 dias',
@@ -1797,7 +1797,7 @@
           'pergunta_221_alternativa_4':'180 dias',
           'pergunta_221_resposta_correta':'120 dias',
           'pergunta_221_justificativa':'Conforme artigo 201 da Lei Complementar 3.673/1991, será concedida licença à servidora gestante por cento e vinte dias consecutivos, sem prejuízo da remuneração.',
-          //----------------------------------
+          //-
           'pergunta_222':'Qual a duração da licença-paternidade?',
           'pergunta_222_alternativa_1':'3 dias',
           'pergunta_222_alternativa_2':'5 dias',
@@ -1805,7 +1805,7 @@
           'pergunta_222_alternativa_4':'10 dias',
           'pergunta_222_resposta_correta':'5 dias',
           'pergunta_222_justificativa':'Conforme artigo 202 da Lei Complementar 3.673/1991, pelo nascimento de filho, o servidor terá direito à licença paternidade de cinco dias consecutivos.',
-          //----------------------------------
+          //-
           'pergunta_223':'O que configura acidente em serviço?',
           'pergunta_223_alternativa_1':'Apenas acidentes dentro do local de trabalho',
           'pergunta_223_alternativa_2':'Dano físico ou mental relacionado com as atribuições do cargo, ocorrido no ambiente de trabalho, durante horário laboral ou no percurso casa-trabalho',
@@ -1813,7 +1813,7 @@
           'pergunta_223_alternativa_4':'Apenas acidentes que resultem em incapacidade permanente',
           'pergunta_223_resposta_correta':'Dano físico ou mental relacionado com as atribuições do cargo, ocorrido no ambiente de trabalho, durante horário laboral ou no percurso casa-trabalho',
           'pergunta_223_justificativa':'Conforme artigo 221 com redação dada pela Lei Complementar nº 458/2014, configura acidente em serviço o dano físico ou mental sofrido pelo servidor que se relacione com as atribuições do cargo, bem como aqueles ocorridos no ambiente de trabalho, durante horário laboral ou no percurso casa-trabalho.',
-          //----------------------------------
+          //-
           'pergunta_224':'Qual o horário considerado como noturno para efeitos de adicional?',
           'pergunta_224_alternativa_1':'Das 20h às 6h',
           'pergunta_224_alternativa_2':'Das 21h às 5h',
@@ -1821,7 +1821,7 @@
           'pergunta_224_alternativa_4':'Das 22h às 4h',
           'pergunta_224_resposta_correta':'Das 19h às 7h',
           'pergunta_224_justificativa':'Conforme artigo 72, parágrafo único da Lei Complementar 3.673/1991, considera-se como noturno o serviço prestado entre dezenove horas de um dia e sete horas do dia seguinte.',
-          //----------------------------------
+          //-
           'pergunta_225':'Qual o percentual do adicional noturno?',
           'pergunta_225_alternativa_1':'10%',
           'pergunta_225_alternativa_2':'20%',
@@ -1829,7 +1829,7 @@
           'pergunta_225_alternativa_4':'40%',
           'pergunta_225_resposta_correta':'20%',
           'pergunta_225_justificativa':'Conforme artigo 140 da Lei Complementar 3.673/1991, ao servidor convocado para prestar serviço noturno será atribuído adicional de vinte por cento sobre a hora normal efetivamente cumprida em horário noturno.',
-          //----------------------------------
+          //-
           'pergunta_226':'Quais os requisitos para o professor atuar em Atendimento Educacional Especializado (AEE)?',
           'pergunta_226_alternativa_1':'Apenas ter curso de magistério',
           'pergunta_226_alternativa_2':'Habilitação específica e/ou curso de especialização para educação especial com mais de 300 horas, ministrado por instituição oficial',
@@ -1837,7 +1837,7 @@
           'pergunta_226_alternativa_4':'Apenas indicação da direção da escola',
           'pergunta_226_resposta_correta':'Habilitação específica e/ou curso de especialização para educação especial com mais de 300 horas, ministrado por instituição oficial',
           'pergunta_226_justificativa':'Conforme artigo 133 da Lei Complementar 3.673/1991 com redação dada pela Lei Complementar nº 540/2017, para atuar em AEE o professor deve possuir habilitação específica e/ou curso de especialização para educação especial com mais de 300 horas, ministrado por instituição pública ou privada oficial.',
-          //----------------------------------
+          //-
           'pergunta_227':'Qual a gratificação devida ao professor que trabalha em Atendimento Educacional Especializado?',
           'pergunta_227_alternativa_1':'20% sobre o vencimento básico',
           'pergunta_227_alternativa_2':'30% sobre o vencimento básico',
@@ -1845,7 +1845,7 @@
           'pergunta_227_alternativa_4':'50% sobre o vencimento básico do Grau I',
           'pergunta_227_resposta_correta':'50% sobre o vencimento básico do Grau I',
           'pergunta_227_justificativa':'Conforme artigo 132 da Lei Complementar 3.673/1991, pelo exercício de magistério em sala de recursos o professor perceberá uma gratificação mensal de 50%, calculada sobre o vencimento básico do Grau I.',
-          //----------------------------------
+          //-
           'pergunta_228':'Quando o servidor pode ser posto em disponibilidade?',
           'pergunta_228_alternativa_1':'Quando declarado extinto ou desnecessário seu cargo e não for possível imediato aproveitamento',
           'pergunta_228_alternativa_2':'A qualquer tempo, por decisão do Prefeito',
@@ -1853,7 +1853,7 @@
           'pergunta_228_alternativa_4':'Apenas por interesse pessoal do servidor',
           'pergunta_228_resposta_correta':'Quando declarado extinto ou desnecessário seu cargo e não for possível imediato aproveitamento',
           'pergunta_228_justificativa':'Conforme artigo 52 da Lei Complementar 3.673/1991, o servidor estável será posto em disponibilidade quando for declarado por lei extinto ou desnecessário o cargo de que era titular e não for possível seu imediato aproveitamento.',
-          //----------------------------------
+          //-
           'pergunta_229':'O que é aproveitamento de servidor?',
           'pergunta_229_alternativa_1':'Promoção para cargo superior',
           'pergunta_229_alternativa_2':'Investidura do servidor em disponibilidade em cargo de provimento equivalente por natureza e retribuição',
@@ -1861,7 +1861,7 @@
           'pergunta_229_alternativa_4':'Transferência para outro município',
           'pergunta_229_resposta_correta':'Investidura do servidor em disponibilidade em cargo de provimento equivalente por natureza e retribuição',
           'pergunta_229_justificativa':'Conforme artigo 53 da Lei Complementar 3.673/1991, aproveitamento é a forma de investidura do servidor em disponibilidade em cargo de provimento equivalente, por sua natureza e retribuição, àquele de que era titular.',
-          //----------------------------------
+          //-
           'pergunta_230':'Quais as hipóteses de acumulação de cargos permitidas?',
           'pergunta_230_alternativa_1':'Dois cargos de professor; um cargo de professor com outro técnico ou científico; dois cargos privativos de médico',
           'pergunta_230_alternativa_2':'Qualquer acumulação desde que haja compatibilidade de horários',
@@ -1869,7 +1869,7 @@
           'pergunta_230_alternativa_4':'Não é permitida qualquer acumulação',
           'pergunta_230_resposta_correta':'Dois cargos de professor; um cargo de professor com outro técnico ou científico; dois cargos privativos de médico',
           'pergunta_230_justificativa':'Conforme artigo 243, §1º da Lei Complementar 3.673/1991, são permitidas as acumulações de: dois cargos de professor; um cargo de professor com outro técnico ou científico; dois cargos privativos de médico, mediante comprovação de compatibilidade de horário.',
-          //----------------------------------
+          //-
           'pergunta_231':'Qual o prazo prescricional para aplicação da penalidade de advertência?',
           'pergunta_231_alternativa_1':'6 meses',
           'pergunta_231_alternativa_2':'1 ano',
@@ -1877,7 +1877,7 @@
           'pergunta_231_alternativa_4':'3 anos',
           'pergunta_231_resposta_correta':'1 ano',
           'pergunta_231_justificativa':'Conforme artigo 263 da Lei Complementar 3.673/1991, a aplicação da penalidade de advertência prescreve em um ano.',
-          //----------------------------------
+          //-
           'pergunta_232':'Quem são as autoridades competentes para aplicar penalidades disciplinares?',
           'pergunta_232_alternativa_1':'Apenas o Prefeito Municipal',
           'pergunta_232_alternativa_2':'Prefeito, Secretários Municipais e titulares de órgãos diretamente subordinados ao Prefeito',
@@ -1885,7 +1885,7 @@
           'pergunta_232_alternativa_4':'Apenas a Câmara de Vereadores',
           'pergunta_232_resposta_correta':'Prefeito, Secretários Municipais e titulares de órgãos diretamente subordinados ao Prefeito',
           'pergunta_232_justificativa':'Conforme artigo 264 da Lei Complementar 3.673/1991, são competentes para aplicação de penas disciplinares: o Prefeito, em qualquer caso; e os Secretários Municipais e titulares de órgãos diretamente subordinados ao Prefeito, até a suspensão ou multa.',
-          //----------------------------------
+          //-
           'pergunta_233':'Qual o prazo para o servidor apresentar defesa no processo administrativo disciplinar?',
           'pergunta_233_alternativa_1':'5 dias',
           'pergunta_233_alternativa_2':'10 dias',
@@ -1893,7 +1893,7 @@
           'pergunta_233_alternativa_4':'20 dias',
           'pergunta_233_resposta_correta':'10 dias',
           'pergunta_233_justificativa':'Conforme artigo 294 da Lei Complementar 3.673/1991, ultimada a instrução, intimar-se-á o indiciado para apresentação de defesa por escrito no prazo de dez dias.',
-          //----------------------------------
+          //-
           'pergunta_234':'O que é estável o servidor público municipal?',
           'pergunta_234_alternativa_1':'Aquele que completou 5 anos de serviço',
           'pergunta_234_alternativa_2':'Aquele nomeado para cargo de provimento efetivo em virtude de concurso público, após 3 anos de efetivo exercício',
@@ -1901,7 +1901,7 @@
           'pergunta_234_alternativa_4':'Aquele que está há mais de 10 anos no serviço público',
           'pergunta_234_resposta_correta':'Aquele nomeado para cargo de provimento efetivo em virtude de concurso público, após 3 anos de efetivo exercício',
           'pergunta_234_justificativa':'Conforme artigo 32 da Lei Complementar 3.673/1991, são estáveis após três anos de efetivo exercício os servidores nomeados para cargos de provimento efetivo em virtude de concurso público.',
-          //----------------------------------
+          //-
           'pergunta_235':'Como se caracteriza o abandono de cargo?',
           'pergunta_235_alternativa_1':'Ausência de 15 dias consecutivos',
           'pergunta_235_alternativa_2':'Ausência de 30 dias consecutivos sem permissão legal',
@@ -1909,7 +1909,7 @@
           'pergunta_235_alternativa_4':'Chegar atrasado frequentemente',
           'pergunta_235_resposta_correta':'Ausência de 30 dias consecutivos sem permissão legal',
           'pergunta_235_justificativa':'Conforme artigo 257, III da Lei Complementar 3.673/1991, caracteriza-se abandono de cargo pelo não-comparecimento do servidor por mais de trinta dias consecutivos, sem permissão legal.',
-          //----------------------------------
+          //-
           'pergunta_236':'Qual o prazo para pagamento da gratificação natalina (13º salário)?',
           'pergunta_236_alternativa_1':'Até 20 de dezembro',
           'pergunta_236_alternativa_2':'Até 30 de novembro',
@@ -1917,7 +1917,7 @@
           'pergunta_236_alternativa_4':'Até 10 de janeiro do ano seguinte',
           'pergunta_236_resposta_correta':'Até 20 de dezembro',
           'pergunta_236_justificativa':'Conforme artigo 134, §1º da Lei Complementar 3.673/1991, o pagamento da gratificação natalina será efetivado até o dia vinte de dezembro.',
-          //----------------------------------
+          //-
           'pergunta_237':'O que é reversão na atividade?',
           'pergunta_237_alternativa_1':'Promoção para cargo superior',
           'pergunta_237_alternativa_2':'Retorno do aposentado à atividade no serviço público municipal',
@@ -1925,7 +1925,7 @@
           'pergunta_237_alternativa_4':'Readmissão de servidor demitido',
           'pergunta_237_resposta_correta':'Retorno do aposentado à atividade no serviço público municipal',
           'pergunta_237_justificativa':'Conforme artigo 39 da Lei Complementar 3.673/1991, reversão é o retorno do aposentado à atividade no serviço público municipal, verificado que não subsistem os motivos determinantes da aposentadoria.',
-          //----------------------------------
+          //-
           'pergunta_238':'Qual o prazo para o servidor requerer reconsideração de ato administrativo?',
           'pergunta_238_alternativa_1':'5 dias',
           'pergunta_238_alternativa_2':'10 dias',
@@ -1933,7 +1933,7 @@
           'pergunta_238_alternativa_4':'30 dias',
           'pergunta_238_resposta_correta':'30 dias',
           'pergunta_238_justificativa':'Conforme artigo 269, §2º da Lei Complementar 3.673/1991, é assegurado ao servidor o exercício do direito de petição no prazo de trinta dias da ciência da aplicação de penalidade.',
-          //----------------------------------
+          //-
           'pergunta_239':'Quais os casos de faltas justificadas ao serviço?',
           'pergunta_239_alternativa_1':'Apenas por motivo de saúde',
           'pergunta_239_alternativa_2':'Doação de sangue, alistamento eleitoral, falecimento de parentes, casamento, até 5 dias anuais comprovados',
@@ -1941,7 +1941,7 @@
           'pergunta_239_alternativa_4':'Qualquer ausência desde que comunicada',
           'pergunta_239_resposta_correta':'Doação de sangue, alistamento eleitoral, falecimento de parentes, casamento, até 5 dias anuais comprovados',
           'pergunta_239_justificativa':'Conforme artigo 182 da Lei Complementar 3.673/1991, o servidor pode faltar sem prejuízo para: doação de sangue (1 dia), alistamento eleitoral (1 dia), falecimento de parentes (2 a 8 dias), casamento (8 dias), até 5 dias anuais comprovados.',
-          //----------------------------------
+          //-
           'pergunta_240':'Qual a jornada de trabalho semanal máxima do servidor público municipal?',
           'pergunta_240_alternativa_1':'36 horas',
           'pergunta_240_alternativa_2':'40 horas',
@@ -1949,7 +1949,7 @@
           'pergunta_240_alternativa_4':'48 horas',
           'pergunta_240_resposta_correta':'40 horas',
           'pergunta_240_justificativa':'Conforme artigo 72 da Lei Complementar 3.673/1991, o horário normal de trabalho não pode ser superior a oito horas diárias e a quarenta horas semanais.',
-          //----------------------------------
+          //-
           'pergunta_241':'O que é licença-prêmio e qual sua duração?',
           'pergunta_241_alternativa_1':'Licença por tempo de serviço, com duração de 2 meses',
           'pergunta_241_alternativa_2':'Licença por assiduidade, com duração de 3 meses por quinquênio',
@@ -1957,7 +1957,7 @@
           'pergunta_241_alternativa_4':'Licença por qualificação, com duração de 6 meses',
           'pergunta_241_resposta_correta':'Licença por assiduidade, com duração de 3 meses por quinquênio',
           'pergunta_241_justificativa':'Conforme artigo 215 da Lei Complementar 3.673/1991, concede-se licença-prêmio de três meses ao servidor que, por um quinquênio completo, não interrompeu a prestação de serviços e revelou assiduidade.',
-          //----------------------------------
+          //-
           'pergunta_242':'Qual o valor do auxílio natalidade?',
           'pergunta_242_alternativa_1':'Equivalente a um salário mínimo',
           'pergunta_242_alternativa_2':'Equivalente a 50% do menor padrão de vencimento do quadro de cargos efetivos',
@@ -1965,7 +1965,7 @@
           'pergunta_242_alternativa_4':'Equivalente a 100% do vencimento básico',
           'pergunta_242_resposta_correta':'Equivalente a 50% do menor padrão de vencimento do quadro de cargos efetivos',
           'pergunta_242_justificativa':'Conforme artigo 312 da Lei Complementar 3.673/1991, o auxílio natalidade é devido ao servidor por motivo de nascimento de filho, em quantia equivalente a cinquenta por cento do menor padrão de vencimento do quadro de cargos de provimento efetivo.',
-          //----------------------------------
+          //-
           'pergunta_243':'Qual o prazo para concessão de licença para tratar de interesses particulares?',
           'pergunta_243_alternativa_1':'A qualquer tempo, independente de tempo de serviço',
           'pergunta_243_alternativa_2':'Após 1 ano de exercício',
@@ -1973,7 +1973,7 @@
           'pergunta_243_alternativa_4':'Nunca é concedida',
           'pergunta_243_resposta_correta':'Após aquisição da estabilidade',
           'pergunta_243_justificativa':'Conforme artigo 211 da Lei Complementar 3.673/1991 com redação dada pela Lei Complementar nº 191/2002, somente depois do servidor adquirir a estabilidade no serviço público poderá obter licença sem vencimento para tratar de interesses particulares.',
-          //----------------------------------
+          //-
           'pergunta_244':'O que é reintegração do servidor?',
           'pergunta_244_alternativa_1':'Promoção para cargo superior',
           'pergunta_244_alternativa_2':'Readmissão de servidor estável em cargo vago',
@@ -1981,7 +1981,7 @@
           'pergunta_244_alternativa_4':'Retorno de licença',
           'pergunta_244_resposta_correta':'Reingresso no serviço público de servidor demitido ou exonerado, por decisão administrativa ou judicial',
           'pergunta_244_justificativa':'Conforme artigo 48 da Lei Complementar 3.673/1991, a reintegração, que decorrerá de decisão administrativa ou judicial, é o reingresso no serviço público municipal de servidor demitido ou exonerado.',
-          //----------------------------------
+          //-
           'pergunta_245':'Qual o limite de consignações em folha de pagamento?',
           'pergunta_245_alternativa_1':'20% da remuneração',
           'pergunta_245_alternativa_2':'30% da remuneração, exceto pensão alimentícia',
@@ -1989,7 +1989,7 @@
           'pergunta_245_alternativa_4':'50% da remuneração',
           'pergunta_245_resposta_correta':'30% da remuneração, exceto pensão alimentícia',
           'pergunta_245_justificativa':'Conforme artigo 187 da Lei Complementar 3.673/1991, a soma das consignações não poderá exceder a trinta por cento da remuneração, excetuada a pensão alimentícia.',
-          //----------------------------------
+          //-
           'pergunta_246':'Quais as formas de citação do indiciado em processo administrativo disciplinar?',
           'pergunta_246_alternativa_1':'Apenas pessoalmente',
           'pergunta_246_alternativa_2':'Pessoal, por hora certa, postal ou edital',
@@ -1997,7 +1997,7 @@
           'pergunta_246_alternativa_4':'Apenas por correio',
           'pergunta_246_resposta_correta':'Pessoal, por hora certa, postal ou edital',
           'pergunta_246_justificativa':'Conforme artigo 286 da Lei Complementar 3.673/1991, a citação pode ser: pessoal, por hora certa (na forma do CPC), postal (carta registrada) ou por edital (quando em lugar incerto).',
-          //----------------------------------
+          //-
           'pergunta_247':'Qual o prazo para julgamento do processo administrativo disciplinar?',
           'pergunta_247_alternativa_1':'10 dias',
           'pergunta_247_alternativa_2':'15 dias',
@@ -2005,7 +2005,7 @@
           'pergunta_247_alternativa_4':'60 dias',
           'pergunta_247_resposta_correta':'15 dias',
           'pergunta_247_justificativa':'Conforme artigo 297 da Lei Complementar 3.673/1991, recebido o processo, a autoridade que determinou sua instauração deverá julgá-lo no prazo de quinze dias.',
-          //----------------------------------
+          //-
           'pergunta_248':'O que é recondução do servidor?',
           'pergunta_248_alternativa_1':'Promoção para cargo superior',
           'pergunta_248_alternativa_2':'Retorno do servidor estável ao cargo anteriormente ocupado',
@@ -2013,7 +2013,7 @@
           'pergunta_248_alternativa_4':'Readmissão após demissão',
           'pergunta_248_resposta_correta':'Retorno do servidor estável ao cargo anteriormente ocupado',
           'pergunta_248_justificativa':'Conforme parágrafo único do artigo 11 da Lei Complementar 3.673/1991, recondução é o retorno do servidor estável ao cargo anteriormente ocupado, decorrente de inabilidade em estágio probatório relativo a outro cargo ou reintegração do anterior ocupante.',
-          //----------------------------------
+          //-
           'pergunta_249':'Qual a gratificação adicional por tempo de serviço?',
           'pergunta_249_alternativa_1':'10% aos 10 anos e 20% aos 20 anos',
           'pergunta_249_alternativa_2':'15% aos 15 anos e 25% aos 25 anos',
@@ -2021,7 +2021,7 @@
           'pergunta_249_alternativa_4':'20% aos 20 anos e 40% aos 30 anos',
           'pergunta_249_resposta_correta':'19% aos 15 anos e 35% aos 25 anos',
           'pergunta_249_justificativa':'Conforme artigo 122 da Lei Complementar 3.673/1991, o servidor estável, ao completar 15 e 25 anos de serviço público, passará a perceber gratificação adicional de 19% ou 35% sobre o vencimento, excluídos os avanços trienais.',
-          //----------------------------------
+          //-
           'pergunta_250':'Quais os afastamentos considerados como de efetivo exercício?',
           'pergunta_250_alternativa_1':'Apenas férias e licença saúde',
           'pergunta_250_alternativa_2':'Férias, casamento, luto, exercício de cargo em comissão, serviço militar, júri, missão ou estudo autorizado, licenças previstas em lei',
@@ -2029,7 +2029,7 @@
           'pergunta_250_alternativa_4':'Todos os afastamentos independente do motivo',
           'pergunta_250_resposta_correta':'Férias, casamento, luto, exercício de cargo em comissão, serviço militar, júri, missão ou estudo autorizado, licenças previstas em lei',
           'pergunta_250_justificativa':'Conforme artigo 91 da Lei Complementar 3.673/1991, são considerados como de efetivo exercício os afastamentos em virtude de: férias, casamento, luto, exercício de cargo em comissão, serviço militar, júri, missão ou estudo autorizado, licenças diversas previstas em lei.',
-          //----------------------------------
+          //-
           'pergunta_251':'Qual o percentual de pontos que podem ser atribuídos a títulos em concurso público?',
           'pergunta_251_alternativa_1':'Até 10% do total de pontos',
           'pergunta_251_alternativa_2':'Até 15% do total de pontos',
@@ -2037,7 +2037,7 @@
           'pergunta_251_alternativa_4':'Até 25% do total de pontos',
           'pergunta_251_resposta_correta':'Até 20% do total de pontos',
           'pergunta_251_justificativa':'Conforme artigo 15, II da Lei Complementar 3.673/1991, os pontos correspondentes aos títulos não poderão exceder a mais de um quinto (1/5 = 20%) do total dos pontos do concurso.',
-          //----------------------------------
+          //-
           'pergunta_252':'O que é exercício de função de confiança?',
           'pergunta_252_alternativa_1':'Qualquer função exercida temporariamente',
           'pergunta_252_alternativa_2':'Função gratificada instituída por lei para atender encargos de direção, chefia, assessoramento ou coordenação',
@@ -2045,7 +2045,7 @@
           'pergunta_252_alternativa_4':'Substituição eventual de servidor',
           'pergunta_252_resposta_correta':'Função gratificada instituída por lei para atender encargos de direção, chefia, assessoramento ou coordenação',
           'pergunta_252_justificativa':'Conforme artigo 63 da Lei Complementar 3.673/1991, a função gratificada é instituída por Lei para atender encargos de direção, chefia, assessoramento ou coordenação de serviços, tarefas ou atividades.',
-          //----------------------------------
+          //-
           'pergunta_253':'Qual o prazo para desfazimento do ato de provimento se a posse não ocorrer?',
           'pergunta_253_alternativa_1':'15 dias',
           'pergunta_253_alternativa_2':'30 dias',
@@ -2053,7 +2053,7 @@
           'pergunta_253_alternativa_4':'60 dias',
           'pergunta_253_resposta_correta':'30 dias',
           'pergunta_253_justificativa':'Conforme artigo 17, §1º da Lei Complementar 3.673/1991, a posse ocorrerá no prazo de quinze dias da publicação do ato de provimento, prorrogável por mais quinze dias, totalizando 30 dias. Não ocorrendo a posse nesse prazo, o ato de provimento será tornado sem efeito.',
-          //----------------------------------
+          //-
           'pergunta_254':'O servidor em estágio probatório pode ser cedido a outros órgãos?',
           'pergunta_254_alternativa_1':'Sim, a qualquer tempo',
           'pergunta_254_alternativa_2':'Não, é expressamente proibido',
@@ -2061,7 +2061,7 @@
           'pergunta_254_alternativa_4':'Sim, apenas com autorização judicial',
           'pergunta_254_resposta_correta':'Não, é expressamente proibido',
           'pergunta_254_justificativa':'Conforme artigo 45, §5º da Lei Complementar 3.673/1991, o servidor em estágio probatório não pode ser cedido ou colocado à disposição de outros órgãos públicos ou entidades.',
-          //----------------------------------
+          //-
           'pergunta_255':'Qual o valor do auxílio funeral?',
           'pergunta_255_alternativa_1':'Um salário mínimo',
           'pergunta_255_alternativa_2':'Dois meses de remuneração ou provento',
@@ -2069,7 +2069,7 @@
           'pergunta_255_alternativa_4':'O valor das despesas comprovadas',
           'pergunta_255_resposta_correta':'Dois meses de remuneração ou provento',
           'pergunta_255_justificativa':'Conforme artigo 318 da Lei Complementar 3.673/1991, por morte do servidor ou aposentado será concedido auxílio funeral no valor de dois meses de remuneração ou provento, se o enterro foi promovido por pessoa da família.',
-          //----------------------------------
+          //-
           'pergunta_256':'Quais as condições para percepção de adicional de insalubridade?',
           'pergunta_256_alternativa_1':'Exercício em local com temperatura elevada',
           'pergunta_256_alternativa_2':'Exercício de atividades ou operações insalubres que exponham a agentes físicos, químicos ou biológicos nocivos',
@@ -2077,7 +2077,7 @@
           'pergunta_256_alternativa_4':'Exercício em local de difícil acesso',
           'pergunta_256_resposta_correta':'Exercício de atividades ou operações insalubres que exponham a agentes físicos, químicos ou biológicos nocivos',
           'pergunta_256_justificativa':'Conforme artigo 149 da Lei Complementar 3.673/1991, são consideradas atividades e operações insalubres aquelas que, por sua natureza, condições ou métodos de trabalho, expõem os servidores a agentes físicos, químicos ou biológicos nocivos.',
-          //----------------------------------
+          //-
           'pergunta_257':'Qual o percentual do adicional de insalubridade em grau máximo?',
           'pergunta_257_alternativa_1':'10%',
           'pergunta_257_alternativa_2':'20%',
@@ -2085,7 +2085,7 @@
           'pergunta_257_alternativa_4':'40%',
           'pergunta_257_resposta_correta':'40%',
           'pergunta_257_justificativa':'Conforme artigo 150, §1º da Lei Complementar 3.673/1991, os graus de insalubridade são: grau máximo - 40%, grau médio - 20%, grau mínimo - 10%, calculados sobre o menor padrão de vencimento.',
-          //----------------------------------
+          //-
           'pergunta_258':'O que é considerado como prática de assédio moral?',
           'pergunta_258_alternativa_1':'Crítica construtiva ao servidor',
           'pergunta_258_alternativa_2':'Avaliação de desempenho regular',
@@ -2093,7 +2093,7 @@
           'pergunta_258_alternativa_4':'Aplicação de penalidade disciplinar',
           'pergunta_258_resposta_correta':'Conduta discriminatória ou constrangedora repetitiva no ambiente de trabalho',
           'pergunta_258_justificativa':'Conforme inciso XXXI do artigo 242 acrescido pela Lei Complementar nº 457/2014, é proibida a prática de assédio moral, entendido como conduta discriminatória ou constrangedora repetitiva no ambiente de trabalho.',
-          //----------------------------------
+          //-
           'pergunta_259':'Qual a penalidade para prática de assédio moral?',
           'pergunta_259_alternativa_1':'Apenas advertência',
           'pergunta_259_alternativa_2':'Destituição de função gratificada ou demissão de cargo em comissão',
@@ -2101,7 +2101,7 @@
           'pergunta_259_alternativa_4':'Não há previsão específica',
           'pergunta_259_resposta_correta':'Destituição de função gratificada ou demissão de cargo em comissão',
           'pergunta_259_justificativa':'Conforme artigo 256, III e artigo 266-A da Lei Complementar 3.673/1991, a prática de assédio moral pode acarretar destituição de função gratificada ou demissão de cargo em comissão, com impedimento de nova investidura por 5 anos.',
-          //----------------------------------
+          //-
           'pergunta_260':'Qual o prazo para revisão do processo administrativo disciplinar?',
           'pergunta_260_alternativa_1':'30 dias',
           'pergunta_260_alternativa_2':'60 dias',
@@ -2109,7 +2109,7 @@
           'pergunta_260_alternativa_4':'120 dias',
           'pergunta_260_resposta_correta':'60 dias',
           'pergunta_260_justificativa':'Conforme artigo 306 da Lei Complementar 3.673/1991, o pedido de revisão será julgado no prazo máximo de sessenta dias.',
-          //----------------------------------
+          //-
           'pergunta_261':'Quais os fundamentos para revisão do processo administrativo disciplinar?',
           'pergunta_261_alternativa_1':'Apenas alegação de injustiça',
           'pergunta_261_alternativa_2':'Decisão contrária à lei, decisão baseada em documentos falsos, novas provas de inocência',
@@ -2117,7 +2117,7 @@
           'pergunta_261_alternativa_4':'Qualquer motivo relevante',
           'pergunta_261_resposta_correta':'Decisão contrária à lei, decisão baseada em documentos falsos, novas provas de inocência',
           'pergunta_261_justificativa':'Conforme artigo 305 da Lei Complementar 3.673/1991, a revisão pode ser requerida quando: a decisão for contrária ao texto expresso da lei; fundada em depoimento, exames ou documentos falsos; aduzidas novas provas de inocência.',
-          //----------------------------------
+          //-
           'pergunta_262':'O servidor pode ser convocado para prestar serviço extraordinário?',
           'pergunta_262_alternativa_1':'Não, é proibido',
           'pergunta_262_alternativa_2':'Sim, sem qualquer limite',
@@ -2125,7 +2125,7 @@
           'pergunta_262_alternativa_4':'Apenas em casos de calamidade pública',
           'pergunta_262_resposta_correta':'Sim, com limite de 50% da jornada semanal',
           'pergunta_262_justificativa':'Conforme artigo 76, §2º da Lei Complementar 3.673/1991, é vedado convocar servidor para prestar serviço extraordinário em número de horas semanais que excedam em cinquenta por cento do regime estabelecido para o respectivo cargo.',
-          //----------------------------------
+          //-
           'pergunta_263':'Qual a diferença entre horário normal e horário noturno para cálculo de horas trabalhadas?',
           'pergunta_263_alternativa_1':'Não há diferença',
           'pergunta_263_alternativa_2':'A hora noturna é computada como 60 minutos',
@@ -2133,7 +2133,7 @@
           'pergunta_263_alternativa_4':'A hora noturna é computada como 45 minutos',
           'pergunta_263_resposta_correta':'A hora noturna é computada como 52 minutos e 30 segundos',
           'pergunta_263_justificativa':'Conforme artigo 72, parágrafo único da Lei Complementar 3.673/1991, no serviço noturno computa-se cada hora como cinquenta e dois minutos e trinta segundos.',
-          //----------------------------------
+          //-
           'pergunta_264':'O que é considerado como repouso semanal remunerado?',
           'pergunta_264_alternativa_1':'Apenas os domingos',
           'pergunta_264_alternativa_2':'Um dia a cada semana, preferencialmente aos domingos, e dias feriados',
@@ -2141,7 +2141,7 @@
           'pergunta_264_alternativa_4':'Dois dias por semana',
           'pergunta_264_resposta_correta':'Um dia a cada semana, preferencialmente aos domingos, e dias feriados',
           'pergunta_264_justificativa':'Conforme artigo 78 da Lei Complementar 3.673/1991, o servidor tem direito a repouso remunerado, num dia a cada semana, preferencialmente aos domingos, bem como nos dias feriados civis e religiosos.',
-          //----------------------------------
+          //-
           'pergunta_265':'Qual o tratamento dado ao servidor estudante?',
           'pergunta_265_alternativa_1':'Nenhum tratamento especial',
           'pergunta_265_alternativa_2':'Redução de jornada sem prejuízo salarial',
@@ -2149,7 +2149,7 @@
           'pergunta_265_alternativa_4':'Apenauxílio financeiro para cursos',
           'pergunta_265_resposta_correta':'Facilitação para conclusão de cursos, horário especial quando incompatível, ausência para provas',
           'pergunta_265_justificativa':'Conforme artigos 177 a 180 da Lei Complementar 3.673/1991, o Município facilitará aos servidores a conclusão de cursos, poderá conceder horário especial e ausência para provas, desde que com compensação de horário.',
-          //----------------------------------
+          //-
           'pergunta_266':'O servidor pode ser removido de ofício?',
           'pergunta_266_alternativa_1':'Não, apenas a pedido',
           'pergunta_266_alternativa_2':'Sim, apenas com seu consentimento',
@@ -2157,7 +2157,7 @@
           'pergunta_266_alternativa_4':'Não, é vedada a remoção compulsória',
           'pergunta_266_resposta_correta':'Sim, no interesse da Administração',
           'pergunta_266_justificativa':'Conforme artigo 56, parágrafo único, alínea b da Lei Complementar 3.673/1991, a remoção poderá ocorrer de ofício, no interesse da Administração.',
-          //----------------------------------
+          //-
           'pergunta_267':'O servidor em estágio probatório pode ser removido?',
           'pergunta_267_alternativa_1':'Sim, a qualquer tempo',
           'pergunta_267_alternativa_2':'Não, é expressamente proibido',
@@ -2165,7 +2165,7 @@
           'pergunta_267_alternativa_4':'Sim, apenas por permuta',
           'pergunta_267_resposta_correta':'Não, é expressamente proibido',
           'pergunta_267_justificativa':'Conforme artigo 57 da Lei Complementar 3.673/1991, o servidor em estágio probatório não poderá ser removido.',
-          //----------------------------------
+          //-
           'pergunta_268':'Qual o prazo para a servidora gestante iniciar a licença-maternidade?',
           'pergunta_268_alternativa_1':'A partir do 6º mês de gestação',
           'pergunta_268_alternativa_2':'A partir do 7º mês de gestação',
@@ -2173,7 +2173,7 @@
           'pergunta_268_alternativa_4':'A partir do 1º dia do 9º mês de gestação',
           'pergunta_268_resposta_correta':'A partir do 1º dia do 9º mês de gestação',
           'pergunta_268_justificativa':'Conforme artigo 201, §1º da Lei Complementar 3.673/1991, a licença poderá ter início no primeiro dia do nono mês de gestação, salvo antecipação por prescrição médica.',
-          //----------------------------------
+          //-
           'pergunta_269':'Qual a duração da licença para adoção de criança de 2 anos?',
           'pergunta_269_alternativa_1':'30 dias',
           'pergunta_269_alternativa_2':'60 dias',
@@ -2181,7 +2181,7 @@
           'pergunta_269_alternativa_4':'120 dias',
           'pergunta_269_resposta_correta':'60 dias',
           'pergunta_269_justificativa':'Conforme artigo 204, §2º da Lei Complementar 3.673/1991, no caso de adoção ou guarda judicial de criança a partir de 1 ano até 4 anos de idade, o período de licença à servidora será de 60 dias.',
-          //----------------------------------
+          //-
           'pergunta_270':'O que é ajuda de custo?',
           'pergunta_270_alternativa_1':'Auxílio para despesas médicas',
           'pergunta_270_alternativa_2':'Verba para cobrir despesas de viagem e instalação em missão ou estudo fora do Município',
@@ -2189,7 +2189,7 @@
           'pergunta_270_alternativa_4':'Subsídio para alimentação',
           'pergunta_270_resposta_correta':'Verba para cobrir despesas de viagem e instalação em missão ou estudo fora do Município',
           'pergunta_270_justificativa':'Conforme artigo 113 da Lei Complementar 3.673/1991, a ajuda de custo destina-se a cobrir as despesas de viagem e instalação do servidor que for designado para exercer missão ou estudo fora do Município.',
-          //----------------------------------
+          //-
           'pergunta_271':'Qual o limite máximo da ajuda de custo?',
           'pergunta_271_alternativa_1':'Um mês de vencimento',
           'pergunta_271_alternativa_2':'O dobro do vencimento, podendo ser até quatro vezes para o exterior',
@@ -2197,7 +2197,7 @@
           'pergunta_271_alternativa_4':'Cinco mil reais',
           'pergunta_271_resposta_correta':'O dobro do vencimento, podendo ser até quatro vezes para o exterior',
           'pergunta_271_justificativa':'Conforme artigo 114 da Lei Complementar 3.673/1991, a ajuda de custo não poderá exceder o dobro do vencimento do servidor, salvo quando o deslocamento for para o exterior, caso em que poderá ser até quatro vezes o vencimento.',
-          //----------------------------------
+          //-
           'pergunta_272':'O que são diárias e quando são devidas?',
           'pergunta_272_alternativa_1':'Valor pago mensalmente para despesas pessoais',
           'pergunta_272_alternativa_2':'Verba para despesas com alimentação e pousada em deslocamento a serviço',
@@ -2205,7 +2205,7 @@
           'pergunta_272_alternativa_4':'Subsídio para custeio de cursos',
           'pergunta_272_resposta_correta':'Verba para despesas com alimentação e pousada em deslocamento a serviço',
           'pergunta_272_justificativa':'Conforme artigo 111 da Lei Complementar 3.673/1991, ao servidor que se afastar transitoriamente do Município, no desempenho de suas atribuições ou em missão, serão concedidas diárias para cobrir as despesas com alimentação e pousada.',
-          //----------------------------------
+          //-
           'pergunta_273':'Qual a consequência do recebimento de diárias sem afastamento da sede?',
           'pergunta_273_alternativa_1':'Nenhuma, desde que justificado',
           'pergunta_273_alternativa_2':'Obrigação de restituí-las integralmente em 3 dias',
@@ -2213,7 +2213,7 @@
           'pergunta_273_alternativa_4':'Dedução no pagamento seguinte',
           'pergunta_273_resposta_correta':'Obrigação de restituí-las integralmente em 3 dias',
           'pergunta_273_justificativa':'Conforme artigo 112 da Lei Complementar 3.673/1991, o servidor que receber diárias e não se afastar da sede, por qualquer motivo, fica obrigado a restituí-las, integralmente, no prazo de três dias.',
-          //----------------------------------
+          //-
           'pergunta_274':'O que é auxílio por diferença de caixa?',
           'pergunta_274_alternativa_1':'Complemento salarial',
           'pergunta_274_alternativa_2':'Verba para cobrir eventual diferença em caixa',
@@ -2221,7 +2221,7 @@
           'pergunta_274_alternativa_4':'Auxílio para despesas bancárias',
           'pergunta_274_resposta_correta':'Adicional de 10% da remuneração para servidor que pague ou receba moeda corrente',
           'pergunta_274_justificativa':'Conforme artigo 117 da Lei Complementar 3.673/1991, o servidor que, por força das atribuições de seu cargo, pague ou receba moeda corrente, perceberá um auxílio por diferença de caixa no montante de dez por cento da remuneração.',
-          //----------------------------------
+          //-
           'pergunta_275':'Quando o auxílio por diferença de caixa é incorporado ao provento?',
           'pergunta_275_alternativa_1':'Após 1 ano de percepção',
           'pergunta_275_alternativa_2':'Após 3 anos consecutivos',
@@ -2229,7 +2229,7 @@
           'pergunta_275_alternativa_4':'Nunca é incorporado',
           'pergunta_275_resposta_correta':'Após 5 anos consecutivos ou 8 intercalados',
           'pergunta_275_justificativa':'Conforme artigo 117, §3º da Lei Complementar 3.673/1991, o auxílio por diferença de caixa será incorporado, na aposentadoria, ao provento do servidor que o perceber durante cinco anos consecutivos ou oito intercalados.',
-          //----------------------------------
+          //-
           'pergunta_276':'O que são avanços trienais?',
           'pergunta_276_alternativa_1':'Promoções automáticas',
           'pergunta_276_alternativa_2':'Aumentos de vencimento de 5% a cada triênio',
@@ -2237,7 +2237,7 @@
           'pergunta_276_alternativa_4':'Bônus por produtividade',
           'pergunta_276_resposta_correta':'Aumentos de vencimento de 5% a cada triênio',
           'pergunta_276_justificativa':'Conforme artigo 118 da Lei Complementar 3.673/1991, os cargos de provimento efetivo terão aumentos de vencimento de cinco por cento, denominados avanços, calculados sobre a referência da classe promocional, a cada triênio de serviço público.',
-          //----------------------------------
+          //-
           'pergunta_277':'Qual o objetivo do plano de seguridade social do servidor?',
           'pergunta_277_alternativa_1':'Apenas previdenciário',
           'pergunta_277_alternativa_2':'Garantir meios de subsistência em eventos de doença, invalidez, velhice, acidente, proteção à maternidade, assistência à saúde',
@@ -2245,7 +2245,7 @@
           'pergunta_277_alternativa_4':'Apenas auxílio alimentação',
           'pergunta_277_resposta_correta':'Garantir meios de subsistência em eventos de doença, invalidez, velhice, acidente, proteção à maternidade, assistência à saúde',
           'pergunta_277_justificativa':'Conforme artigo 308 da Lei Complementar 3.673/1991, o plano de seguridade social visa dar cobertura aos riscos a que está sujeito o servidor e sua família, garantindo meios de subsistência em diversos eventos e proteção à maternidade, adoção e paternidade.',
-          //----------------------------------
+          //-
           'pergunta_278':'Quais os benefícios do plano de seguridade social?',
           'pergunta_278_alternativa_1':'Apenas aposentadoria',
           'pergunta_278_alternativa_2':'Auxílio alimentação, auxílio natalidade, pensão por morte, auxílio funeral, auxílio reclusão',
@@ -2253,7 +2253,7 @@
           'pergunta_278_alternativa_4':'Todos os benefícios previstos na CLT',
           'pergunta_278_resposta_correta':'Auxílio alimentação, auxílio natalidade, pensão por morte, auxílio funeral, auxílio reclusão',
           'pergunta_278_justificativa':'Conforme artigo 309 da Lei Complementar 3.673/1991, os benefícios compreendem: auxílio alimentação, auxílio natalidade, pensão por morte, auxílio funeral, auxílio reclusão, entre outros.',
-          //----------------------------------
+          //-
           'pergunta_279':'O que é auxílio reclusão e quando é devido?',
           'pergunta_279_alternativa_1':'Auxílio para familiares de presos, devido sempre',
           'pergunta_279_alternativa_2':'Verba para custear advogado',
@@ -2261,7 +2261,7 @@
           'pergunta_279_alternativa_4':'Auxílio para servidor preso',
           'pergunta_279_resposta_correta':'Benefício à família do servidor ativo afastado por prisão preventiva ou condenação',
           'pergunta_279_justificativa':'Conforme artigo 319 da Lei Complementar 3.673/1991, à família do servidor ativo é devido o auxílio reclusão quando afastado por prisão preventiva (2/3 da remuneração) ou condenação (1/2 da remuneração).',
-          //----------------------------------
+          //-
           'pergunta_280':'Qual a competência para aplicação de penalidades disciplinares?',
           'pergunta_280_alternativa_1':'Apenas o Prefeito',
           'pergunta_280_alternativa_2':'Prefeito, Secretários Municipais e titulares de órgãos diretamente subordinados',
@@ -2269,7 +2269,7 @@
           'pergunta_280_alternativa_4':'Qualquer chefe imediato',
           'pergunta_280_resposta_correta':'Prefeito, Secretários Municipais e titulares de órgãos diretamente subordinados',
           'pergunta_280_justificativa':'Conforme artigo 264 da Lei Complementar 3.673/1991, são competentes: o Prefeito, em qualquer caso; e os Secretários Municipais e titulares de órgãos diretamente subordinados ao Prefeito, até a suspensão ou multa.',
-          //----------------------------------
+          //-
           'pergunta_281':'Qual o prazo para instauração do procedimento administrativo disciplinar?',
           'pergunta_281_alternativa_1':'5 dias úteis da data de sua instauração',
           'pergunta_281_alternativa_2':'10 dias',
@@ -2277,7 +2277,7 @@
           'pergunta_281_alternativa_4':'30 dias',
           'pergunta_281_resposta_correta':'5 dias úteis da data de sua instauração',
           'pergunta_281_justificativa':'Conforme artigo 282 da Lei Complementar 3.673/1991, o procedimento administrativo disciplinar deverá ser iniciado dentro do prazo de cinco dias úteis, contado da data da sua instauração.',
-          //----------------------------------
+          //-
           'pergunta_282':'Quais as fases do procedimento administrativo disciplinar?',
           'pergunta_282_alternativa_1':'Instauração e julgamento',
           'pergunta_282_alternativa_2':'Instauração, inquérito administrativo (instrução, defesa e relatório) e julgamento',
@@ -2285,7 +2285,7 @@
           'pergunta_282_alternativa_4':'Investigação e decisão',
           'pergunta_282_resposta_correta':'Instauração, inquérito administrativo (instrução, defesa e relatório) e julgamento',
           'pergunta_282_justificativa':'Conforme artigo 284 da Lei Complementar 3.673/1991, o procedimento disciplinar se desenvolve nas fases de: instauração, inquérito administrativo (que compreende instrução, defesa e relatório) e julgamento.',
-          //----------------------------------
+          //-
           'pergunta_283':'Qual o número máximo de testemunhas que o indiciado pode arrolar?',
           'pergunta_283_alternativa_1':'3 testemunhas',
           'pergunta_283_alternativa_2':'5 testemunhas',
@@ -2293,7 +2293,7 @@
           'pergunta_283_alternativa_4':'10 testemunhas',
           'pergunta_283_resposta_correta':'5 testemunhas',
           'pergunta_283_justificativa':'Conforme artigo 288, §2º da Lei Complementar 3.673/1991, o indiciado poderá arrolar testemunhas até o máximo de cinco.',
-          //----------------------------------
+          //-
           'pergunta_284':'O que acontece se o indiciado não comparecer à citação?',
           'pergunta_284_alternativa_1':'O processo é arquivado',
           'pergunta_284_alternativa_2':'O processo prossegue à revelia com defensor designado',
@@ -2301,7 +2301,7 @@
           'pergunta_284_alternativa_4':'É marcada nova data indefinidamente',
           'pergunta_284_resposta_correta':'O processo prossegue à revelia com defensor designado',
           'pergunta_284_justificativa':'Conforme artigo 287 da Lei Complementar 3.673/1991, feita a citação e não comparecendo o indiciado, o processo prosseguirá à sua revelia e com defensor designado pelo presidente.',
-          //----------------------------------
+          //-
           'pergunta_285':'Qual o prazo para a comissão apresentar relatório após a defesa?',
           'pergunta_285_alternativa_1':'5 dias',
           'pergunta_285_alternativa_2':'10 dias',
@@ -2309,7 +2309,7 @@
           'pergunta_285_alternativa_4':'20 dias',
           'pergunta_285_resposta_correta':'10 dias',
           'pergunta_285_justificativa':'Conforme artigo 295 da Lei Complementar 3.673/1991, esgotado o prazo de defesa, a comissão apresentará o seu relatório dentro de dez dias.',
-          //----------------------------------
+          //-
           'pergunta_286':'O que deve conter o relatório da comissão disciplinar?',
           'pergunta_286_alternativa_1':'Apenas a proposta de pena',
           'pergunta_286_alternativa_2':'Apreciação das irregularidades, provas, razões de defesa, proposta de absolvição ou punição, sugestão de providências',
@@ -2317,7 +2317,7 @@
           'pergunta_286_alternativa_4':'Apenas a qualificação do indiciado',
           'pergunta_286_resposta_correta':'Apreciação das irregularidades, provas, razões de defesa, proposta de absolvição ou punição, sugestão de providências',
           'pergunta_286_justificativa':'Conforme artigo 295, §2º e §3º da Lei Complementar 3.673/1991, o relatório deve conter apreciação das irregularidades, provas, razões de defesa, proposta de absolvição ou punição, e sugestão de providências para evitar fatos semelhantes.',
-          //----------------------------------
+          //-
           'pergunta_287':'Qual o prazo para julgamento do processo pela autoridade competente?',
           'pergunta_287_alternativa_1':'5 dias',
           'pergunta_287_alternativa_2':'10 dias',
@@ -2325,7 +2325,7 @@
           'pergunta_287_alternativa_4':'30 dias',
           'pergunta_287_resposta_correta':'15 dias',
           'pergunta_287_justificativa':'Conforme artigo 297 da Lei Complementar 3.673/1991, recebido o processo, a autoridade que determinou sua instauração deverá julgá-lo no prazo de quinze dias.',
-          //----------------------------------
+          //-
           'pergunta_288':'O que é suspensão preventiva e qual seu prazo máximo?',
           'pergunta_288_alternativa_1':'Afastamento cautelar por até 30 dias',
           'pergunta_288_alternativa_2':'Afastamento por até 60 dias, prorrogável por mais 30 dias',
@@ -2333,7 +2333,7 @@
           'pergunta_288_alternativa_4':'Penalidade aplicada após processo',
           'pergunta_288_resposta_correta':'Afastamento por até 60 dias, prorrogável por mais 30 dias',
           'pergunta_288_justificativa':'Conforme artigo 272 da Lei Complementar 3.673/1991, a autoridade competente poderá determinar a suspensão preventiva do servidor, até sessenta dias, prorrogáveis por mais trinta dias.',
-          //----------------------------------
+          //-
           'pergunta_289':'Quando o servidor tem direito à remuneração durante a suspensão preventiva?',
           'pergunta_289_alternativa_1':'Sempre',
           'pergunta_289_alternativa_2':'Nunca',
@@ -2341,7 +2341,7 @@
           'pergunta_289_alternativa_4':'Apenas se for absolvido',
           'pergunta_289_resposta_correta':'Quando do processo não resultar punição, ou esta se limitar à advertência',
           'pergunta_289_justificativa':'Conforme artigo 273 da Lei Complementar 3.673/1991, o servidor terá direito à remuneração quando do processo não resultar punição, ou esta se limitar à pena de advertência.',
-          //----------------------------------
+          //-
           'pergunta_290':'O que é sindicância e quando é cabível?',
           'pergunta_290_alternativa_1':'Processo complexo para faltas graves',
           'pergunta_290_alternativa_2':'Procedimento sumário para apuração de irregularidades quando a ciência não for suficiente para determinação ou indicação do servidor faltoso',
@@ -2349,7 +2349,7 @@
           'pergunta_290_alternativa_4':'Investigação criminal',
           'pergunta_290_resposta_correta':'Procedimento sumário para apuração de irregularidades quando a ciência não for suficiente para determinação ou indicação do servidor faltoso',
           'pergunta_290_justificativa':'Conforme artigo 269, I da Lei Complementar 3.673/1991, a sindicância é cabível quando a ciência ou notícia não for suficiente para determinação da irregularidade ou para apontar o servidor faltoso.',
-          //----------------------------------
+          //-
           'pergunta_291':'Qual o prazo para conclusão da sindicância?',
           'pergunta_291_alternativa_1':'5 dias úteis',
           'pergunta_291_alternativa_2':'10 dias úteis',
@@ -2357,7 +2357,7 @@
           'pergunta_291_alternativa_4':'30 dias',
           'pergunta_291_resposta_correta':'10 dias úteis',
           'pergunta_291_justificativa':'Conforme artigo 276 da Lei Complementar 3.673/1991, o sindicante apresentará, no prazo máximo de dez dias úteis, relatório a respeito das diligências realizadas.',
-          //----------------------------------
+          //-
           'pergunta_292':'Quem pode determinar a realização de sindicância?',
           'pergunta_292_alternativa_1':'Apenas o Prefeito',
           'pergunta_292_alternativa_2':'Apenas o Procurador-Geral',
@@ -2365,7 +2365,7 @@
           'pergunta_292_alternativa_4':'Apenas a Câmara de Vereadores',
           'pergunta_292_resposta_correta':'Toda autoridade municipal no âmbito do órgão sob sua chefia',
           'pergunta_292_justificativa':'Conforme artigo 275 da Lei Complementar 3.673/1991, toda autoridade municipal é competente para, no âmbito do órgão sob sua chefia, determinar a realização de sindicância.',
-          //----------------------------------
+          //-
           'pergunta_293':'O que acontece com o processo administrativo disciplinar quando o ilícito também configurar crime?',
           'pergunta_293_alternativa_1':'O processo é arquivado',
           'pergunta_293_alternativa_2':'O processo continua independentemente',
@@ -2373,7 +2373,7 @@
           'pergunta_293_alternativa_4':'Apenas se comunica ao Ministério Público',
           'pergunta_293_resposta_correta':'A autoridade providenciará instauração de inquérito policial',
           'pergunta_293_justificativa':'Conforme artigo 298 da Lei Complementar 3.673/1991, quando do procedimento administrativo disciplinar resultar a prática de crime, a autoridade que houver determinado a instauração do processo providenciará para que se instaure o inquérito policial.',
-          //----------------------------------
+          //-
           'pergunta_294':'Qual o prazo de prescrição para a penalidade de demissão?',
           'pergunta_294_alternativa_1':'2 anos',
           'pergunta_294_alternativa_2':'3 anos',
@@ -2381,7 +2381,7 @@
           'pergunta_294_alternativa_4':'5 anos',
           'pergunta_294_resposta_correta':'4 anos',
           'pergunta_294_justificativa':'Conforme artigo 263, IV da Lei Complementar 3.673/1991, a aplicação da penalidade de demissão prescreve em quatro anos.',
-          //----------------------------------
+          //-
           'pergunta_295':'Quando se inicia a contagem do prazo prescricional?',
           'pergunta_295_alternativa_1':'Da data do fato',
           'pergunta_295_alternativa_2':'Da data da instauração do processo',
@@ -2389,7 +2389,7 @@
           'pergunta_295_alternativa_4':'Da data do julgamento',
           'pergunta_295_resposta_correta':'Da data do conhecimento do ato ou fato',
           'pergunta_295_justificativa':'Conforme artigo 263, §1º da Lei Complementar 3.673/1991, o prazo de prescrição contar-se-á da data do conhecimento do ato ou fato.',
-          //----------------------------------
+          //-
           'pergunta_296':'O que interrompe a prescrição da penalidade disciplinar?',
           'pergunta_296_alternativa_1':'Nada interrompe',
           'pergunta_296_alternativa_2':'Apenas o falecimento do servidor',
@@ -2397,7 +2397,7 @@
           'pergunta_296_alternativa_4':'Apenas decisão judicial',
           'pergunta_296_resposta_correta':'A instauração do processo administrativo disciplinar',
           'pergunta_296_justificativa':'Conforme artigo 263, §2º da Lei Complementar 3.673/1991, no caso de processo administrativo disciplinar, a prescrição se interrompe da data da sua instauração.',
-          //----------------------------------
+          //-
           'pergunta_297':'Quais as hipóteses de revisão do processo administrativo disciplinar?',
           'pergunta_297_alternativa_1':'Apenas por erro material',
           'pergunta_297_alternativa_2':'Decisão contrária à lei, decisão baseada em documentos falsos, novas provas de inocência',
@@ -2405,7 +2405,7 @@
           'pergunta_297_alternativa_4':'Qualquer motivo relevante',
           'pergunta_297_resposta_correta':'Decisão contrária à lei, decisão baseada em documentos falsos, novas provas de inocência',
           'pergunta_297_justificativa':'Conforme artigo 305 da Lei Complementar 3.673/1991, a revisão pode ser requerida quando: a decisão for contrária ao texto expresso da lei; fundada em depoimento, exames ou documentos falsos; aduzidas novas provas de inocência.',
-          //----------------------------------
+          //-
           'pergunta_298':'Qual o prazo para requerer reconsideração de ato administrativo?',
           'pergunta_298_alternativa_1':'5 dias',
           'pergunta_298_alternativa_2':'10 dias',
@@ -2413,7 +2413,7 @@
           'pergunta_298_alternativa_4':'60 dias',
           'pergunta_298_resposta_correta':'30 dias',
           'pergunta_298_justificativa':'Conforme artigo 269, §2º da Lei Complementar 3.673/1991, é assegurado ao servidor o exercício do direito de petição no prazo de trinta dias da ciência.',
-          //----------------------------------
+          //-
           'pergunta_299':'O que é direito de petição do servidor?',
           'pergunta_299_alternativa_1':'Direito de requerer, pedir reconsideração e recorrer',
           'pergunta_299_alternativa_2':'Apenas direito de requerer',
@@ -2421,13 +2421,415 @@
           'pergunta_299_alternativa_4':'Direito de representar contra colegas',
           'pergunta_299_resposta_correta':'Direito de requerer, pedir reconsideração e recorrer',
           'pergunta_299_justificativa':'Conforme artigo 225 da Lei Complementar 3.673/1991, é assegurado ao servidor direito de requerer, pedir reconsideração e recorrer, bem como o de representar em defesa do direito ou interesse legítimo.',
-          //----------------------------------
+          //-
           'pergunta_300':'Qual o prazo para despacho final em petição dirigida ao Prefeito?',
           'pergunta_300_alternativa_1':'15 dias',
           'pergunta_300_alternativa_2':'30 dias',
           'pergunta_300_alternativa_3':'40 dias',
           'pergunta_300_alternativa_4':'60 dias',
           'pergunta_300_resposta_correta':'40 dias',
-          'pergunta_300_justificativa':'Conforme artigo 225, §1º da Lei Complementar 3.673/1991, as petições dirigidas ao Prefeito terão despacho final no prazo final de quarenta dias.'
+          'pergunta_300_justificativa':'Conforme artigo 225, §1º da Lei Complementar 3.673/1991, as petições dirigidas ao Prefeito terão despacho final no prazo final de quarenta dias.',
        
+
+ 
+            'pergunta_301':'Quantos vereadores compõem a Câmara Municipal de Caxias do Sul conforme a Lei Orgânica?',
+            'pergunta_301_alternativa_1':'15 (quinze)',
+            'pergunta_301_alternativa_2':'21 (vinte e um)',
+            'pergunta_301_alternativa_3':'25 (vinte e cinco)',
+            'pergunta_301_alternativa_4':'29 (vinte e nove)',
+            'pergunta_301_resposta_correta':'21 (vinte e um)',
+            'pergunta_301_justificativa':'Conforme parágrafo único do Art. 40, fixa-se em 21 (vinte e um) Vereadores a composição numérica da Câmara Municipal',
+            //-
+            'pergunta_302':'Em que período anual a Câmara Municipal se reúne ordinariamente?',
+            'pergunta_302_alternativa_1':'1º de janeiro a 30 de junho',
+            'pergunta_302_alternativa_2':'1º de fevereiro a 15 de dezembro',
+            'pergunta_302_alternativa_3':'1º de março a 15 de novembro',
+            'pergunta_302_alternativa_4':'Durante todo o ano, sem interrupção',
+            'pergunta_302_resposta_correta':'1º de fevereiro a 15 de dezembro',
+            'pergunta_302_justificativa':'Art. 41 estabelece que a Câmara Municipal reunir-se-á anualmente, de 1º de fevereiro a 15 de dezembro',
+            //-
+            'pergunta_303':'Quando é realizada a primeira sessão de cada legislatura?',
+            'pergunta_303_alternativa_1':'1º de janeiro do ano seguinte à eleição',
+            'pergunta_303_alternativa_2':'1º de fevereiro do ano da eleição',
+            'pergunta_303_alternativa_3':'15 de dezembro do ano da eleição',
+            'pergunta_303_alternativa_4':'1º de março do ano seguinte à eleição',
+            'pergunta_303_resposta_correta':'1º de janeiro do ano seguinte à eleição',
+            'pergunta_303_justificativa':'Art. 42 estabelece que a primeira sessão de cada legislatura realizar-se-á no dia 1º de janeiro do ano subsequente ao da eleição',
+            //-
+            'pergunta_304':'Qual o prazo máximo para o vereador tomar posse após a sessão do dia 1º de janeiro?',
+            'pergunta_304_alternativa_1':'5 dias',
+            'pergunta_304_alternativa_2':'10 dias',
+            'pergunta_304_alternativa_3':'15 dias',
+            'pergunta_304_alternativa_4':'30 dias',
+            'pergunta_304_resposta_correta':'15 dias',
+            'pergunta_304_justificativa':'Art. 43 estabelece que o vereador deve tomar posse dentro de quinze dias do início do normal funcionamento da Câmara, sob pena de perda do mandato',
+            //-
+            'pergunta_305':'Quem pode convocar sessão extraordinária da Câmara?',
+            'pergunta_305_alternativa_1':'Apenas o Prefeito Municipal',
+            'pergunta_305_alternativa_2':'Apenas o Presidente da Câmara',
+            'pergunta_305_alternativa_3':'Prefeito, Presidente da Câmara ou maioria dos vereadores',
+            'pergunta_305_alternativa_4':'Apenas o Ministério Público',
+            'pergunta_305_resposta_correta':'Prefeito, Presidente da Câmara ou maioria dos vereadores',
+            'pergunta_305_justificativa':'Art. 45 estabelece que a convocação extraordinária cabe ao Prefeito, ao Presidente da Câmara ou à maioria de seus membros',
+            //-
+            'pergunta_306':'Qual o quórum mínimo para abertura das sessões da Câmara?',
+            'pergunta_306_alternativa_1':'Maioria absoluta dos vereadores',
+            'pergunta_306_alternativa_2':'Um terço dos vereadores',
+            'pergunta_306_alternativa_3':'Dois terços dos vereadores',
+            'pergunta_306_alternativa_4':'Apenas o Presidente e um secretário',
+            'pergunta_306_resposta_correta':'Um terço dos vereadores',
+            'pergunta_306_justificativa':'Art. 48 estabelece que as sessões somente serão abertas com a presença de, no mínimo, um terço dos Vereadores',
+            //-
+            'pergunta_307':'Como é composta a Mesa da Câmara Municipal?',
+            'pergunta_307_alternativa_1':'Presidente e um Vice-Presidente',
+            'pergunta_307_alternativa_2':'Presidente, Vice-Presidente e Secretário',
+            'pergunta_307_alternativa_3':'Presidente, dois Vice-Presidentes e dois Secretários',
+            'pergunta_307_alternativa_4':'Presidente, três Vice-Presidentes e um Secretário',
+            'pergunta_307_resposta_correta':'Presidente, dois Vice-Presidentes e dois Secretários',
+            'pergunta_307_justificativa':'Art. 51 estabelece que a Mesa é constituída de um Presidente, um Primeiro Vice-Presidente, um Segundo Vice-Presidente, um Primeiro-Secretário e um Segundo-Secretário',
+            //-
+            'pergunta_308':'Qual das seguintes NÃO é competência da Mesa da Câmara?',
+            'pergunta_308_alternativa_1':'Promulgar a Lei Orgânica e suas emendas',
+            'pergunta_308_alternativa_2':'Representar junto ao Poder Executivo sobre necessidades de economia interna',
+            'pergunta_308_alternativa_3':'Deliberar sobre questões de ordem levantadas pelos Vereadores',
+            'pergunta_308_alternativa_4':'Conceder licença ao Prefeito Municipal',
+            'pergunta_308_resposta_correta':'Conceder licença ao Prefeito Municipal',
+            'pergunta_308_justificativa':'Art. 52 enumera as competências da Mesa, sendo que conceder licença ao Prefeito é competência privativa da Câmara (Art. 62, V)',
+            //-
+            'pergunta_309':'Qual das seguintes é competência do Presidente da Câmara?',
+            'pergunta_309_alternativa_1':'Representar a Câmara em juízo e fora dele',
+            'pergunta_309_alternativa_2':'Nomear secretários municipais',
+            'pergunta_309_alternativa_3':'Exercer o poder de veto sobre projetos de lei',
+            'pergunta_309_alternativa_4':'Conceder aumento salarial aos servidores',
+            'pergunta_309_resposta_correta':'Representar a Câmara em juízo e fora dele',
+            'pergunta_309_justificativa':'Art. 53, I estabelece como competência do Presidente representar a Câmara em juízo e fora dele',
+            //-
+            'pergunta_310':'O que é vedado ao vereador desde a expedição do diploma?',
+            'pergunta_310_alternativa_1':'Firmar contrato com entidades públicas',
+            'pergunta_310_alternativa_2':'Exercer advocacia',
+            'pergunta_310_alternativa_3':'Participar de partido político',
+            'pergunta_310_alternativa_4':'Morar fora do município',
+            'pergunta_310_resposta_correta':'Firmar contrato com entidades públicas',
+            'pergunta_310_justificativa':'Art. 55, I, a veda ao vereador, desde a expedição do diploma, firmar ou manter contrato com pessoa jurídica de direito público, salvo quando obedecer a cláusulas uniformes',
+            //-
+            'pergunta_311':'Em qual dos casos abaixo o vereador PERDE o mandato?',
+            'pergunta_311_alternativa_1':'Deixar de comparecer à terça parte das sessões ordinárias',
+            'pergunta_311_alternativa_2':'Ser proprietário de empresa privada',
+            'pergunta_311_alternativa_3':'Exercer profissão liberal',
+            'pergunta_311_alternativa_4':'Participar de comissões temporárias',
+            'pergunta_311_resposta_correta':'Deixar de comparecer à terça parte das sessões ordinárias',
+            'pergunta_311_justificativa':'Art. 56, II estabelece que perde o mandato o vereador que deixar de comparecer, em cada sessão legislativa, à terça parte das sessões ordinárias',
+            //-
+            'pergunta_312':'O vereador que ocupar cargo de secretário municipal:',
+            'pergunta_312_alternativa_1':'Perde automaticamente o mandato',
+            'pergunta_312_alternativa_2':'Não perde o mandato se afastar-se da vereança',
+            'pergunta_312_alternativa_3':'Pode acumular os dois cargos',
+            'pergunta_312_alternativa_4':'Deve renunciar a um dos cargos em 30 dias',
+            'pergunta_312_resposta_correta':'Não perde o mandato se afastar-se da vereança',
+            'pergunta_312_justificativa':'Art. 58 estabelece que não perde o mandato o Vereador que ocupar cargo de secretário municipal, desde que se afaste do exercício da vereança',
+            //-
+            'pergunta_313':'Qual o prazo para o suplente convocado tomar posse?',
+            'pergunta_313_alternativa_1':'5 dias',
+            'pergunta_313_alternativa_2':'10 dias',
+            'pergunta_313_alternativa_3':'15 dias',
+            'pergunta_313_alternativa_4':'30 dias',
+            'pergunta_313_resposta_correta':'15 dias',
+            'pergunta_313_justificativa':'Art. 60, parágrafo único estabelece que o suplente convocado deve tomar posse dentro do prazo de quinze dias da data da notificação',
+            //-
+            'pergunta_314':'Qual das seguintes NÃO é competência da Câmara Municipal com a sanção do Prefeito?',
+            'pergunta_314_alternativa_1':'Instituir tributos municipais',
+            'pergunta_314_alternativa_2':'Votar o orçamento anual',
+            'pergunta_314_alternativa_3':'Autorizar a concessão de serviços públicos',
+            'pergunta_314_alternativa_4':'Eleger sua Mesa Diretora',
+            'pergunta_314_resposta_correta':'Eleger sua Mesa Diretora',
+            'pergunta_314_justificativa':'Art. 61 enumera competências da Câmara com sanção do Prefeito, enquanto eleger a Mesa é competência privativa (Art. 62, I)',
+            //-
+            'pergunta_315':'Qual das seguintes é competência PRIVATIVA da Câmara Municipal?',
+            'pergunta_315_alternativa_1':'Elaborar o Regimento Interno',
+            'pergunta_315_alternativa_2':'Nomear servidores públicos',
+            'pergunta_315_alternativa_3':'Executar o orçamento municipal',
+            'pergunta_315_alternativa_4':'Administrar os serviços de saúde',
+            'pergunta_315_resposta_correta':'Elaborar o Regimento Interno',
+            'pergunta_315_justificativa':'Art. 62, II estabelece como competência privativa da Câmara elaborar o Regimento Interno',
+            //-
+            'pergunta_316':'Qual o prazo para a Câmara deliberar sobre as contas do Prefeito após recebimento do parecer do Tribunal de Contas?',
+            'pergunta_316_alternativa_1':'30 dias',
+            'pergunta_316_alternativa_2':'60 dias',
+            'pergunta_316_alternativa_3':'90 dias',
+            'pergunta_316_alternativa_4':'120 dias',
+            'pergunta_316_resposta_correta':'60 dias',
+            'pergunta_316_justificativa':'Art. 62, VIII estabelece que a Câmara deve julgar as contas do Prefeito no prazo de sessenta dias de seu recebimento',
+            //-
+            'pergunta_317':'Quantos vereadores são necessários para criar Comissão Parlamentar de Inquérito?',
+            'pergunta_317_alternativa_1':'Um décimo dos membros',
+            'pergunta_317_alternativa_2':'Um quinto dos membros',
+            'pergunta_317_alternativa_3':'Um terço dos membros',
+            'pergunta_317_alternativa_4':'Maioria absoluta',
+            'pergunta_317_resposta_correta':'Um terço dos membros',
+            'pergunta_317_justificativa':'Art. 62, XVIII estabelece que a CPI é criada mediante requerimento de um terço de seus membros',
+            //-
+            'pergunta_318':'O que compete à Comissão Representativa durante o recesso?',
+            'pergunta_318_alternativa_1':'Legislar sobre matérias urgentes',
+            'pergunta_318_alternativa_2':'Substituir integralmente a Câmara',
+            'pergunta_318_alternativa_3':'Zelar pelas prerrogativas do Poder Legislativo',
+            'pergunta_318_alternativa_4':'Conceder aumento salarial a servidores',
+            'pergunta_318_resposta_correta':'Zelar pelas prerrogativas do Poder Legislativo',
+            'pergunta_318_justificativa':'Art. 63, II estabelece como atribuição da Comissão Representativa zelar pelas prerrogativas do Poder Legislativo',
+            //-
+            'pergunta_319':'Qual o percentual mínimo de eleitores para iniciativa popular de lei?',
+            'pergunta_319_alternativa_1':'1%',
+            'pergunta_319_alternativa_2':'3%',
+            'pergunta_319_alternativa_3':'5%',
+            'pergunta_319_alternativa_4':'10%',
+            'pergunta_319_resposta_correta':'5%',
+            'pergunta_319_justificativa':'Art. 66 estabelece que a iniciativa do eleitorado se exerce sob forma de moção articulada, subscrita, no mínimo, em cinco por cento do total de eleitores',
+            //-
+            'pergunta_320':'Qual o prazo máximo para apreciação de projeto de lei de iniciativa popular?',
+            'pergunta_320_alternativa_1':'30 dias',
+            'pergunta_320_alternativa_2':'60 dias',
+            'pergunta_320_alternativa_3':'90 dias',
+            'pergunta_320_alternativa_4':'120 dias',
+            'pergunta_320_resposta_correta':'90 dias',
+            'pergunta_320_justificativa':'Art. 66, § 1º estabelece que o projeto de iniciativa popular será apreciado no prazo máximo de noventa dias',
+            //-
+            'pergunta_321':'São de iniciativa PRIVATIVA do Prefeito as leis que disponham sobre:',
+            'pergunta_321_alternativa_1':'Criação de cargos públicos',
+            'pergunta_321_alternativa_2':'Emenda à Lei Orgânica',
+            'pergunta_321_alternativa_3':'Regimento Interno da Câmara',
+            'pergunta_321_alternativa_4':'Eleição da Mesa Diretora',
+            'pergunta_321_resposta_correta':'Criação de cargos públicos',
+            'pergunta_321_justificativa':'Art. 67, I estabelece como de iniciativa privativa do Prefeito as leis que disponham sobre criação de cargos, funções ou empregos públicos',
+            //-
+            'pergunta_322':'Como são aprovadas as leis complementares?',
+            'pergunta_322_alternativa_1':'Maioria simples',
+            'pergunta_322_alternativa_2':'Maioria absoluta',
+            'pergunta_322_alternativa_3':'Dois terços dos membros',
+            'pergunta_322_alternativa_4':'Unanimidade',
+            'pergunta_322_resposta_correta':'Maioria absoluta',
+            'pergunta_322_justificativa':'Art. 70, parágrafo único estabelece que as leis complementares serão aprovadas por maioria absoluta',
+            //-
+            'pergunta_323':'Qual o prazo para o Prefeito sancionar ou vetar projeto de lei?',
+            'pergunta_323_alternativa_1':'10 dias úteis',
+            'pergunta_323_alternativa_2':'15 dias úteis',
+            'pergunta_323_alternativa_3':'20 dias úteis',
+            'pergunta_323_alternativa_4':'30 dias úteis',
+            'pergunta_323_resposta_correta':'15 dias úteis',
+            'pergunta_323_justificativa':'Art. 73, § 1º estabelece que o Prefeito tem prazo de quinze dias úteis para vetar projeto de lei',
+            //-
+            'pergunta_324':'O que ocorre se o Prefeito não se manifestar sobre projeto de lei no prazo legal?',
+            'pergunta_324_alternativa_1':'O projeto é arquivado',
+            'pergunta_324_alternativa_2':'Considera-se vetado',
+            'pergunta_324_alternativa_3':'Considera-se sancionado',
+            'pergunta_324_alternativa_4':'Retorna à Câmara para nova votação',
+            'pergunta_324_resposta_correta':'Considera-se sancionado',
+            'pergunta_324_justificativa':'Art. 73, § 3º estabelece que decorrido o prazo de quinze dias, o silêncio do Prefeito importará em sanção',
+            //-
+            'pergunta_325':'Qual o prazo para a Câmara apreciar o veto?',
+            'pergunta_325_alternativa_1':'15 dias',
+            'pergunta_325_alternativa_2':'30 dias',
+            'pergunta_325_alternativa_3':'45 dias',
+            'pergunta_325_alternativa_4':'60 dias',
+            'pergunta_325_resposta_correta':'30 dias',
+            'pergunta_325_justificativa':'Art. 73, § 4º estabelece que o veto será apreciado dentro de trinta dias a contar de seu recebimento',
+            //-
+            'pergunta_326':'Quantos votos são necessários para rejeitar veto do Prefeito?',
+            'pergunta_326_alternativa_1':'Maioria simples',
+            'pergunta_326_alternativa_2':'Maioria absoluta',
+            'pergunta_326_alternativa_3':'Dois terços dos membros',
+            'pergunta_326_alternativa_4':'Unanimidade',
+            'pergunta_326_resposta_correta':'Maioria absoluta',
+            'pergunta_326_justificativa':'Art. 73, § 4º estabelece que o veto só pode ser rejeitado pelo voto da maioria absoluta dos Vereadores',
+            //-
+            'pergunta_327':'Quando o Presidente da Câmara tem direito a voto?',
+            'pergunta_327_alternativa_1':'Sempre',
+            'pergunta_327_alternativa_2':'Nunca',
+            'pergunta_327_alternativa_3':'Apenas em votações secretas',
+            'pergunta_327_alternativa_4':'Apenas quando houver empate ou em casos específicos',
+            'pergunta_327_resposta_correta':'Apenas quando houver empate ou em casos específicos',
+            'pergunta_327_justificativa':'Art. 77, § 3º estabelece que o Presidente só vota nas eleições da Mesa, votações secretas, empate em qualquer votação, ou quando a matéria exigir dois terços',
+            //-
+            'pergunta_328':'Após quantos dias da recepção de proposição o Presidente deve incluí-la na Ordem do Dia?',
+            'pergunta_328_alternativa_1':'15 dias',
+            'pergunta_328_alternativa_2':'30 dias',
+            'pergunta_328_alternativa_3':'45 dias',
+            'pergunta_328_alternativa_4':'60 dias',
+            'pergunta_328_resposta_correta':'45 dias',
+            'pergunta_328_justificativa':'Art. 78 estabelece que transcorridos quarenta e cinco dias do recebimento de qualquer proposição, o Presidente deve incluí-la na Ordem do Dia',
+            //-
+            'pergunta_329':'Quando é fixada a remuneração do Prefeito, Vice-Prefeito e Vereadores?',
+            'pergunta_329_alternativa_1':'No início de cada ano',
+            'pergunta_329_alternativa_2':'A cada dois anos',
+            'pergunta_329_alternativa_3':'Em cada legislatura para a subsequente',
+            'pergunta_329_alternativa_4':'A critério do Prefeito Municipal',
+            'pergunta_329_resposta_correta':'Em cada legislatura para a subsequente',
+            'pergunta_329_justificativa':'Art. 80 estabelece que a remuneração será fixada pela Câmara em cada legislatura para a subsequente',
+            //-
+            'pergunta_330':'Qual órgão auxilia a Câmara no controle externo?',
+            'pergunta_330_alternativa_1':'Tribunal de Contas do Estado',
+            'pergunta_330_alternativa_2':'Ministério Público Estadual',
+            'pergunta_330_alternativa_3':'Prefeitura Municipal',
+            'pergunta_330_alternativa_4':'Assembleia Legislativa',
+            'pergunta_330_resposta_correta':'Tribunal de Contas do Estado',
+            'pergunta_330_justificativa':'Art. 83 estabelece que o controle externo da Câmara terá o auxílio do Tribunal de Contas do Estado do Rio Grande do Sul',
+            //-
+            'pergunta_331':'Qual o prazo para apresentação das contas anuais do Prefeito?',
+            'pergunta_331_alternativa_1':'30 dias do encerramento do exercício financeiro',
+            'pergunta_331_alternativa_2':'60 dias do encerramento do exercício financeiro',
+            'pergunta_331_alternativa_3':'90 dias do encerramento do exercício financeiro',
+            'pergunta_331_alternativa_4':'120 dias do encerramento do exercício financeiro',
+            'pergunta_331_resposta_correta':'90 dias do encerramento do exercício financeiro',
+            'pergunta_331_justificativa':'Art. 83, § 1º estabelece que as contas serão apresentadas até noventa dias do encerramento do exercício financeiro',
+            //-
+            'pergunta_332':'Qual a duração do mandato dos membros da Mesa da Câmara?',
+            'pergunta_332_alternativa_1':'6 meses',
+            'pergunta_332_alternativa_2':'1 ano',
+            'pergunta_332_alternativa_3':'2 anos',
+            'pergunta_332_alternativa_4':'4 anos',
+            'pergunta_332_resposta_correta':'1 ano',
+            'pergunta_332_justificativa':'Art. 42, parágrafo único estabelece que é de um ano o mandato dos membros da Mesa',
+            //-
+            'pergunta_333':'Em que circunstâncias as sessões da Câmara podem ser secretas?',
+            'pergunta_333_alternativa_1':'A critério exclusivo do Presidente',
+            'pergunta_333_alternativa_2':'Por decisão de dois terços dos membros',
+            'pergunta_333_alternativa_3':'A pedido do Prefeito Municipal',
+            'pergunta_333_alternativa_4':'Nunca podem ser secretas',
+            'pergunta_333_resposta_correta':'Por decisão de dois terços dos membros',
+            'pergunta_333_justificativa':'Art. 47 estabelece que as sessões serão públicas, salvo deliberação em contrário por dois terços dos membros',
+            //-
+            'pergunta_334':'O que deve fazer o vereador no ato da posse e ao término do mandato?',
+            'pergunta_334_alternativa_1':'Prestar compromisso solene',
+            'pergunta_334_alternativa_2':'Fazer declaração de seus bens',
+            'pergunta_334_alternativa_3':'Apresentar atestado de saúde',
+            'pergunta_334_alternativa_4':'Assinar termo de responsabilidade',
+            'pergunta_334_resposta_correta':'Fazer declaração de seus bens',
+            'pergunta_334_justificativa':'Art. 44 estabelece que no ato da posse e ao término do mandato, os Vereadores devem fazer a declaração de seus bens',
+            //-
+            'pergunta_335':'Qual das seguintes NÃO é competência do Presidente da Câmara?',
+            'pergunta_335_alternativa_1':'Autorizar as despesas da Câmara',
+            'pergunta_335_alternativa_2':'Manter a ordem no recinto',
+            'pergunta_335_alternativa_3':'Nomear servidores do Executivo',
+            'pergunta_335_alternativa_4':'Fazer cumprir o Regimento Interno',
+            'pergunta_335_resposta_correta':'Nomear servidores do Executivo',
+            'pergunta_335_justificativa':'Art. 53 enumera competências do Presidente, sendo que nomear servidores do Executivo é competência do Prefeito',
+            //-
+            'pergunta_336':'Em que caso o vereador pode licenciar-se para tratar de interesses particulares?',
+            'pergunta_336_alternativa_1':'Por prazo indeterminado',
+            'pergunta_336_alternativa_2':'Por prazo nunca inferior a trinta dias',
+            'pergunta_336_alternativa_3':'Apenas com autorização do Prefeito',
+            'pergunta_336_alternativa_4':'Apenas uma vez por legislatura',
+            'pergunta_336_resposta_correta':'Por prazo nunca inferior a trinta dias',
+            'pergunta_336_justificativa':'Art. 59, III estabelece que o vereador pode licenciar-se para tratar de interesses particulares por prazo determinado, nunca inferior a trinta dias',
+            //-
+            'pergunta_337':'Qual das seguintes é competência da Câmara com sanção do Prefeito?',
+            'pergunta_337_alternativa_1':'Autorizar a alienação de bens imóveis',
+            'pergunta_337_alternativa_2':'Eleger a Mesa Diretora',
+            'pergunta_337_alternativa_3':'Elaborar o Regimento Interno',
+            'pergunta_337_alternativa_4':'Criar Comissão Parlamentar de Inquérito',
+            'pergunta_337_resposta_correta':'Autorizar a alienação de bens imóveis',
+            'pergunta_337_justificativa':'Art. 61, VII estabelece como competência da Câmara com sanção do Prefeito autorizar a alienação de bens imóveis',
+            //-
+            'pergunta_338':'Qual o prazo para Secretários Municipais comparecerem quando convocados pela Câmara?',
+            'pergunta_338_alternativa_1':'5 dias',
+            'pergunta_338_alternativa_2':'10 dias',
+            'pergunta_338_alternativa_3':'15 dias',
+            'pergunta_338_alternativa_4':'30 dias',
+            'pergunta_338_resposta_correta':'10 dias',
+            'pergunta_338_justificativa':'Art. 62, XVI estabelece que o não comparecimento no prazo de dez dias sem justificação importa em crime de responsabilidade',
+            //-
+            'pergunta_339':'O que compreende o processo legislativo municipal?',
+            'pergunta_339_alternativa_1':'Apenas leis ordinárias e complementares',
+            'pergunta_339_alternativa_2':'Emendas à Lei Orgânica, leis complementares, leis ordinárias, decretos legislativos e resoluções',
+            'pergunta_339_alternativa_3':'Apenas decretos do Prefeito',
+            'pergunta_339_alternativa_4':'Leis, decretos e portarias',
+            'pergunta_339_resposta_correta':'Emendas à Lei Orgânica, leis complementares, leis ordinárias, decretos legislativos e resoluções',
+            'pergunta_339_justificativa':'Art. 64 enumera que o processo legislativo compreende a elaboração de emendas à Lei Orgânica, leis complementares, leis ordinárias, decretos legislativos e resoluções',
+            //-
+            'pergunta_340':'Quem tem iniciativa de leis no município?',
+            'pergunta_340_alternativa_1':'Apenas os vereadores',
+            'pergunta_340_alternativa_2':'Apenas o Prefeito',
+            'pergunta_340_alternativa_3':'Vereadores, Prefeito e eleitorado',
+            'pergunta_340_alternativa_4':'Apenas o Ministério Público',
+            'pergunta_340_resposta_correta':'Vereadores, Prefeito e eleitorado',
+            'pergunta_340_justificativa':'Art. 66 estabelece que a iniciativa das leis cabe a qualquer Vereador, ao Prefeito e ao eleitorado',
+            //-
+            'pergunta_341':'Qual das seguintes matérias é de lei complementar?',
+            'pergunta_341_alternativa_1':'Código Tributário do Município',
+            'pergunta_341_alternativa_2':'Orçamento anual',
+            'pergunta_341_alternativa_3':'Denominação de logradouros',
+            'pergunta_341_alternativa_4':'Concessão de licença',
+            'pergunta_341_resposta_correta':'Código Tributário do Município',
+            'pergunta_341_justificativa':'Art. 70, I estabelece que o Código Tributário do Município é matéria de lei complementar',
+            //-
+            'pergunta_342':'O que ocorre com projeto de lei rejeitado pela Câmara?',
+            'pergunta_342_alternativa_1':'Pode ser reapresentado na mesma sessão legislativa por maioria absoluta',
+            'pergunta_342_alternativa_2':'Nunca pode ser reapresentado',
+            'pergunta_342_alternativa_3':'Pode ser reapresentado a qualquer tempo',
+            'pergunta_342_alternativa_4':'É automaticamente encaminhado ao Prefeito',
+            'pergunta_342_resposta_correta':'Pode ser reapresentado na mesma sessão legislativa por maioria absoluta',
+            'pergunta_342_justificativa':'Art. 74 estabelece que a matéria rejeitada só pode constituir objeto de novo projeto na mesma sessão legislativa mediante proposta da maioria absoluta',
+            //-
+            'pergunta_343':'Como devem ser constituídas as comissões da Câmara?',
+            'pergunta_343_alternativa_1':'Apenas por indicação do Presidente',
+            'pergunta_343_alternativa_2':'Com representação proporcional dos partidos',
+            'pergunta_343_alternativa_3':'Apenas por sorteio',
+            'pergunta_343_alternativa_4':'Por indicação exclusiva do Prefeito',
+            'pergunta_343_resposta_correta':'Com representação proporcional dos partidos',
+            'pergunta_343_justificativa':'Art. 75, § 1º estabelece que na constituição de cada comissão será assegurada a representação dos partidos, proporcional ao número de representantes',
+            //-
+            'pergunta_344':'Para que são criadas as Comissões Parlamentares de Inquérito?',
+            'pergunta_344_alternativa_1':'Para apuração de fato determinado e por prazo certo',
+            'pergunta_344_alternativa_2':'Para legislar sobre matérias urgentes',
+            'pergunta_344_alternativa_3':'Para substituir a Mesa Diretora',
+            'pergunta_344_alternativa_4':'Para administrar o orçamento',
+            'pergunta_344_resposta_correta':'Para apuração de fato determinado e por prazo certo',
+            'pergunta_344_justificativa':'Art. 76 estabelece que as CPIs são criadas para apuração de fato determinado e por prazo certo',
+            //-
+            'pergunta_345':'Quantos votos são necessários para aprovar emenda à Lei Orgânica?',
+            'pergunta_345_alternativa_1':'Maioria simples',
+            'pergunta_345_alternativa_2':'Maioria absoluta',
+            'pergunta_345_alternativa_3':'Dois terços dos membros',
+            'pergunta_345_alternativa_4':'Unanimidade',
+            'pergunta_345_resposta_correta':'Dois terços dos membros',
+            'pergunta_345_justificativa':'Art. 77, § 2º, a estabelece que as emendas à Lei Orgânica dependem do voto favorável de dois terços dos membros',
+            //-
+            'pergunta_346':'Em que situação o vereador NÃO pode votar?',
+            'pergunta_346_alternativa_1':'Quando tiver parente até terceiro grau interessado',
+            'pergunta_346_alternativa_2':'Quando estiver de licença',
+            'pergunta_346_alternativa_3':'Quando discordar do Presidente',
+            'pergunta_346_alternativa_4':'Quando representar partido de oposição',
+            'pergunta_346_resposta_correta':'Quando tiver parente até terceiro grau interessado',
+            'pergunta_346_justificativa':'Art. 77, § 4º veda o voto ao vereador que tiver parente afim ou consanguíneo até terceiro grau interessado na deliberação',
+            //-
+            'pergunta_347':'Quem pode retirar proposição da Ordem do Dia em caso de convocação extraordinária?',
+            'pergunta_347_alternativa_1':'Apenas o autor da proposição',
+            'pergunta_347_alternativa_2':'Apenas o Presidente da Câmara',
+            'pergunta_347_alternativa_3':'Maioria dos membros da Câmara',
+            'pergunta_347_alternativa_4':'Apenas o Prefeito Municipal',
+            'pergunta_347_resposta_correta':'Maioria dos membros da Câmara',
+            'pergunta_347_justificativa':'Art. 79 estabelece que a Câmara, mediante requerimento da maioria de seus membros, pode retirar proposição da Ordem do Dia',
+            //-
+            'pergunta_348':'Como é estabelecido o critério de atualização monetária da remuneração dos vereadores?',
+            'pergunta_348_alternativa_1':'Pelo Prefeito Municipal',
+            'pergunta_348_alternativa_2':'Pela Câmara Municipal',
+            'pergunta_348_alternativa_3':'Pelo Tribunal de Contas',
+            'pergunta_348_alternativa_4':'Pelo Governo do Estado',
+            'pergunta_348_resposta_correta':'Pela Câmara Municipal',
+            'pergunta_348_justificativa':'Art. 81 estabelece que quando da fixação da remuneração, a Câmara Municipal estabelecerá o critério de atualização',
+            //-
+            'pergunta_349':'Quem deve prestar contas ao Município?',
+            'pergunta_349_alternativa_1':'Apenas o Prefeito',
+            'pergunta_349_alternativa_2':'Apenas os secretários municipais',
+            'pergunta_349_alternativa_3':'Toda pessoa física ou entidade que utilize bens públicos',
+            'pergunta_349_alternativa_4':'Apenas as empresas concessionárias',
+            'pergunta_349_resposta_correta':'Toda pessoa física ou entidade que utilize bens públicos',
+            'pergunta_349_justificativa':'Art. 82, parágrafo único estabelece que deve prestar contas toda pessoa física ou entidade que utilize, arrecade, guarde ou administre bens públicos',
+            //-
+            'pergunta_350':'Qual o prazo para os contribuintes questionarem a legitimidade das contas públicas?',
+            'pergunta_350_alternativa_1':'30 dias',
+            'pergunta_350_alternativa_2':'45 dias',
+            'pergunta_350_alternativa_3':'60 dias',
+            'pergunta_350_alternativa_4':'90 dias',
+            'pergunta_350_resposta_correta':'60 dias',
+            'pergunta_350_justificativa':'Art. 83, § 3º estabelece que o contribuinte terá o prazo de sessenta dias para questionar a legitimidade das contas'
+        
   }
