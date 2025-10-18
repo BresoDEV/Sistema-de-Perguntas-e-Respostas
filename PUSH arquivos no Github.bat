@@ -14,6 +14,6 @@ echo Enviando para o repositorio remoto...
 git push
 
 echo Operacao concluida.
-pause
+
 
 
