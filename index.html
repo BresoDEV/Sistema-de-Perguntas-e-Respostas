@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>V1</title>
     </head>
     <style>
       *{
@@ -110,6 +110,7 @@
       _ocultar('details')
 
 
+      //Salva as perguntas que foram respondidas erradas, pra exiir no final
       function salvarPerguntas(p,respostaSelecionada,respostaCerta){
 
         var arraia;
@@ -201,8 +202,18 @@
 
         
         if(chave == 'pergunta_'+index) {
-          getID('pergunta').innerHTML = perguntas['pergunta_'+index];
+
+          //-----------
+          var reajustada = ''
+          reajustada = perguntas['pergunta_'+index].replace('IIII -','<br>IIII -')
+          reajustada = reajustada.replace('III -','<br>III -')
+          reajustada = reajustada.replace('II -','<br>II -')
+          reajustada = reajustada.replace('I -','<br>I -')
+          reajustada = reajustada.replace(':',':<br>')
+
+          getID('pergunta').innerHTML = reajustada;
           
+          //------------
           getID('alternativa1').innerHTML = perguntas['pergunta_'+index+'_alternativa_1'];
           getID('alternativa2').innerHTML = perguntas['pergunta_'+index+'_alternativa_2'];
           getID('alternativa3').innerHTML = perguntas['pergunta_'+index+'_alternativa_3'];
