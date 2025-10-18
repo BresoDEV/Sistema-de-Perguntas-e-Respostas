@@ -142,9 +142,11 @@
       const params = new URLSearchParams(window.location.search);
       var index = 1;
       var pontuacao = 0;
+      var erradas = 0;
       if(params.get("index")){
         index = params.get("index"); 
         pontuacao = params.get("pontuacao"); 
+        erradas = params.get("erradas"); 
       } 
 
       //Finalizou------------------------------------
@@ -181,7 +183,7 @@
         getID('proxima').innerHTML = "Reiniciar"
         addClick('proxima',()=>{
           localStorage.removeItem('respostasErradas')
-          window.location.href = 'index.html?index=1&pontuacao=0'
+          window.location.href = 'index.html?index=1&pontuacao=0&erradas=0'
         })
          
         throw new Error("Parando execução manualmente");
@@ -215,6 +217,7 @@
               _exibir('proxima')
             }
             else{
+              erradas++
               addErrada('alternativa1');
               _exibir('justificativa')
               _exibir('proxima')
@@ -239,6 +242,7 @@
               _exibir('proxima')
             }
             else{
+              erradas++
               addErrada('alternativa2');
               _exibir('justificativa')
               _exibir('proxima')
@@ -263,6 +267,7 @@
               _exibir('proxima')
             }
             else{
+              erradas++
               addErrada('alternativa3');
               _exibir('justificativa')
               _exibir('proxima')
@@ -287,6 +292,7 @@
               _exibir('proxima')
             }
             else{
+              erradas++
               addErrada('alternativa4');
               _exibir('justificativa')
               _exibir('proxima')
@@ -311,7 +317,7 @@
 
       addClick('proxima',()=>{
         index++;
-        window.location.href = 'index.html?index='+index+'&pontuacao='+pontuacao
+        window.location.href = 'index.html?index='+index+'&pontuacao='+pontuacao+'&erradas='+erradas
       })
 
       
