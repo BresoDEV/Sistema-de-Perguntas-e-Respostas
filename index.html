@@ -8,12 +8,12 @@
     </head>
     <style>
       *{
-        background-color: #333;
+        background-color: #181818;
         font-weight: bold;
         user-select: none;
       }
       .pergunta{
-        background-color: #666;
+        background-color: #333;
         color: aliceblue;
         border-radius: 20px;
         padding: 20px;
@@ -21,15 +21,16 @@
         margin-bottom: 20px;
       }
       .justificativa{
-        background-color: #666;
+        background-color: #333;
         color: aliceblue;
         border-radius: 20px;
         padding: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
+        font-weight: normal;
       }
       .alternativa{
-        background-color: #666;
+        background-color: #333;
         color: aliceblue;
         border-radius: 20px;
         padding: 10px;
@@ -43,11 +44,11 @@
       }
       .fonte-errada{
         color: rgb(190, 88, 88); 
-        background-color: #666;
+        background-color: #333;
       }
       .fonte-certa{
         color: rgb(134, 169, 124); 
-        background-color: #666;
+        background-color: #333;
       }
        
       button{
@@ -62,21 +63,22 @@
 
        summary{ 
         border-radius: 10px;
-        background-color: #666;
-        color: #590b0b;
+        background-color: #333;
+        color: rgb(190, 88, 88);
         padding: 5px;
        } 
        details{ 
         border-radius: 10px;
-        background-color: #666;
+        background-color: #333;
         color: #ffffff; 
        }
-       details p{ 
+        p{ 
         border-radius: 10px;
-        background-color: #666;
+        background-color: #333;
         color: #ffffff; 
         margin-left: 5px;
        }
+       
        
     </style>
     <body>
@@ -152,7 +154,11 @@
       //Finalizou------------------------------------
       if(!perguntas['pergunta_'+index]){
         
-        getID('justificativa').innerHTML = 'Sua pontuaçao foi de '+pontuacao + ''
+        getID('justificativa').innerHTML = 'Perguntas finalizadas!!'+
+        '<p>Acertos: <font class="fonte-certa">' + pontuacao + '</font></p>' +
+        '<p>Erros: <font class="fonte-errada">' + erradas + '</font></p>';
+        '<p>Erros: <font class="fonte-errada">' + erradas + '</font></p>';
+
         getID('justificativa').style.textAlign = 'center'
 
         _ocultar('pergunta')
@@ -176,7 +182,7 @@
           
           __++
         }
-         
+        s += '<br><br>';
         getID('local').innerHTML = s
         //---------------------------
         _exibir('proxima')
