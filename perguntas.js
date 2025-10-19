@@ -443,5 +443,31 @@ const perguntas = {
   'pergunta_47_justificativa':'As moções servem para manifestar apoio, repúdio ou pesar, entre outros',
 
 
-  
+  //----------------------------------
+  'pergunta_48':'Durante a discussão de uma proposição, o vereador pode usar a palavra:',
+  'pergunta_48_alternativa_1':'Por tempo ilimitado.',
+  'pergunta_48_alternativa_2':'Por até 10 minutos, prorrogáveis uma vez pelo Presidente.',
+  'pergunta_48_alternativa_3':'Somente mediante requerimento escrito.',
+  'pergunta_48_alternativa_4':'Apenas com autorização do Prefeito.',
+  'pergunta_48_resposta_correta':'Por até 10 minutos, prorrogáveis uma vez pelo Presidente.',
+  'pergunta_48_justificativa':'O Regimento estabelece limite de 10 minutos por vereador na discussão de cada proposição.',
+
+  //----------------------------------
+  'pergunta_49':'O prazo para o contribuinte examinar as contas apresentadas pelo Prefeito é de:',
+  'pergunta_49_alternativa_1':'30 dias.',
+  'pergunta_49_alternativa_2':'45 dias.',
+  'pergunta_49_alternativa_3':'60 dias.',
+  'pergunta_49_alternativa_4':'90 dias.',
+  'pergunta_49_resposta_correta':'60 dias.',
+  'pergunta_49_justificativa':'Após publicação de edital, o contribuinte tem 60 dias para examinar e apresentar questionamentos às contas.',
+
+  //----------------------------------
+  'pergunta_50':'Compete à Câmara Municipal, conforme o Regimento Interno:',
+  'pergunta_50_alternativa_1':'Julgar as contas do Prefeito e da Mesa da Câmara.',
+  'pergunta_50_alternativa_2':'Executar diretamente as leis municipais.',
+  'pergunta_50_alternativa_3':'Representar o Município em juízo.',
+  'pergunta_50_alternativa_4':'Fiscalizar apenas obras públicas.',
+  'pergunta_50_resposta_correta':'Julgar as contas do Prefeito e da Mesa da Câmara.',
+  'pergunta_50_justificativa':'O art. 216 e seguintes dispõem que cabe à Câmara deliberar sobre as contas do Prefeito e da própria Mesa.',
+}
 }
