@@ -470,4 +470,4 @@ const perguntas = {
   'pergunta_50_resposta_correta':'Julgar as contas do Prefeito e da Mesa da Câmara.',
   'pergunta_50_justificativa':'O art. 216 e seguintes dispõem que cabe à Câmara deliberar sobre as contas do Prefeito e da própria Mesa.',
 }
-}
+
