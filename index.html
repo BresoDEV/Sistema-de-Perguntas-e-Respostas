@@ -296,6 +296,18 @@
         _ocultar('alternativa3')
         _ocultar('alternativa4')
 
+        
+        _exibir('proxima')
+        getID('proxima').innerHTML = "Reiniciar"
+        addClick('proxima',()=>{
+          localStorage.removeItem('respostasErradas')
+
+          localStorage.setItem('index',1)
+          localStorage.setItem('pontuacao',0)
+          localStorage.setItem('erradas',0)
+          window.location.href = 'index.html?index=1&pontuacao=0&erradas=0'
+        })
+
         //--------------------------------
         _exibir('details') 
         
@@ -314,16 +326,6 @@
         s += '<br><br>';
         getID('local').innerHTML = s
         //---------------------------
-        _exibir('proxima')
-        getID('proxima').innerHTML = "Reiniciar"
-        addClick('proxima',()=>{
-          localStorage.removeItem('respostasErradas')
-
-          localStorage.setItem('index',1)
-          localStorage.setItem('pontuacao',0)
-          localStorage.setItem('erradas',0)
-          window.location.href = 'index.html?index=1&pontuacao=0&erradas=0'
-        })
          
         throw new Error("Parando execução manualmente");
       }
