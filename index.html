@@ -102,7 +102,11 @@
         text-align: center;
         color: aliceblue;
        }
-       
+       h2{
+        background-color: #406b6d;
+        font-size: 30vw;
+        margin: 0;
+       }
     </style>
     <body>
 
@@ -264,7 +268,24 @@
         
         getID('justificativa').innerHTML = '🏆 Perguntas finalizadas 🏆'+
         '<p>✅Acertos: <font class="fonte-certa">' + pontuacao + '</font></p>' +
-        '<p>❌Erros: <font class="fonte-errada">' + erradas + '</font></p>';
+        '<p>❌Erros: <font class="fonte-errada">' + erradas + '</font></p>'+
+        '<h2 id="h2">🏅</h2>';
+
+        //----Calcular a medalha
+       
+        if(pontuacao / 4 >= erradas){
+          getID('h2').innerHTML = '🥈'
+        }
+        else if(pontuacao / 2 >= erradas){
+          getID('h2').innerHTML = '🥉'
+        }
+        if(erradas == 0 && pontuacao >= 1){
+          getID('h2').innerHTML = '🥇'
+        }
+        
+        console.log('🥉'+pontuacao / 4)
+        console.log('🥈'+pontuacao / 2) 
+        //------
          
 
         getID('justificativa').style.textAlign = 'center'
