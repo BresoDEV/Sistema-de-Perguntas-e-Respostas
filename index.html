@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>V 1.2</title>
+        <title>V 1.5</title>
     </head>
     <style>
       *{
@@ -13,7 +13,7 @@
         user-select: none;
       }
       .pergunta{
-        background-color: #333;
+        background-color: #3a495b;
         color: aliceblue;
         border-radius: 20px;
         padding: 20px;
@@ -21,7 +21,7 @@
         margin-bottom: 20px;
       }
       .justificativa{
-        background-color: #333;
+        background-color: #406b6d;
         color: aliceblue;
         border-radius: 20px;
         padding: 20px;
@@ -43,12 +43,12 @@
         background-color: rgb(134, 169, 124); 
       }
       .fonte-errada{
-        color: rgb(190, 88, 88); 
+        color: rgb(190, 88, 88);  
         background-color: #333;
       }
       .fonte-certa{
-        color: rgb(134, 169, 124); 
-        background-color: #333;
+        color: rgb(75, 200, 40); 
+        background-color: #333; 
       }
        
       button{
@@ -59,6 +59,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
         color: aliceblue;
+        margin-bottom: 5px;
       }
 
        summary{ 
@@ -79,9 +80,34 @@
         margin-left: 5px;
        }
        
+
+       .topo{
+        margin: -5px;
+        height: 10px;
+        background-color: rgb(73, 162, 192);
+       }
+
+       .finzalizar{
+        background-color: rgb(190, 88, 88);
+       }
+
+       input{
+        background-color: #404040;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 90vw;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        color: aliceblue;
+       }
        
     </style>
     <body>
+
+      <div id="topo" class="topo"></div>
+
         <div id="pergunta" class="pergunta">
             1: Qual a cor do cavalo branco de Napoleão?
         </div>
@@ -103,11 +129,76 @@
         <br>
 
         <button id="proxima">Próxima</button>
+        <button id="finalizar" class="finzalizar">Finalizar</button>
     </body>
     <script src="perguntas.js"></script>
     <script>
  
       _ocultar('details')
+      _ocultar('finalizar')
+
+      addClick('finalizar',()=>{
+        localStorage.setItem('index',1000)
+        window.location.reload()
+      })
+
+
+
+      //DEV MENU
+      addClick('topo',()=>{
+
+        document.body.innerHTML = `
+          <center>
+            <br>
+            <br>
+            <br>
+            <button id="bt1">Reiniciar Tudo</button>
+            <br>
+            <button id="bt2">Apagar Respostas Erradas</button>
+            <hr>
+            <input id="inpt" type="number" min="1" max="350">
+            <br>
+            <button id="bt3">Mudar Pergunta</button>
+            <br> 
+            <br>
+            <br>
+            <br>
+            <button id="bt4">Voltar</button>
+
+
+          </center>
+
+        
+        `
+
+        getID('inpt').value = index
+        
+
+        addClick('bt1',()=>{
+            localStorage.setItem('index',1)
+            localStorage.setItem('pontuacao',0)
+            localStorage.setItem('erradas',0)
+            localStorage.removeItem('respostasErradas')
+            window.location.reload()
+        })
+
+        addClick('bt2',()=>{
+          localStorage.removeItem('respostasErradas')
+          alert('Lista de respostas erradas foi deletado')
+        })
+        addClick('bt3',()=>{
+          localStorage.setItem('index',getID('inpt').value)
+          alert('Indice das perguntas foi alterado para '+getID('inpt').value)
+        })
+
+        addClick('bt4',()=>{
+          window.location.reload()
+        })
+       
+      })
+      //---------------------------------------------
+
+
 
 
       //Salva as perguntas que foram respondidas erradas, pra exiir no final
@@ -146,19 +237,35 @@
       var index = 1;
       var pontuacao = 0;
       var erradas = 0;
-      if(params.get("index")){
-        index = params.get("index"); 
-        pontuacao = params.get("pontuacao"); 
-        erradas = params.get("erradas"); 
-      } 
+      
+      if(localStorage.getItem('index')){
+        index = parseInt(localStorage.getItem('index'))
+      }else{
+        localStorage.setItem('index',1)
+      }
+
+      if(localStorage.getItem('pontuacao')){
+        pontuacao = parseInt(localStorage.getItem('pontuacao'))
+      }else{
+        localStorage.setItem('pontuacao',0)
+      }
+
+      if(localStorage.getItem('erradas')){
+        erradas = parseInt(localStorage.getItem('erradas'))
+      }else{
+        localStorage.setItem('erradas',0)
+      }
+
+
+
 
       //Finalizou------------------------------------
       if(!perguntas['pergunta_'+index]){
         
-        getID('justificativa').innerHTML = 'Perguntas finalizadas!!'+
-        '<p>Acertos: <font class="fonte-certa">' + pontuacao + '</font></p>' +
-        '<p>Erros: <font class="fonte-errada">' + erradas + '</font></p>';
-        '<p>Erros: <font class="fonte-errada">' + erradas + '</font></p>';
+        getID('justificativa').innerHTML = '🏆 Perguntas finalizadas 🏆'+
+        '<p>✅Acertos: <font class="fonte-certa">' + pontuacao + '</font></p>' +
+        '<p>❌Erros: <font class="fonte-errada">' + erradas + '</font></p>';
+         
 
         getID('justificativa').style.textAlign = 'center'
 
@@ -169,7 +276,7 @@
         _ocultar('alternativa4')
 
         //--------------------------------
-        _exibir('details')
+        _exibir('details') 
         
         var __ = 1
         var s = ''
@@ -190,6 +297,10 @@
         getID('proxima').innerHTML = "Reiniciar"
         addClick('proxima',()=>{
           localStorage.removeItem('respostasErradas')
+
+          localStorage.setItem('index',1)
+          localStorage.setItem('pontuacao',0)
+          localStorage.setItem('erradas',0)
           window.location.href = 'index.html?index=1&pontuacao=0&erradas=0'
         })
          
@@ -225,7 +336,7 @@
           reajustada = reajustada.replace('( )','<br>(  )')
           }
 
-          getID('pergunta').innerHTML = reajustada;
+          getID('pergunta').innerHTML = index+':<br><br>'+reajustada;
           
           //------------
           getID('alternativa1').innerHTML = perguntas['pergunta_'+index+'_alternativa_1'];
@@ -246,12 +357,16 @@
               addCerto('alternativa1');
               _exibir('justificativa')
               _exibir('proxima')
+              _exibir('finalizar')
+ 
+              localStorage.setItem('pontuacao',pontuacao) 
             }
             else{
               erradas++
               addErrada('alternativa1');
               _exibir('justificativa')
               _exibir('proxima')
+              _exibir('finalizar')
               buscarAlternativaCorreta(perguntas['pergunta_'+index+'_resposta_correta'])
 
               salvarPerguntas(
@@ -259,6 +374,9 @@
                 getID('alternativa1').innerHTML,
                 perguntas['pergunta_'+index+'_resposta_correta']
                 )
+ 
+              localStorage.setItem('erradas',erradas)
+
             }
 
           });
@@ -271,12 +389,17 @@
               addCerto('alternativa2');
               _exibir('justificativa')
               _exibir('proxima')
+              _exibir('finalizar')
+ 
+              localStorage.setItem('pontuacao',pontuacao)
+              
             }
             else{
               erradas++
               addErrada('alternativa2');
               _exibir('justificativa')
               _exibir('proxima')
+              _exibir('finalizar')
               buscarAlternativaCorreta(perguntas['pergunta_'+index+'_resposta_correta'])
 
               salvarPerguntas(
@@ -284,6 +407,9 @@
                 getID('alternativa2').innerHTML,
                 perguntas['pergunta_'+index+'_resposta_correta']
                 )
+ 
+              localStorage.setItem('erradas',erradas)
+
             }
 
           });
@@ -296,12 +422,17 @@
               addCerto('alternativa3');
               _exibir('justificativa')
               _exibir('proxima')
+              _exibir('finalizar')
+ 
+              localStorage.setItem('pontuacao',pontuacao) 
+
             }
             else{
               erradas++
               addErrada('alternativa3');
               _exibir('justificativa')
               _exibir('proxima')
+              _exibir('finalizar')
               buscarAlternativaCorreta(perguntas['pergunta_'+index+'_resposta_correta'])
 
               salvarPerguntas(
@@ -309,6 +440,9 @@
                 getID('alternativa3').innerHTML,
                 perguntas['pergunta_'+index+'_resposta_correta']
                 )
+                 
+              localStorage.setItem('erradas',erradas)
+
             }
 
           });
@@ -321,12 +455,17 @@
               addCerto('alternativa4');
               _exibir('justificativa')
               _exibir('proxima')
+              _exibir('finalizar')
+               
+              localStorage.setItem('pontuacao',pontuacao) 
+
             }
             else{
               erradas++
               addErrada('alternativa4');
               _exibir('justificativa')
               _exibir('proxima')
+              _exibir('finalizar')
               buscarAlternativaCorreta(perguntas['pergunta_'+index+'_resposta_correta'])
 
               salvarPerguntas(
@@ -334,6 +473,8 @@
                 getID('alternativa4').innerHTML,
                 perguntas['pergunta_'+index+'_resposta_correta']
                 )
+ 
+              localStorage.setItem('erradas',erradas)
             }
 
           });
@@ -348,6 +489,12 @@
 
       addClick('proxima',()=>{
         index++;
+
+        
+        localStorage.setItem('index',index)
+        localStorage.setItem('pontuacao',pontuacao)
+        localStorage.setItem('erradas',erradas)
+
         window.location.href = 'index.html?index='+index+'&pontuacao='+pontuacao+'&erradas='+erradas
       })
 
@@ -385,7 +532,10 @@
         })
       }
       function getID(id){
-        return document.getElementById(id)
+        if(document.getElementById(id)){
+          return document.getElementById(id);
+        }
+        return id
       }
      
 
@@ -414,5 +564,10 @@
       _ocultar('proxima')
       _ocultar('justificativa')
       _ocultar('details')
+
+
+      console.log('index: '+index)
+      console.log('pontuacao: '+pontuacao)
+      console.log('erradas: '+erradas) 
     </script>
 </html>
