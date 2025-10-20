@@ -1,1282 +1,1883 @@
+
 const perguntas = {
-  // 1
-  'pergunta_1':'De acordo com o Regimento Interno da Câmara de Caxias do Sul, a função legislativa consiste em:',
-  'pergunta_1_alternativa_1':'Elaborar, apreciar, votar, modificar e revogar leis municipais.',
-  'pergunta_1_alternativa_2':'Fiscalizar as contas do Executivo.',
-  'pergunta_1_alternativa_3':'Julgar infrações político-administrativas.',
-  'pergunta_1_alternativa_4':'Administrar o orçamento interno da Câmara.',
-  'pergunta_1_resposta_correta':'Elaborar, apreciar, votar, modificar e revogar leis municipais.',
-  'pergunta_1_justificativa':'O artigo 5º, §1º da Resolução 244/A estabelece que a função legislativa consiste na elaboração, apreciação, votação, modificação e revogação de leis de competência municipal.',
-
-  //-----------------------------------
-  // 2
-  'pergunta_2':'A função de fiscalização financeira e controle externo da Câmara é exercida:',
-  'pergunta_2_alternativa_1':'Sem auxílio de qualquer órgão externo.',
-  'pergunta_2_alternativa_2':'Com o auxílio do Tribunal de Contas do Estado.',
-  'pergunta_2_alternativa_3':'Pela Controladoria-Geral do Município.',
-  'pergunta_2_alternativa_4':'Pelo Ministério Público Estadual.',
-  'pergunta_2_resposta_correta':'Com o auxílio do Tribunal de Contas do Estado.',
-  'pergunta_2_justificativa':'Segundo o art. 5º, §2º do Regimento, a Câmara exerce o controle financeiro e de contas com o auxílio do Tribunal de Contas do Estado.',
-
-  //----------------------------------
-  // 3
-  'pergunta_3':'Assumirá a presidência da Sessão Solene de Instalação:',
-  'pergunta_3_alternativa_1':'O vereador mais votado.',
-  'pergunta_3_alternativa_2':'O vereador mais idoso.',
-  'pergunta_3_alternativa_3':'O vereador com mais mandatos.',
-  'pergunta_3_alternativa_4':'O prefeito eleito.',
-  'pergunta_3_resposta_correta':'O vereador mais idoso.',
-  'pergunta_3_justificativa':'O art. 6º, §1º determina que o vereador mais idoso preside a Sessão Solene de Instalação.',
-
-  //----------------------------------
-  // 4
-  'pergunta_4':'A Ordem do Dia é o momento da sessão destinado a:',
-  'pergunta_4_alternativa_1':'Registro de presença.',
-  'pergunta_4_alternativa_2':'Leitura de expedientes.',
-  'pergunta_4_alternativa_3':'Discussão e votação das matérias incluídas na pauta.',
-  'pergunta_4_alternativa_4':'Comunicações pessoais dos vereadores.',
-  'pergunta_4_resposta_correta':'Discussão e votação das matérias incluídas na pauta.',
-  'pergunta_4_justificativa':'A Ordem do Dia é a fase da sessão em que se discutem e votam proposições previamente incluídas na pauta.',
-
-  //----------------------------------
-  // 5
-  'pergunta_5':'A Mesa Diretora da Câmara é composta por:',
-  'pergunta_5_alternativa_1':'Presidente, Vice-Presidente e Secretário.',
-  'pergunta_5_alternativa_2':'Presidente, 1º e 2º Vice-Presidentes, 1º e 2º Secretários.',
-  'pergunta_5_alternativa_3':'Presidente e dois Secretários.',
-  'pergunta_5_alternativa_4':'Presidente, Vice-Presidente e Líder de Governo.',
-  'pergunta_5_resposta_correta':'Presidente, 1º e 2º Vice-Presidentes, 1º e 2º Secretários.',
-  'pergunta_5_justificativa':'Conforme o art. 13, a Mesa é composta por um Presidente, dois Vice-Presidentes e dois Secretários.',
-
-  //----------------------------------
-  // 6
-  'pergunta_6':'As funções dos membros da Mesa cessarão:',
-  'pergunta_6_alternativa_1':'Somente ao final do mandato.',
-  'pergunta_6_alternativa_2':'Ao final do ano legislativo, por renúncia, perda do mandato ou destituição.',
-  'pergunta_6_alternativa_3':'Apenas com a morte do titular.',
-  'pergunta_6_alternativa_4':'Com aprovação de dois terços do plenário.',
-  'pergunta_6_resposta_correta':'Ao final do ano legislativo, por renúncia, perda do mandato ou destituição.',
-  'pergunta_6_justificativa':'Segundo o art. 23, o término ocorre nessas hipóteses.',
-
-  //----------------------------------
-  // 7
-  'pergunta_7':'As Sessões Ordinárias e Extraordinárias só podem ser abertas com:',
-  'pergunta_7_alternativa_1':'Um terço dos vereadores presentes.',
-  'pergunta_7_alternativa_2':'Metade mais um dos vereadores.',
-  'pergunta_7_alternativa_3':'Um quarto dos vereadores.',
-  'pergunta_7_alternativa_4':'Dois terços dos vereadores.',
-  'pergunta_7_resposta_correta':'Um terço dos vereadores.',
-  'pergunta_7_justificativa':'Conforme o art. 130, a presença mínima para abertura é de um terço dos membros.',
-
-  //----------------------------------
-  // 8
-  'pergunta_8':'A duração máxima das sessões ordinárias e extraordinárias é de:',
-  'pergunta_8_alternativa_1':'Uma hora.',
-  'pergunta_8_alternativa_2':'Duas horas.',
-  'pergunta_8_alternativa_3':'Três horas.',
-  'pergunta_8_alternativa_4':'Quatro horas.',
-  'pergunta_8_resposta_correta':'Três horas.',
-  'pergunta_8_justificativa':'O art. 130 também fixa o limite máximo de duração das sessões em três horas.',
-
-  //----------------------------------
-  // 9
-  'pergunta_9':'As Sessões Solenes:',
-  'pergunta_9_alternativa_1':'Dependem de quorum mínimo.',
-  'pergunta_9_alternativa_2':'Podem deliberar matérias urgentes.',
-  'pergunta_9_alternativa_3':'Independem de quorum por terem caráter apenas cerimonial.',
-  'pergunta_9_alternativa_4':'São realizadas apenas mediante convocação do Prefeito.',
-  'pergunta_9_resposta_correta':'Independem de quorum por terem caráter apenas cerimonial.',
-  'pergunta_9_justificativa':'As sessões solenes têm caráter comemorativo e não deliberativo, portanto independem de quorum.',
-
-  //----------------------------------
-  // 10
-  'pergunta_10':'As contas do Prefeito e da Mesa da Câmara devem ser prestadas:',
-  'pergunta_10_alternativa_1':'Até noventa dias após o encerramento do exercício.',
-  'pergunta_10_alternativa_2':'Em até sessenta dias após o parecer do Tribunal de Contas.',
-  'pergunta_10_alternativa_3':'Diretamente ao Legislativo sem prazo fixo.',
-  'pergunta_10_alternativa_4':'Até o fim da legislatura.',
-  'pergunta_10_resposta_correta':'Em até sessenta dias após o parecer do Tribunal de Contas.',
-  'pergunta_10_justificativa':'O Regimento prevê prazo de 60 dias para a Câmara deliberar após o recebimento do parecer prévio do Tribunal de Contas.',
-
-  //----------------------------------
-  // 11
-  'pergunta_11':'O Presidente da Câmara só vota:',
-  'pergunta_11_alternativa_1':'Sempre.',
-  'pergunta_11_alternativa_2':'Quando houver empate, votação secreta ou matéria que exija 2/3 dos votos.',
-  'pergunta_11_alternativa_3':'Em casos de urgência.',
-  'pergunta_11_alternativa_4':'Quando autorizado pelo plenário.',
-  'pergunta_11_resposta_correta':'Quando houver empate, votação secreta ou matéria que exija 2/3 dos votos.',
-  'pergunta_11_justificativa':'O art. 29 do Regimento determina essas hipóteses específicas para o voto do Presidente.',
-
-  //----------------------------------
-  // 12
-  'pergunta_12':'As Comissões Permanentes são órgãos:',
-  'pergunta_12_alternativa_1':'De assessoramento técnico e político, com atuação contínua.',
-  'pergunta_12_alternativa_2':'De caráter apenas temporário.',
-  'pergunta_12_alternativa_3':'Formados por servidores efetivos.',
-  'pergunta_12_alternativa_4':'Sem poder de parecer.',
-  'pergunta_12_resposta_correta':'De assessoramento técnico e político, com atuação contínua.',
-  'pergunta_12_justificativa':'O Regimento define as comissões permanentes como órgãos técnicos e políticos de caráter permanente.',
-
-  //----------------------------------
-  // 13
-  'pergunta_13':'A Câmara Municipal reunir-se-á anualmente, em sessão legislativa ordinária:',
-  'pergunta_13_alternativa_1':'De 1º de janeiro a 22 de dezembro.',
-  'pergunta_13_alternativa_2':'De 15 de janeiro a 22 de dezembro.',
-  'pergunta_13_alternativa_3':'De 1º de fevereiro a 15 de dezembro.',
-  'pergunta_13_alternativa_4':'De 2 de fevereiro a 15 de dezembro.',
-  'pergunta_13_resposta_correta':'De 1º de fevereiro a 15 de dezembro.',
-  'pergunta_13_justificativa':'O art. 125 estabelece o período da sessão legislativa ordinária.',
-
-  //----------------------------------
-  // 14
-  'pergunta_14':'As funções da Câmara incluem, entre outras:',
-  'pergunta_14_alternativa_1':'Executiva e judiciária.',
-  'pergunta_14_alternativa_2':'Legislativa, fiscalizadora, de julgamento e assessoramento.',
-  'pergunta_14_alternativa_3':'Administrativa e privada.',
-  'pergunta_14_alternativa_4':'Judicial e arbitral.',
-  'pergunta_14_resposta_correta':'Legislativa, fiscalizadora, de julgamento e assessoramento.',
-  'pergunta_14_justificativa':'Essas são as funções descritas no art. 5º do Regimento.',
-
-  //----------------------------------
-  // 15
-  'pergunta_15':'Durante a Sessão Solene de Instalação, a posse do Prefeito ocorre:',
-  'pergunta_15_alternativa_1':'Antes do compromisso legal.',
-  'pergunta_15_alternativa_2':'Após a prestação do compromisso e entrega de declaração de bens.',
-  'pergunta_15_alternativa_3':'Após a eleição da Mesa Diretora.',
-  'pergunta_15_alternativa_4':'Somente após aprovação do Tribunal de Contas.',
-  'pergunta_15_resposta_correta':'Após a prestação do compromisso e entrega de declaração de bens.',
-  'pergunta_15_justificativa':'O art. 6º, §2º define essa sequência da Sessão Solene de Instalação.',
-
-  //----------------------------------
-  // 16
-  'pergunta_16':'A Comissão de Constituição, Justiça e Legislação tem como competência específica:',
-  'pergunta_16_alternativa_1':'Opinar sobre proposições e emendas em tramitação.',
-  'pergunta_16_alternativa_2':'Fiscalizar obras públicas.',
-  'pergunta_16_alternativa_3':'Acompanhar o orçamento anual.',
-  'pergunta_16_alternativa_4':'Promover debates sobre meio ambiente.',
-  'pergunta_16_resposta_correta':'Opinar sobre proposições e emendas em tramitação.',
-  'pergunta_16_justificativa':'Compete à Comissão de Constituição e Justiça emitir parecer sobre a legalidade e constitucionalidade de proposições.',
-
-  //----------------------------------
-  // 17
-  'pergunta_17':'As Comissões Temporárias têm como característica:',
-  'pergunta_17_alternativa_1':'Existirem por prazo determinado para tratar de assuntos específicos.',
-  'pergunta_17_alternativa_2':'Terem duração igual à legislatura.',
-  'pergunta_17_alternativa_3':'Substituírem as Comissões Permanentes.',
-  'pergunta_17_alternativa_4':'Serem compostas por servidores efetivos.',
-  'pergunta_17_resposta_correta':'Existirem por prazo determinado para tratar de assuntos específicos.',
-  'pergunta_17_justificativa':'O Regimento diferencia as Comissões Temporárias pelas suas finalidades transitórias e prazo definido.',
-
-  //----------------------------------
-  // 18
-  'pergunta_18':'As Sessões Extraordinárias são realizadas:',
-  'pergunta_18_alternativa_1':'Para tratar de matérias urgentes, mediante convocação.',
-  'pergunta_18_alternativa_2':'Somente para homenagens.',
-  'pergunta_18_alternativa_3':'Sem necessidade de convocação.',
-  'pergunta_18_alternativa_4':'Apenas durante o recesso.',
-  'pergunta_18_resposta_correta':'Para tratar de matérias urgentes, mediante convocação.',
-  'pergunta_18_justificativa':'As sessões extraordinárias são convocadas para matérias urgentes e relevantes.',
-
-  //----------------------------------
-  // 19
-  'pergunta_19':'As sessões extraordinárias e solenes independem de quorum para:',
-  'pergunta_19_alternativa_1':'Convocação e deliberação, respectivamente.',
-  'pergunta_19_alternativa_2':'Ambas as etapas.',
-  'pergunta_19_alternativa_3':'Apenas para encerramento.',
-  'pergunta_19_alternativa_4':'Nenhuma etapa.',
-  'pergunta_19_resposta_correta':'Convocação e deliberação, respectivamente.',
-  'pergunta_19_justificativa':'Extraordinária não depende de quorum para convocação, e a solene independe totalmente por não deliberar.',
   
-  //----------------------------------
-  // 20
-  'pergunta_20':'Proposição é:',
-  'pergunta_20_alternativa_1':'Qualquer matéria sujeita à deliberação da Câmara.',
-  'pergunta_20_alternativa_2':'Apenas projeto de lei.',
-  'pergunta_20_alternativa_3':'Moção de aplauso.',
-  'pergunta_20_alternativa_4':'Expediente administrativo.',
-  'pergunta_20_resposta_correta':'Qualquer matéria sujeita à deliberação da Câmara.',
-  'pergunta_20_justificativa':'O Regimento define proposição como toda matéria sobre a qual deva pronunciar-se a Câmara.',
+  'pergunta_1':'O controle externo da Câmara Municipal de Caxias do Sul terá o auxílio do Tribunal de Contas do Estado do Rio Grande do Sul, por meio de parecer prévio. Sobre o julgamento das contas do Prefeito: I - A Câmara julgará as contas com base em processo iniciado a partir do parecer prévio do TCE. II - A Câmara tem prazo improrrogável de 60 dias, a partir do recebimento do parecer do TCE, para analisar e julgar as contas. III - O parecer prévio somente poderá ser rejeitado por decisão de 2/3 dos membros da Câmara. IV - Esgotado o prazo do art. 217, as contas vão a Plenário para apreciação. V - O contribuinte possui prazo de 60 dias para impugnar as contas diretamente na Câmara.',
+  'pergunta_1_alternativa_1':'Se corretas I, III e IV.',
+  'pergunta_1_alternativa_2':'Se corretas I, II, III e IV.',
+  'pergunta_1_alternativa_3':'Se corretas I e V.',
+  'pergunta_1_alternativa_4':'Se corretas I, II, III, IV e V.',
+  'pergunta_1_resposta_correta':'Se corretas I, III e IV.',
+  'pergunta_1_justificativa':'Arts. 216, 217 e 218 — o prazo de 60 dias (art. 217) conta do recebimento do parecer do TCE; não há previsão de “impugnação por contribuinte” no Regimento.',
 
+
+  //----------------------------------
+  'pergunta_2':'Sobre a Sessão Solene de Instalação da Legislatura: I - O vereador mais idoso preside a Sessão Solene de Instalação. II - Prestado o compromisso, o Presidente declara empossados Prefeito, Vice e Vereadores. III - Após a posse, a Sessão pode ser suspensa por até 180 minutos para tratativas da composição e eleição da Mesa Diretora. IV - Reabertos os trabalhos, procede-se à eleição e posse da Mesa Diretora. V - A indicação de Líderes e Vice-Líderes deve ser encaminhada ao Presidente da Sessão Solene por documento subscrito pela maioria da bancada.',
+  'pergunta_2_alternativa_1':'Se corretas I, II e IV.',
+  'pergunta_2_alternativa_2':'Se corretas I, II, III e IV.',
+  'pergunta_2_alternativa_3':'Se corretas I, II, III, IV e V.',
+  'pergunta_2_alternativa_4':'Se corretas II, III e V.',
+  'pergunta_2_resposta_correta':'Se corretas I, II, III, IV e V.',
+  'pergunta_2_justificativa':'Art. 6º, §§ 1º a 9º — regra de presidência por vereador mais idoso, posse, suspensão por até 180 min, eleição e indicação de líderes.',
+
+
+  //----------------------------------
+  'pergunta_3':'Quanto às funções da Câmara Municipal previstas no Regimento Interno, assinale a alternativa CORRETA.',
+  'pergunta_3_alternativa_1':'A Câmara tem apenas função legislativa e de fiscalização financeira.',
+  'pergunta_3_alternativa_2':'A Câmara exerce funções legislativa, de fiscalização e controle externo, de julgamento, de assessoramento e administrativa interna.',
+  'pergunta_3_alternativa_3':'A Câmara não exerce função de julgamento.',
+  'pergunta_3_alternativa_4':'A função administrativa da Câmara alcança toda a Administração Municipal.',
+  'pergunta_3_resposta_correta':'A Câmara exerce funções legislativa, de fiscalização e controle externo, de julgamento, de assessoramento e administrativa interna.',
+  'pergunta_3_justificativa':'Art. 5º, caput e §§ 1º a 5º — enumeração das funções e seus limites.',
+
+
+  //----------------------------------
+  'pergunta_4':'Sobre a composição da Mesa Diretora, assinale a correta.',
+  'pergunta_4_alternativa_1':'Presidente, 1º Secretário e 2º Secretário.',
+  'pergunta_4_alternativa_2':'Presidente, 1º Vice-Presidente, 1º Secretário e 2º Secretário.',
+  'pergunta_4_alternativa_3':'Presidente, 1º Vice-Presidente, 2º Vice-Presidente, 1º Secretário e 2º Secretário.',
+  'pergunta_4_alternativa_4':'Presidente e dois Secretários.',
+  'pergunta_4_resposta_correta':'Presidente, 1º Vice-Presidente, 2º Vice-Presidente, 1º Secretário e 2º Secretário.',
+  'pergunta_4_justificativa':'Art. 10 — composição da Mesa.',
+
+
+  //----------------------------------
+  'pergunta_5':'Sobre o mandato e a vacância na Mesa Diretora, assinale a alternativa CORRETA.',
+  'pergunta_5_alternativa_1':'O mandato é de 2 anos, sem reeleição.',
+  'pergunta_5_alternativa_2':'O mandato é de 1 ano, com uma única reeleição possível.',
+  'pergunta_5_alternativa_3':'O mandato é de 1 ano, sem reeleição.',
+  'pergunta_5_alternativa_4':'O mandato é de 2 anos, com reeleição ilimitada.',
+  'pergunta_5_resposta_correta':'O mandato é de 1 ano, com uma única reeleição possível.',
+  'pergunta_5_justificativa':'Art. 10, § 1º — duração do mandato e reeleição.',
+
+
+  //----------------------------------
+  'pergunta_6':'Na ausência do Presidente da Câmara, a substituição em caráter interino observa a seguinte ordem:',
+  'pergunta_6_alternativa_1':'1º Secretário, 2º Secretário, 1º Vice-Presidente, 2º Vice-Presidente.',
+  'pergunta_6_alternativa_2':'1º Vice-Presidente, 2º Vice-Presidente, 1º Secretário e 2º Secretário.',
+  'pergunta_6_alternativa_3':'2º Vice-Presidente, 1º Vice-Presidente, 1º Secretário, 2º Secretário.',
+  'pergunta_6_alternativa_4':'2º Secretário, 1º Secretário, 2º Vice-Presidente, 1º Vice-Presidente.',
+  'pergunta_6_resposta_correta':'1º Vice-Presidente, 2º Vice-Presidente, 1º Secretário e 2º Secretário.',
+  'pergunta_6_justificativa':'Art. 10, § 2º — ordem de substituição.',
+
+
+  //----------------------------------
+  'pergunta_7':'As Sessões Ordinárias compõem-se, na ordem, de:',
+  'pergunta_7_alternativa_1':'Ordem do Dia, Pequenas Comunicações, Grande Expediente e Pequeno Expediente.',
+  'pergunta_7_alternativa_2':'Pequenas Comunicações, Grande Expediente, Ordem do Dia e Pequeno Expediente.',
+  'pergunta_7_alternativa_3':'Grande Expediente, Pequenas Comunicações, Ordem do Dia e Pequeno Expediente.',
+  'pergunta_7_alternativa_4':'Pequenas Comunicações, Ordem do Dia, Grande Expediente e Pequeno Expediente.',
+  'pergunta_7_resposta_correta':'Pequenas Comunicações, Grande Expediente, Ordem do Dia e Pequeno Expediente.',
+  'pergunta_7_justificativa':'Art. 106, incisos I a IV — sequência das partes da Sessão Ordinária.',
+
+
+  //----------------------------------
+  'pergunta_8':'Sobre a Tribuna Livre, assinale a alternativa CORRETA.',
+  'pergunta_8_alternativa_1':'Realiza-se semanalmente, por 30 minutos, antes do Grande Expediente.',
+  'pergunta_8_alternativa_2':'Realiza-se quinzenalmente, por 20 minutos, após as Pequenas Comunicações da última Sessão Ordinária.',
+  'pergunta_8_alternativa_3':'Somente cidadãos individualmente podem falar, por inscrição no protocolo.',
+  'pergunta_8_alternativa_4':'Pode ser usada ilimitadamente por uma mesma instituição no mesmo ano legislativo.',
+  'pergunta_8_resposta_correta':'Realiza-se quinzenalmente, por 20 minutos, após as Pequenas Comunicações da última Sessão Ordinária.',
+  'pergunta_8_justificativa':'Art. 109, caput — periodicidade, duração e posicionamento na sessão.',
+
+
+  //----------------------------------
+  'pergunta_9':'Entidades que podem utilizar a Tribuna Livre incluem:',
+  'pergunta_9_alternativa_1':'Clubes de serviço, entidades beneficentes, fundações, associações e órgãos públicos municipais.',
+  'pergunta_9_alternativa_2':'Apenas associações e cidadãos individualmente.',
+  'pergunta_9_alternativa_3':'Somente órgãos do Executivo Municipal.',
+  'pergunta_9_alternativa_4':'Somente entidades religiosas.',
+  'pergunta_9_resposta_correta':'Clubes de serviço, entidades beneficentes, fundações, associações e órgãos públicos municipais.',
+  'pergunta_9_justificativa':'Art. 109, § 1º, I a V — rol de legitimados.',
+
+
+  //----------------------------------
+  'pergunta_10':'Quanto à Ordem do Dia, assinale a alternativa CORRETA.',
+  'pergunta_10_alternativa_1':'É fase da Sessão destinada apenas a comunicações dos vereadores.',
+  'pergunta_10_alternativa_2':'Constitui-se de matérias sobre as quais a Câmara se manifesta por voto.',
+  'pergunta_10_alternativa_3':'Não admite inversão de pauta.',
+  'pergunta_10_alternativa_4':'Não admite pedido de vista.',
+  'pergunta_10_resposta_correta':'Constitui-se de matérias sobre as quais a Câmara se manifesta por voto.',
+  'pergunta_10_justificativa':'Art. 115 — conceito da Ordem do Dia.',
+
+
+  //----------------------------------
+  'pergunta_11':'A pauta da Ordem do Dia é organizada e distribuída na seguinte ordem:',
+  'pergunta_11_alternativa_1':'Veto; primeira discussão; segunda discussão; redação final; discussões reabertas.',
+  'pergunta_11_alternativa_2':'Discussão única; primeira discussão; segunda discussão; veto; redação final.',
+  'pergunta_11_alternativa_3':'Veto; reabertura de discussão única; discussão única; reabertura de primeira; primeira; reabertura de segunda; segunda; discussão única de redação final.',
+  'pergunta_11_alternativa_4':'Ordem livre estabelecida pelo Presidente sem critérios.',
+  'pergunta_11_resposta_correta':'Veto; reabertura de discussão única; discussão única; reabertura de primeira; primeira; reabertura de segunda; segunda; discussão única de redação final.',
+  'pergunta_11_justificativa':'Art. 116, incisos I a VIII — ordem de distribuição na pauta.',
+
+
+  //----------------------------------
+  'pergunta_12':'A Ordem do Dia só pode ser interrompida/alterada para:',
+  'pergunta_12_alternativa_1':'Inclusão de Urgência, retirada de proposição ou inversão de pauta.',
+  'pergunta_12_alternativa_2':'Manifestação de vereador por questão pessoal.',
+  'pergunta_12_alternativa_3':'Homenagem a visitantes.',
+  'pergunta_12_alternativa_4':'Debates temáticos sem votação.',
+  'pergunta_12_resposta_correta':'Inclusão de Urgência, retirada de proposição ou inversão de pauta.',
+  'pergunta_12_justificativa':'Art. 117, I a III — hipóteses de alteração/interrupção.',
+
+
+  //----------------------------------
+  'pergunta_13':'Sobre o Pedido de Vista na Ordem do Dia, assinale a CORRETA.',
+  'pergunta_13_alternativa_1':'É formulado verbalmente e por prazo indeterminado.',
+  'pergunta_13_alternativa_2':'É formulado por requerimento escrito, na primeira discussão, por prazo determinado, até 15 dias.',
+  'pergunta_13_alternativa_3':'Somente o Presidente pode solicitar vista.',
+  'pergunta_13_alternativa_4':'Pode ser apresentado após iniciada a votação.',
+  'pergunta_13_resposta_correta':'É formulado por requerimento escrito, na primeira discussão, por prazo determinado, até 15 dias.',
+  'pergunta_13_justificativa':'Art. 120, caput — forma, fase e prazo máximo.',
+
+
+  //----------------------------------
+  'pergunta_14':'Quanto ao adiamento de votação na Ordem do Dia, é CORRETO afirmar:',
+  'pergunta_14_alternativa_1':'Admite-se mesmo após a votação de alguma peça do processo.',
+  'pergunta_14_alternativa_2':'Somente pode ser concedido uma vez para cada vereador.',
+  'pergunta_14_alternativa_3':'Requer votação unânime.',
+  'pergunta_14_alternativa_4':'Não há necessidade de prazo.',
+  'pergunta_14_resposta_correta':'Somente pode ser concedido uma vez para cada vereador.',
+  'pergunta_14_justificativa':'Art. 121, § 4º — limitação do adiamento.',
+
+
+  //----------------------------------
+  'pergunta_15':'Sobre a retirada de proposição constante da Ordem do Dia:',
+  'pergunta_15_alternativa_1':'Depende sempre de deliberação do Plenário.',
+  'pergunta_15_alternativa_2':'Dá-se por requerimento escrito do autor; se for de Mesa ou Comissão, precisa da maioria de seus membros.',
+  'pergunta_15_alternativa_3':'É vedada após inclusão em pauta.',
+  'pergunta_15_alternativa_4':'Somente o Presidente pode requerer.',
+  'pergunta_15_resposta_correta':'Dá-se por requerimento escrito do autor; se for de Mesa ou Comissão, precisa da maioria de seus membros.',
+  'pergunta_15_justificativa':'Art. 122, caput e parágrafo único — regras de retirada.',
+
+
+  //----------------------------------
+  'pergunta_16':'No Pequeno Expediente, a regra de início e uso da palavra é:',
+  'pergunta_16_alternativa_1':'Inicia-se com qualquer quórum e fala livre de 10 minutos.',
+  'pergunta_16_alternativa_2':'Inicia-se se presente ao menos 1/3 dos vereadores e cada um fala por até 5 minutos.',
+  'pergunta_16_alternativa_3':'Início depende de maioria absoluta e fala de 2 minutos.',
+  'pergunta_16_alternativa_4':'Início automático ao fim da Ordem do Dia, sem quórum mínimo.',
+  'pergunta_16_resposta_correta':'Inicia-se se presente ao menos 1/3 dos vereadores e cada um fala por até 5 minutos.',
+  'pergunta_16_justificativa':'Art. 124 e art. 125 — quórum e tempo de fala.',
+
+
+  //----------------------------------
+  'pergunta_17':'Quanto ao expediente disponibilizado no site da Câmara durante Sessões Ordinárias:',
+  'pergunta_17_alternativa_1':'As proposições dos vereadores podem ser protocoladas até 1 hora antes do início.',
+  'pergunta_17_alternativa_2':'Devem ser protocoladas com 48 horas de antecedência.',
+  'pergunta_17_alternativa_3':'Somente o Executivo pode encaminhar documentos.',
+  'pergunta_17_alternativa_4':'A ordem do expediente é livre.',
+  'pergunta_17_resposta_correta':'As proposições dos vereadores podem ser protocoladas até 1 hora antes do início.',
+  'pergunta_17_justificativa':'Art. 108, § 1º — prazo mínimo para protocolo.',
+
+
+  //----------------------------------
+  'pergunta_18':'Sobre a participação de entidades na Tribuna Livre da segunda quinzena:',
+  'pergunta_18_alternativa_1':'A inscrição é por requerimento de vereador em discussão única.',
+  'pergunta_18_alternativa_2':'As entidades legitimadas inscrevem-se em livro próprio na Secretaria Legislativa.',
+  'pergunta_18_alternativa_3':'É vedada a participação de órgãos públicos.',
+  'pergunta_18_alternativa_4':'Necessita aprovação por 2/3 do Plenário.',
+  'pergunta_18_resposta_correta':'As entidades legitimadas inscrevem-se em livro próprio na Secretaria Legislativa.',
+  'pergunta_18_justificativa':'Art. 109, § 3º — procedimento de inscrição.',
+
+
+  //----------------------------------
+  'pergunta_19':'Cada instituição pode usar a Tribuna Livre, por ano legislativo:',
+  'pergunta_19_alternativa_1':'Ilimitadamente.',
+  'pergunta_19_alternativa_2':'No máximo duas vezes.',
+  'pergunta_19_alternativa_3':'Uma única vez.',
+  'pergunta_19_alternativa_4':'Somente se tiver utilidade pública.',
+  'pergunta_19_resposta_correta':'Uma única vez.',
+  'pergunta_19_justificativa':'Art. 109, § 5º — limitação anual.',
+
+
+  //----------------------------------
+  'pergunta_20':'A pauta da Ordem do Dia pode sofrer Inversão de Pauta mediante:',
+  'pergunta_20_alternativa_1':'Solicitação verbal devidamente fundamentada.',
+  'pergunta_20_alternativa_2':'Requerimento escrito do Prefeito.',
+  'pergunta_20_alternativa_3':'Ato unilateral do Presidente, sem justificativa.',
+  'pergunta_20_alternativa_4':'Pedido de qualquer cidadão.',
+  'pergunta_20_resposta_correta':'Solicitação verbal devidamente fundamentada.',
+  'pergunta_20_justificativa':'Art. 118 — forma de inversão da pauta.',
+
+
+  //----------------------------------
+  'pergunta_21':'Constituídas as Comissões Permanentes, a eleição de seu Presidente dar-se-á:',
+  'pergunta_21_alternativa_1':'Imediatamente, sob a presidência do mais jovem.',
+  'pergunta_21_alternativa_2':'No prazo de 3 Sessões Legislativas Ordinárias, presidida pelo mais idoso presente.',
+  'pergunta_21_alternativa_3':'Somente após indicação do Executivo.',
+  'pergunta_21_alternativa_4':'Por votação secreta em Plenário.',
+  'pergunta_21_resposta_correta':'No prazo de 3 Sessões Legislativas Ordinárias, presidida pelo mais idoso presente.',
+  'pergunta_21_justificativa':'Art. 41, caput — prazo e condução da eleição.',
+
+
+  //----------------------------------
+  'pergunta_22':'A destituição de membro de Comissão Permanente por faltas ocorre quando:',
+  'pergunta_22_alternativa_1':'Não comparece a 2 reuniões consecutivas.',
+  'pergunta_22_alternativa_2':'Não comparece a 3 reuniões ordinárias consecutivas, salvo justificativa.',
+  'pergunta_22_alternativa_3':'Falta a uma reunião sem justificativa.',
+  'pergunta_22_alternativa_4':'Somente por decisão judicial.',
+  'pergunta_22_resposta_correta':'Não comparece a 3 reuniões ordinárias consecutivas, salvo justificativa.',
+  'pergunta_22_justificativa':'Art. 43, caput e §§ — regra de destituição e justificativa.',
+
+
+  //----------------------------------
+  'pergunta_23':'Poderão participar das Comissões Permanentes, como convidados:',
+  'pergunta_23_alternativa_1':'Apenas vereadores suplentes.',
+  'pergunta_23_alternativa_2':'Qualquer cidadão.',
+  'pergunta_23_alternativa_3':'Técnicos de reconhecida competência ou representantes de entidades idôneas.',
+  'pergunta_23_alternativa_4':'Somente servidores efetivos da Câmara.',
+  'pergunta_23_resposta_correta':'Técnicos de reconhecida competência ou representantes de entidades idôneas.',
+  'pergunta_23_justificativa':'Art. 44, caput e parágrafo único — convidados e forma do convite.',
+
+
+  //----------------------------------
+  'pergunta_24':'Durante a Ordem do Dia, é permitido projetar:',
+  'pergunta_24_alternativa_1':'Vídeos com áudio.',
+  'pergunta_24_alternativa_2':'Apenas imagens estáticas, gráficos, quadros e tabelas, sem áudio, relativas à matéria.',
+  'pergunta_24_alternativa_3':'Qualquer conteúdo multimídia.',
+  'pergunta_24_alternativa_4':'Somente texto.',
+  'pergunta_24_resposta_correta':'Apenas imagens estáticas, gráficos, quadros e tabelas, sem áudio, relativas à matéria.',
+  'pergunta_24_justificativa':'Art. 123, caput e parágrafo único — limites de projeção.',
+
+
+  //----------------------------------
+  'pergunta_25':'Sobre requerimentos sujeitos a despacho do Presidente (verbais), é CORRETO:',
+  'pergunta_25_alternativa_1':'Retirada de moção ainda não deliberada pode ser pedida verbalmente.',
+  'pergunta_25_alternativa_2':'Pedido de vista verbal é admitido.',
+  'pergunta_25_alternativa_3':'Renúncia de membro da Mesa é verbal.',
+  'pergunta_25_alternativa_4':'Nenhum requerimento pode ser verbal.',
+  'pergunta_25_resposta_correta':'Retirada de moção ainda não deliberada pode ser pedida verbalmente.',
+  'pergunta_25_justificativa':'Art. 172, V — requerimentos verbais sujeitos ao Presidente.',
+
+
+  //----------------------------------
+  'pergunta_26':'São requerimentos escritos sujeitos ao Presidente:',
+  'pergunta_26_alternativa_1':'Requisição de documentos relacionados à proposição em discussão e renúncia de membro da Mesa.',
+  'pergunta_26_alternativa_2':'Pedido de palavra pela ordem.',
+  'pergunta_26_alternativa_3':'Pedido de verificação de quórum.',
+  'pergunta_26_alternativa_4':'Permissão para falar sentado.',
+  'pergunta_26_resposta_correta':'Requisição de documentos relacionados à proposição em discussão e renúncia de membro da Mesa.',
+  'pergunta_26_justificativa':'Art. 173, I e II — exemplos de requerimentos escritos.',
+
+
+  //----------------------------------
+  'pergunta_27':'Na pauta, quando ocorre encerramento da sessão com inversão já concedida:',
+  'pergunta_27_alternativa_1':'Perde-se a inversão.',
+  'pergunta_27_alternativa_2':'A proposição figurará como primeiro item da Sessão Ordinária seguinte, após vetos.',
+  'pergunta_27_alternativa_3':'Retorna ao fim da pauta.',
+  'pergunta_27_alternativa_4':'Vai automaticamente a arquivo.',
+  'pergunta_27_resposta_correta':'A proposição figurará como primeiro item da Sessão Ordinária seguinte, após vetos.',
+  'pergunta_27_justificativa':'Art. 118, parágrafo único — efeito do encerramento sobre a inversão.',
+
+
+  //----------------------------------
+  'pergunta_28':'O Pedido de Vista na Ordem do Dia:',
+  'pergunta_28_alternativa_1':'Admite vários pedidos simultâneos sem preferência.',
+  'pergunta_28_alternativa_2':'Se houver dois ou mais, vota-se o de menor prazo.',
+  'pergunta_28_alternativa_3':'Pode ser renovado indefinidamente pelo mesmo vereador.',
+  'pergunta_28_alternativa_4':'Suspende todas as demais proposições da pauta.',
+  'pergunta_28_resposta_correta':'Se houver dois ou mais, vota-se o de menor prazo.',
+  'pergunta_28_justificativa':'Art. 120, § 2º — preferência ao menor prazo.',
+
+
+  //----------------------------------
+  'pergunta_29':'Esgotado o prazo de Vista/Adiamento e não devolvido o processo, o Presidente poderá:',
+  'pergunta_29_alternativa_1':'Arquivar definitivamente.',
+  'pergunta_29_alternativa_2':'Colocar em Ordem do Dia pela cópia.',
+  'pergunta_29_alternativa_3':'Enviar ao Executivo.',
+  'pergunta_29_alternativa_4':'Substituir o autor da proposição.',
+  'pergunta_29_resposta_correta':'Colocar em Ordem do Dia pela cópia.',
+  'pergunta_29_justificativa':'Art. 120, § 3º e art. 121, § 5º — inclusão pela cópia.',
+
+
+  //----------------------------------
+  'pergunta_30':'A Comissão de Desenvolvimento Econômico, Fiscalização e Controle Orçamentário (CDEFCOT), no processo orçamentário, deverá:',
+  'pergunta_30_alternativa_1':'Em 20 dias realizar audiência pública quando necessário.',
+  'pergunta_30_alternativa_2':'Emitir parecer em 5 dias após a audiência pública.',
+  'pergunta_30_alternativa_3':'Ambas as anteriores.',
+  'pergunta_30_alternativa_4':'Nenhuma das anteriores.',
+  'pergunta_30_resposta_correta':'Ambas as anteriores.',
+  'pergunta_30_justificativa':'Art. 214, §§ 2º e 3º (numeração do PDF p.61 antes do Cap. III) — prazos de audiência e parecer da CDEFCOT.',
+
+
+  //----------------------------------
+  'pergunta_31':'A concessão de Títulos Honoríficos (como Cidadão Caxiense) exige:',
+  'pergunta_31_alternativa_1':'Aprovação unânime dos vereadores.',
+  'pergunta_31_alternativa_2':'Subscrição mínima por 1/3 dos vereadores e biografia circunstanciada.',
+  'pergunta_31_alternativa_3':'Iniciativa exclusiva do Prefeito.',
+  'pergunta_31_alternativa_4':'Apenas despacho da Mesa.',
+  'pergunta_31_resposta_correta':'Subscrição mínima por 1/3 dos vereadores e biografia circunstanciada.',
+  'pergunta_31_justificativa':'Art. 214, parágrafo único — requisitos de instrução.',
+
+
+  //----------------------------------
+  'pergunta_32':'A entrega de títulos honoríficos ocorre:',
+  'pergunta_32_alternativa_1':'Em Sessão Ordinária.',
+  'pergunta_32_alternativa_2':'Em Sessão Extraordinária.',
+  'pergunta_32_alternativa_3':'Em Sessão Solene, convocada unicamente para esse fim.',
+  'pergunta_32_alternativa_4':'No expediente do Gabinete da Presidência.',
+  'pergunta_32_resposta_correta':'Em Sessão Solene, convocada unicamente para esse fim.',
+  'pergunta_32_justificativa':'Art. 215 — forma de entrega dos títulos.',
+
+
+  //----------------------------------
+  'pergunta_33':'Recebido o parecer prévio do TCE, a Câmara observará, dentre outros, que:',
+  'pergunta_33_alternativa_1':'O parecer pode ser rejeitado por maioria simples.',
+  'pergunta_33_alternativa_2':'O parecer somente poderá ser rejeitado por 2/3 dos membros.',
+  'pergunta_33_alternativa_3':'O parecer é irrecorrível e irrevogável.',
+  'pergunta_33_alternativa_4':'O parecer dispensa deliberação do Plenário.',
+  'pergunta_33_resposta_correta':'O parecer somente poderá ser rejeitado por 2/3 dos membros.',
+  'pergunta_33_justificativa':'Art. 218, I — quórum para rejeição do parecer do TCE.',
+
+
+  //----------------------------------
+  'pergunta_34':'Sobre a convocação e suspensão de Sessão pelo Presidente, assinale a correta.',
+  'pergunta_34_alternativa_1':'O Presidente pode determinar a suspensão da Sessão nas hipóteses regimentais.',
+  'pergunta_34_alternativa_2':'A suspensão de Sessão depende sempre de deliberação do Plenário.',
+  'pergunta_34_alternativa_3':'O Presidente não pode suspender Sessão Solene.',
+  'pergunta_34_alternativa_4':'A suspensão deve ser homologada pelo Prefeito.',
+  'pergunta_34_resposta_correta':'O Presidente pode determinar a suspensão da Sessão nas hipóteses regimentais.',
+  'pergunta_34_justificativa':'Índice remissivo (art. 20, II, “a” e “g”, e art. 194, IV) — competência do Presidente para suspensão.',
+
+
+  //----------------------------------
+  'pergunta_35':'Quanto ao início da Legislatura e posse dos eleitos, é CORRETO afirmar:',
+  'pergunta_35_alternativa_1':'A instalação ocorre em 1º de janeiro do ano subsequente à eleição, salvo legislação superior.',
+  'pergunta_35_alternativa_2':'A instalação ocorre sempre em 15 de janeiro.',
+  'pergunta_35_alternativa_3':'A posse do Prefeito é posterior à posse da Mesa e não ocorre na mesma Sessão.',
+  'pergunta_35_alternativa_4':'A instalação depende de maioria absoluta presente.',
+  'pergunta_35_resposta_correta':'A instalação ocorre em 1º de janeiro do ano subsequente à eleição, salvo legislação superior.',
+  'pergunta_35_justificativa':'Art. 6º, caput — data e natureza da Sessão Solene de Instalação.',
+
+
+  //----------------------------------
+  'pergunta_36':'O compromisso legal lido na posse dos eleitos é prestado:',
+  'pergunta_36_alternativa_1':'Coletivamente, por representante da Câmara.',
+  'pergunta_36_alternativa_2':'Individualmente, da tribuna, por Prefeito, Vice e Vereadores presentes.',
+  'pergunta_36_alternativa_3':'Somente pelo Prefeito.',
+  'pergunta_36_alternativa_4':'Apenas pelos vereadores.',
+  'pergunta_36_resposta_correta':'Individualmente, da tribuna, por Prefeito, Vice e Vereadores presentes.',
+  'pergunta_36_justificativa':'Art. 6º, § 3º — forma do compromisso.',
+
+
+  //----------------------------------
+  'pergunta_37':'O vereador que não prestou compromisso na Sessão Solene de Instalação:',
+  'pergunta_37_alternativa_1':'Perde o mandato.',
+  'pergunta_37_alternativa_2':'Prestará compromisso na primeira Sessão a que comparecer.',
+  'pergunta_37_alternativa_3':'Somente poderá tomar posse por decisão judicial.',
+  'pergunta_37_alternativa_4':'Prestará compromisso por escrito ao Presidente.',
+  'pergunta_37_resposta_correta':'Prestará compromisso na primeira Sessão a que comparecer.',
+  'pergunta_37_justificativa':'Art. 6º, § 5º — regra para compromisso posterior.',
+
+
+  //----------------------------------
+  'pergunta_38':'Quanto ao local das Sessões da Câmara:',
+  'pergunta_38_alternativa_1':'Devem ocorrer sempre no Plenário, sem exceções.',
+  'pergunta_38_alternativa_2':'Podem ocorrer em outro local, mediante resolução da Mesa ou aprovação da maioria absoluta, conforme o caso.',
+  'pergunta_38_alternativa_3':'Podem ocorrer em qualquer local por ato do Prefeito.',
+  'pergunta_38_alternativa_4':'Exige-se unanimidade dos vereadores para mudança.',
+  'pergunta_38_resposta_correta':'Podem ocorrer em outro local, mediante resolução da Mesa ou aprovação da maioria absoluta, conforme o caso.',
+  'pergunta_38_justificativa':'Art. 3º, §§ 1º e 2º — hipóteses de mudança do local.',
+
+
+  //----------------------------------
+  'pergunta_39':'Além dos atos parlamentares, no Plenário poderão ocorrer:',
+  'pergunta_39_alternativa_1':'Somente reuniões partidárias fechadas.',
+  'pergunta_39_alternativa_2':'Reuniões de caráter político, cultural ou de interesse da comunidade, com autorização prévia da Mesa.',
+  'pergunta_39_alternativa_3':'Eventos particulares sem autorização.',
+  'pergunta_39_alternativa_4':'Atos do Executivo sem comunicação.',
+  'pergunta_39_resposta_correta':'Reuniões de caráter político, cultural ou de interesse da comunidade, com autorização prévia da Mesa.',
+  'pergunta_39_justificativa':'Art. 4º — limitações de uso do Plenário.',
+
+
+  //----------------------------------
+  'pergunta_40':'A Mesa Diretora é:',
+  'pergunta_40_alternativa_1':'Órgão consultivo do Executivo.',
+  'pergunta_40_alternativa_2':'Órgão de direção dos trabalhos da Câmara.',
+  'pergunta_40_alternativa_3':'Comissão temporária.',
+  'pergunta_40_alternativa_4':'Frente parlamentar.',
+  'pergunta_40_resposta_correta':'Órgão de direção dos trabalhos da Câmara.',
+  'pergunta_40_justificativa':'Art. 9º — definição da Mesa.',
+
+
+  //----------------------------------
+  'pergunta_41':'No índice remissivo, a eleição da Mesa está associada aos artigos:',
+  'pergunta_41_alternativa_1':'Arts. 10, 11 e 12.',
+  'pergunta_41_alternativa_2':'Arts. 16, 17 e 40.',
+  'pergunta_41_alternativa_3':'Arts. 18, 19 e 20.',
+  'pergunta_41_alternativa_4':'Arts. 90, 92 e 94.',
+  'pergunta_41_resposta_correta':'Arts. 16, 17 e 40.',
+  'pergunta_41_justificativa':'Índice remissivo — remissão expressa para eleição da Mesa.',
+
+
+  //----------------------------------
+  'pergunta_42':'Sobre o Pequeno Expediente, é correto afirmar:',
+  'pergunta_42_alternativa_1':'Serve à livre manifestação do vereador, por até 5 minutos.',
+  'pergunta_42_alternativa_2':'É fase para votação nominal.',
+  'pergunta_42_alternativa_3':'É reservado a líderes de bancada.',
+  'pergunta_42_alternativa_4':'Exige quórum de maioria absoluta.',
+  'pergunta_42_resposta_correta':'Serve à livre manifestação do vereador, por até 5 minutos.',
+  'pergunta_42_justificativa':'Art. 125 — finalidade e tempo do Pequeno Expediente.',
+
+
+  //----------------------------------
+  'pergunta_43':'Sobre a “Inversão de Pauta”, assinale a incorreta.',
+  'pergunta_43_alternativa_1':'Exige solicitação verbal fundamentada.',
+  'pergunta_43_alternativa_2':'Se a sessão encerrar, a proposição volta como primeiro item na seguinte.',
+  'pergunta_43_alternativa_3':'Pode ser requerida por qualquer vereador.',
+  'pergunta_43_alternativa_4':'Depende de despacho do Prefeito.',
+  'pergunta_43_resposta_correta':'Depende de despacho do Prefeito.',
+  'pergunta_43_justificativa':'Arts. 118 e parágrafo único — nada envolve despacho do Prefeito.',
+
+
+  //----------------------------------
+  'pergunta_44':'No âmbito das Comissões Permanentes, as atas das reuniões:',
+  'pergunta_44_alternativa_1':'São dispensadas.',
+  'pergunta_44_alternativa_2':'Devem ser lavradas e assinadas pelos membros presentes.',
+  'pergunta_44_alternativa_3':'São lavradas apenas quando houver votação.',
+  'pergunta_44_alternativa_4':'São sigilosas por padrão.',
+  'pergunta_44_resposta_correta':'Devem ser lavradas e assinadas pelos membros presentes.',
+  'pergunta_44_justificativa':'Art. 49, § 2º — lavratura e assinatura de atas (numeração no PDF indica § 2º em sequência de reuniões).',
+
+
+  //----------------------------------
+  'pergunta_45':'As reuniões das Comissões Permanentes:',
+  'pergunta_45_alternativa_1':'Ocorrem em dias/horários informados à Mesa Diretora.',
+  'pergunta_45_alternativa_2':'Devem ocorrer simultaneamente às Sessões Ordinárias.',
+  'pergunta_45_alternativa_3':'Somente por convocação do Prefeito.',
+  'pergunta_45_alternativa_4':'Não podem ter convidados.',
+  'pergunta_45_resposta_correta':'Ocorrem em dias/horários informados à Mesa Diretora.',
+  'pergunta_45_justificativa':'Art. 42 — periodicidade informada à Mesa.',
+
+
+  //----------------------------------
+  'pergunta_46':'Licença de membro de Comissão Permanente:',
+  'pergunta_46_alternativa_1':'É irrelevante para composição.',
+  'pergunta_46_alternativa_2':'O Presidente oficiará ao Líder da bancada para indicar novo representante em até 5 dias.',
+  'pergunta_46_alternativa_3':'Exige eleição em Plenário para substituição.',
+  'pergunta_46_alternativa_4':'Suspende a Comissão.',
+  'pergunta_46_resposta_correta':'O Presidente oficiará ao Líder da bancada para indicar novo representante em até 5 dias.',
+  'pergunta_46_justificativa':'Art. 40, § 2º — regra de substituição em caso de licença.',
+
+
+  //----------------------------------
+  'pergunta_47':'No processo de concessão de títulos honoríficos, a biografia da pessoa a ser homenageada:',
+  'pergunta_47_alternativa_1':'É facultativa.',
+  'pergunta_47_alternativa_2':'É requisito essencial e deve ser circunstanciada.',
+  'pergunta_47_alternativa_3':'Pode ser apresentada após a votação.',
+  'pergunta_47_alternativa_4':'É substituída por currículo resumido.',
+  'pergunta_47_resposta_correta':'É requisito essencial e deve ser circunstanciada.',
+  'pergunta_47_justificativa':'Art. 214, parágrafo único — exigência de biografia circunstanciada.',
+
+
+  //----------------------------------
+  'pergunta_48':'Sobre a redação final, na ordem da pauta:',
+  'pergunta_48_alternativa_1':'Tem discussão única no final da sequência.',
+  'pergunta_48_alternativa_2':'É discutida em segunda discussão.',
+  'pergunta_48_alternativa_3':'Não integra a Ordem do Dia.',
+  'pergunta_48_alternativa_4':'É votada antes de vetos.',
+  'pergunta_48_resposta_correta':'Tem discussão única no final da sequência.',
+  'pergunta_48_justificativa':'Art. 116, VIII — discussão única de parecer de redação final.',
+
+
+  //----------------------------------
+  'pergunta_49':'Sobre o conceito de requerimento no Regimento:',
+  'pergunta_49_alternativa_1':'É todo pedido verbal ou escrito feito ao Presidente ou por seu intermédio, por vereador ou comissão.',
+  'pergunta_49_alternativa_2':'É apenas pedido escrito ao Prefeito.',
+  'pergunta_49_alternativa_3':'É sempre deliberado pelo Plenário.',
+  'pergunta_49_alternativa_4':'É exclusivo das Comissões.',
+  'pergunta_49_resposta_correta':'É todo pedido verbal ou escrito feito ao Presidente ou por seu intermédio, por vereador ou comissão.',
+  'pergunta_49_justificativa':'Art. 171 — conceito e legitimados do requerimento.',
+
+
+  //----------------------------------
+  'pergunta_50':'Sobre a finalidade do Grande Expediente, assinale a alternativa CORRETA.',
+  'pergunta_50_alternativa_1':'Destina-se exclusivamente à votação de proposições.',
+  'pergunta_50_alternativa_2':'Permite a cessão total ou parcial do tempo do vereador inscrito, mediante comunicação verbal à Mesa.',
+  'pergunta_50_alternativa_3':'É reservado a líderes.',
+  'pergunta_50_alternativa_4':'Não admite declarações de líder.',
+  'pergunta_50_resposta_correta':'Permite a cessão total ou parcial do tempo do vereador inscrito, mediante comunicação verbal à Mesa.',
+  'pergunta_50_justificativa':'Art. 114, caput e parágrafo único — cessão de tempo no Grande Expediente.',
+
+  
+  'pergunta_51':'De acordo com o art. 40 da Lei Orgânica do Município de Caxias do Sul, o Poder Legislativo é exercido por:',
+  'pergunta_51_alternativa_1':'Câmara Municipal de Vereadores.',
+  'pergunta_51_alternativa_2':'Assembleia Legislativa Municipal.',
+  'pergunta_51_alternativa_3':'Prefeitura e Câmara, conjuntamente.',
+  'pergunta_51_alternativa_4':'Poder Executivo e Judiciário municipais.',
+  'pergunta_51_resposta_correta':'Câmara Municipal de Vereadores.',
+  'pergunta_51_justificativa':'Conforme art. 40 da Lei Orgânica do Município de Caxias do Sul.',
+  //----------------------------------
+  'pergunta_52':'Quantos Vereadores compõem a Câmara Municipal de Caxias do Sul, conforme o art. 40?',
+  'pergunta_52_alternativa_1':'19',
+  'pergunta_52_alternativa_2':'21',
+  'pergunta_52_alternativa_3':'23',
+  'pergunta_52_alternativa_4':'25',
+  'pergunta_52_resposta_correta':'21',
+  'pergunta_52_justificativa':'De acordo com o parágrafo único do art. 40, a composição é de 21 vereadores.',
+  //----------------------------------
+  'pergunta_53':'Segundo o art. 41, a Câmara Municipal reunir-se-á anualmente:',
+  'pergunta_53_alternativa_1':'De 1º de janeiro a 31 de dezembro.',
+  'pergunta_53_alternativa_2':'De 1º de fevereiro a 15 de dezembro.',
+  'pergunta_53_alternativa_3':'De 15 de janeiro a 15 de dezembro.',
+  'pergunta_53_alternativa_4':'De 1º de março a 30 de novembro.',
+  'pergunta_53_resposta_correta':'De 1º de fevereiro a 15 de dezembro.',
+  'pergunta_53_justificativa':'Conforme redação do art. 41, dada pela Emenda nº 17/2000.',
+  //----------------------------------
+  'pergunta_54':'De acordo com o art. 42, a primeira sessão de cada legislatura será realizada:',
+  'pergunta_54_alternativa_1':'No dia 1º de janeiro do ano subsequente à eleição.',
+  'pergunta_54_alternativa_2':'No dia 1º de fevereiro do ano subsequente à eleição.',
+  'pergunta_54_alternativa_3':'Na primeira segunda-feira do ano subsequente.',
+  'pergunta_54_alternativa_4':'No último dia do ano da eleição.',
+  'pergunta_54_resposta_correta':'No dia 1º de janeiro do ano subsequente à eleição.',
+  'pergunta_54_justificativa':'Conforme art. 42 da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_55':'O mandato dos membros da Mesa da Câmara é de:',
+  'pergunta_55_alternativa_1':'Dois anos, vedada a recondução.',
+  'pergunta_55_alternativa_2':'Um ano, permitida a recondução por igual período.',
+  'pergunta_55_alternativa_3':'Dois anos, permitida recondução ilimitada.',
+  'pergunta_55_alternativa_4':'Um ano, vedada a recondução.',
+  'pergunta_55_resposta_correta':'Um ano, permitida a recondução por igual período.',
+  'pergunta_55_justificativa':'Conforme parágrafo único do art. 42 da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_56':'O Vereador que não tomar posse até 15 dias do início do funcionamento normal da Câmara:',
+  'pergunta_56_alternativa_1':'Perderá o mandato, salvo motivo justo aceito pela maioria dos membros.',
+  'pergunta_56_alternativa_2':'Poderá tomar posse até o final da legislatura.',
+  'pergunta_56_alternativa_3':'Terá suspensos seus vencimentos, mas manterá o mandato.',
+  'pergunta_56_alternativa_4':'Será automaticamente reconduzido ao cargo.',
+  'pergunta_56_resposta_correta':'Perderá o mandato, salvo motivo justo aceito pela maioria dos membros.',
+  'pergunta_56_justificativa':'Conforme art. 43 da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_57':'Conforme o art. 44, no ato da posse e ao término do mandato, os Vereadores deverão:',
+  'pergunta_57_alternativa_1':'Apresentar declaração de bens, a ser arquivada na Câmara.',
+  'pergunta_57_alternativa_2':'Prestar juramento de sigilo funcional.',
+  'pergunta_57_alternativa_3':'Protocolar relatório de atividades.',
+  'pergunta_57_alternativa_4':'Entregar prestação de contas à Prefeitura.',
+  'pergunta_57_resposta_correta':'Apresentar declaração de bens, a ser arquivada na Câmara.',
+  'pergunta_57_justificativa':'Conforme art. 44 da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_58':'Quem pode convocar extraordinariamente a Câmara Municipal, segundo o art. 45?',
+  'pergunta_58_alternativa_1':'Somente o Prefeito.',
+  'pergunta_58_alternativa_2':'O Prefeito, o Presidente da Câmara ou a maioria dos Vereadores.',
+  'pergunta_58_alternativa_3':'Apenas o Presidente da Câmara.',
+  'pergunta_58_alternativa_4':'O Tribunal de Contas e o Prefeito.',
+  'pergunta_58_resposta_correta':'O Prefeito, o Presidente da Câmara ou a maioria dos Vereadores.',
+  'pergunta_58_justificativa':'De acordo com o art. 45 da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_59':'As sessões da Câmara serão públicas, salvo deliberação contrária tomada por:',
+  'pergunta_59_alternativa_1':'Maioria simples.',
+  'pergunta_59_alternativa_2':'Maioria absoluta.',
+  'pergunta_59_alternativa_3':'Dois terços dos membros.',
+  'pergunta_59_alternativa_4':'Unanimidade dos Vereadores.',
+  'pergunta_59_resposta_correta':'Dois terços dos membros.',
+  'pergunta_59_justificativa':'Conforme art. 47 da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_60':'Qual o número mínimo de Vereadores necessário para abertura das sessões da Câmara?',
+  'pergunta_60_alternativa_1':'Metade mais um dos membros.',
+  'pergunta_60_alternativa_2':'Um terço dos membros.',
+  'pergunta_60_alternativa_3':'Dois terços dos membros.',
+  'pergunta_60_alternativa_4':'Maioria absoluta dos membros.',
+  'pergunta_60_resposta_correta':'Um terço dos membros.',
+  'pergunta_60_justificativa':'Conforme art. 48 da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_61':'De acordo com o art. 51, a Mesa da Câmara é composta por:',
+  'pergunta_61_alternativa_1':'Presidente, Vice-Presidente e Secretário.',
+  'pergunta_61_alternativa_2':'Presidente, dois Vice-Presidentes e dois Secretários.',
+  'pergunta_61_alternativa_3':'Presidente, Vice-Presidente e três Secretários.',
+  'pergunta_61_alternativa_4':'Presidente, dois Vice-Presidentes e um Secretário.',
+  'pergunta_61_resposta_correta':'Presidente, dois Vice-Presidentes e dois Secretários.',
+  'pergunta_61_justificativa':'Conforme art. 51 da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_62':'Compete ao Presidente da Câmara, dentre outras atribuições:',
+  'pergunta_62_alternativa_1':'Representar a Câmara em juízo e fora dele.',
+  'pergunta_62_alternativa_2':'Julgar as contas do Prefeito.',
+  'pergunta_62_alternativa_3':'Criar comissões parlamentares.',
+  'pergunta_62_alternativa_4':'Elaborar leis complementares.',
+  'pergunta_62_resposta_correta':'Representar a Câmara em juízo e fora dele.',
+  'pergunta_62_justificativa':'Conforme art. 53, inciso I, da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_63':'É vedado ao Vereador, desde a expedição do diploma:',
+  'pergunta_63_alternativa_1':'Firmar contrato com pessoa jurídica de direito público, salvo cláusulas uniformes.',
+  'pergunta_63_alternativa_2':'Exercer mandato em mais de um município.',
+  'pergunta_63_alternativa_3':'Representar partido político em atos públicos.',
+  'pergunta_63_alternativa_4':'Aceitar cargo em comissão municipal.',
+  'pergunta_63_resposta_correta':'Firmar contrato com pessoa jurídica de direito público, salvo cláusulas uniformes.',
+  'pergunta_63_justificativa':'De acordo com art. 55, I, alínea “a”.',
+  //----------------------------------
+  'pergunta_64':'A perda do mandato do Vereador por decoro parlamentar será decidida:',
+  'pergunta_64_alternativa_1':'Pela Justiça Eleitoral.',
+  'pergunta_64_alternativa_2':'Pela Câmara, por maioria absoluta.',
+  'pergunta_64_alternativa_3':'Pelo Prefeito.',
+  'pergunta_64_alternativa_4':'Pelo Tribunal de Contas.',
+  'pergunta_64_resposta_correta':'Pela Câmara, por maioria absoluta.',
+  'pergunta_64_justificativa':'Conforme art. 56, §1º, da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_65':'Não perde o mandato o Vereador que:',
+  'pergunta_65_alternativa_1':'Assumir cargo de Secretário Municipal, afastando-se da vereança.',
+  'pergunta_65_alternativa_2':'Exercer cargo em empresa pública municipal.',
+  'pergunta_65_alternativa_3':'Aceitar emprego na iniciativa privada.',
+  'pergunta_65_alternativa_4':'Deixar de comparecer a 1/3 das sessões sem justificativa.',
+  'pergunta_65_resposta_correta':'Assumir cargo de Secretário Municipal, afastando-se da vereança.',
+  'pergunta_65_justificativa':'Conforme art. 58 da Lei Orgânica.',
   //----------------------------------
 //----------------------------------
-  'pergunta_21':'As Comissões Temporárias podem ser criadas para:',
-  'pergunta_21_alternativa_1':'Tratar de assuntos de caráter permanente.',
-  'pergunta_21_alternativa_2':'Tratar de assuntos específicos e por prazo determinado.',
-  'pergunta_21_alternativa_3':'Substituir a Mesa Diretora.',
-  'pergunta_21_alternativa_4':'Fiscalizar obras públicas.',
-  'pergunta_21_resposta_correta':'Tratar de assuntos específicos e por prazo determinado.',
-  'pergunta_21_justificativa':'O Regimento define que as Comissões Temporárias são criadas para assuntos específicos e têm duração limitada.',
-
+  'pergunta_66':'Compete à Câmara Municipal, com a sanção do Prefeito, dispor sobre todas as matérias de competência do Município e, especialmente:',
+  'pergunta_66_alternativa_1':'Instituir tributos e regular a arrecadação e aplicação das rendas municipais.',
+  'pergunta_66_alternativa_2':'Elaborar o regimento interno do Tribunal de Contas.',
+  'pergunta_66_alternativa_3':'Nomear diretores das secretarias municipais.',
+  'pergunta_66_alternativa_4':'Fiscalizar obras estaduais no município.',
+  'pergunta_66_resposta_correta':'Instituir tributos e regular a arrecadação e aplicação das rendas municipais.',
+  'pergunta_66_justificativa':'Conforme art. 61, inciso I, da Lei Orgânica.',
   //----------------------------------
-  'pergunta_22':'A criação de Comissões Parlamentares de Inquérito depende de requerimento de:',
-  'pergunta_22_alternativa_1':'Um terço dos vereadores.',
-  'pergunta_22_alternativa_2':'Maioria simples do plenário.',
-  'pergunta_22_alternativa_3':'Dois terços dos vereadores.',
-  'pergunta_22_alternativa_4':'Apenas do Presidente da Câmara.',
-  'pergunta_22_resposta_correta':'Um terço dos vereadores.',
-  'pergunta_22_justificativa':'Conforme o art. 168 do Regimento, a CPI é criada mediante requerimento de um terço dos vereadores.',
-
+  'pergunta_67':'É competência privativa da Câmara Municipal, segundo o art. 62:',
+  'pergunta_67_alternativa_1':'Tomar e julgar as contas do Prefeito.',
+  'pergunta_67_alternativa_2':'Aprovar o orçamento estadual.',
+  'pergunta_67_alternativa_3':'Emitir decretos executivos municipais.',
+  'pergunta_67_alternativa_4':'Indicar servidores ao Executivo.',
+  'pergunta_67_resposta_correta':'Tomar e julgar as contas do Prefeito.',
+  'pergunta_67_justificativa':'Conforme art. 62, VIII, da Lei Orgânica.',
   //----------------------------------
-  'pergunta_23':'As proposições podem ser retiradas:',
-  'pergunta_23_alternativa_1':'A qualquer tempo pelo autor, antes da votação.',
-  'pergunta_23_alternativa_2':'Somente pela Mesa Diretora.',
-  'pergunta_23_alternativa_3':'Somente antes da leitura em plenário.',
-  'pergunta_23_alternativa_4':'Após a aprovação final.',
-  'pergunta_23_resposta_correta':'A qualquer tempo pelo autor, antes da votação.',
-  'pergunta_23_justificativa':'O autor pode retirar sua proposição até o início da votação, conforme as regras regimentais.',
-
+  'pergunta_68':'Segundo o art. 62, inciso VIII, o parecer do Tribunal de Contas sobre as contas do Prefeito deixa de prevalecer por decisão de:',
+  'pergunta_68_alternativa_1':'Maioria simples.',
+  'pergunta_68_alternativa_2':'Maioria absoluta.',
+  'pergunta_68_alternativa_3':'Dois terços dos membros da Câmara.',
+  'pergunta_68_alternativa_4':'Unanimidade dos Vereadores.',
+  'pergunta_68_resposta_correta':'Dois terços dos membros da Câmara.',
+  'pergunta_68_justificativa':'Conforme art. 62, VIII, alínea “a”.',
   //----------------------------------
-  'pergunta_24':'O veto do Prefeito deverá ser apreciado pela Câmara no prazo de:',
-  'pergunta_24_alternativa_1':'10 dias úteis.',
-  'pergunta_24_alternativa_2':'30 dias corridos.',
-  'pergunta_24_alternativa_3':'45 dias úteis.',
-  'pergunta_24_alternativa_4':'60 dias corridos.',
-  'pergunta_24_resposta_correta':'30 dias corridos.',
-  'pergunta_24_justificativa':'O Regimento fixa o prazo de 30 dias para apreciação do veto pelo Legislativo.',
-
+  'pergunta_69':'De acordo com o art. 63, durante o recesso da Câmara Municipal atuará:',
+  'pergunta_69_alternativa_1':'Uma comissão representativa.',
+  'pergunta_69_alternativa_2':'A Mesa Diretora.',
+  'pergunta_69_alternativa_3':'O Conselho Municipal.',
+  'pergunta_69_alternativa_4':'A Comissão de Orçamento e Finanças.',
+  'pergunta_69_resposta_correta':'Uma comissão representativa.',
+  'pergunta_69_justificativa':'Conforme art. 63 da Lei Orgânica.',
   //----------------------------------
-  'pergunta_25':'A promulgação de lei é ato que:',
-  'pergunta_25_alternativa_1':'Compete sempre ao Prefeito.',
-  'pergunta_25_alternativa_2':'Compete ao Presidente da Câmara quando o Prefeito não o faz.',
-  'pergunta_25_alternativa_3':'Depende de aprovação judicial.',
-  'pergunta_25_alternativa_4':'É feito apenas pelo Governador do Estado.',
-  'pergunta_25_resposta_correta':'Compete ao Presidente da Câmara quando o Prefeito não o faz.',
-  'pergunta_25_justificativa':'Se o Prefeito não promulgar a lei no prazo legal, o Presidente da Câmara o fará, conforme o Regimento.',
-
+  'pergunta_70':'A iniciativa das leis municipais, salvo casos de competência exclusiva, cabe:',
+  'pergunta_70_alternativa_1':'A qualquer Vereador, ao Prefeito e ao eleitorado.',
+  'pergunta_70_alternativa_2':'Somente ao Prefeito.',
+  'pergunta_70_alternativa_3':'Aos secretários municipais.',
+  'pergunta_70_alternativa_4':'Aos partidos políticos representados na Câmara.',
+  'pergunta_70_resposta_correta':'A qualquer Vereador, ao Prefeito e ao eleitorado.',
+  'pergunta_70_justificativa':'Conforme art. 66 da Lei Orgânica.',
   //----------------------------------
-  'pergunta_26':'A sanção tácita ocorre quando:',
-  'pergunta_26_alternativa_1':'O Prefeito devolve o projeto com veto parcial.',
-  'pergunta_26_alternativa_2':'O Prefeito não se manifesta no prazo de 15 dias úteis.',
-  'pergunta_26_alternativa_3':'O projeto é aprovado por unanimidade.',
-  'pergunta_26_alternativa_4':'O Prefeito promulga a lei antes do prazo.',
-  'pergunta_26_resposta_correta':'O Prefeito não se manifesta no prazo de 15 dias úteis.',
-  'pergunta_26_justificativa':'A ausência de manifestação do Prefeito no prazo de 15 dias úteis implica sanção tácita.',
-
+  'pergunta_71':'O projeto de lei de iniciativa popular deve ser subscrito por, no mínimo:',
+  'pergunta_71_alternativa_1':'1% do total de eleitores do Município.',
+  'pergunta_71_alternativa_2':'5% do total de eleitores do Município.',
+  'pergunta_71_alternativa_3':'10% do total de eleitores do Município.',
+  'pergunta_71_alternativa_4':'15% do total de eleitores do Município.',
+  'pergunta_71_resposta_correta':'5% do total de eleitores do Município.',
+  'pergunta_71_justificativa':'Conforme art. 66, caput.',
   //----------------------------------
-  'pergunta_27':'A iniciativa de lei sobre matéria orçamentária é de competência:',
-  'pergunta_27_alternativa_1':'Exclusiva do Prefeito.',
-  'pergunta_27_alternativa_2':'Compartilhada entre Prefeito e Câmara.',
-  'pergunta_27_alternativa_3':'Exclusiva da Mesa Diretora.',
-  'pergunta_27_alternativa_4':'Do Tribunal de Contas.',
-  'pergunta_27_resposta_correta':'Exclusiva do Prefeito.',
-  'pergunta_27_justificativa':'A competência para propor leis orçamentárias é privativa do Executivo Municipal.',
-
+  'pergunta_72':'Os projetos de iniciativa privativa do Prefeito são aqueles que dispõem sobre:',
+  'pergunta_72_alternativa_1':'Criação de cargos e funções na administração pública.',
+  'pergunta_72_alternativa_2':'Homenagens e títulos honoríficos.',
+  'pergunta_72_alternativa_3':'Organização interna da Câmara.',
+  'pergunta_72_alternativa_4':'Nomeação de comissões legislativas.',
+  'pergunta_72_resposta_correta':'Criação de cargos e funções na administração pública.',
+  'pergunta_72_justificativa':'Conforme art. 67, inciso I.',
   //----------------------------------
-  'pergunta_28':'As emendas apresentadas aos projetos de lei orçamentária devem ser:',
-  'pergunta_28_alternativa_1':'Aprovadas por unanimidade.',
-  'pergunta_28_alternativa_2':'Compatíveis com o plano plurianual e com a lei de diretrizes orçamentárias.',
-  'pergunta_28_alternativa_3':'Apenas de iniciativa popular.',
-  'pergunta_28_alternativa_4':'Feitas exclusivamente pelo Executivo.',
-  'pergunta_28_resposta_correta':'Compatíveis com o plano plurianual e com a lei de diretrizes orçamentárias.',
-  'pergunta_28_justificativa':'O Regimento impõe que as emendas respeitem o PPA e a LDO.',
-
+  'pergunta_73':'Segundo o art. 69, o Prefeito pode solicitar urgência na apreciação de projetos, devendo a Câmara manifestar-se em até:',
+  'pergunta_73_alternativa_1':'15 dias.',
+  'pergunta_73_alternativa_2':'20 dias.',
+  'pergunta_73_alternativa_3':'30 dias.',
+  'pergunta_73_alternativa_4':'60 dias.',
+  'pergunta_73_resposta_correta':'30 dias.',
+  'pergunta_73_justificativa':'Conforme art. 69, §1º.',
   //----------------------------------
-  'pergunta_29':'A Câmara Municipal julga o Prefeito e o Vice-Prefeito quando:',
-  'pergunta_29_alternativa_1':'Cometem infrações penais.',
-  'pergunta_29_alternativa_2':'Incorrem em infrações político-administrativas.',
-  'pergunta_29_alternativa_3':'Descumprem decisões judiciais.',
-  'pergunta_29_alternativa_4':'Não executam obras públicas.',
-  'pergunta_29_resposta_correta':'Incorrem em infrações político-administrativas.',
-  'pergunta_29_justificativa':'Essa é uma das funções da Câmara, conforme o art. 5º.',
-
+  'pergunta_74':'As leis complementares municipais serão aprovadas por:',
+  'pergunta_74_alternativa_1':'Maioria simples.',
+  'pergunta_74_alternativa_2':'Maioria absoluta.',
+  'pergunta_74_alternativa_3':'Dois terços dos Vereadores.',
+  'pergunta_74_alternativa_4':'Unanimidade.',
+  'pergunta_74_resposta_correta':'Maioria absoluta.',
+  'pergunta_74_justificativa':'Conforme parágrafo único do art. 70.',
   //----------------------------------
-  'pergunta_30':'A licença para tratar de interesse particular do vereador deve ter duração mínima de:',
-  'pergunta_30_alternativa_1':'10 dias.',
-  'pergunta_30_alternativa_2':'20 dias.',
-  'pergunta_30_alternativa_3':'30 dias.',
-  'pergunta_30_alternativa_4':'60 dias.',
-  'pergunta_30_resposta_correta':'30 dias.',
-  'pergunta_30_justificativa':'O vereador pode licenciar-se por motivo particular por período nunca inferior a 30 dias.',
-
+  'pergunta_75':'O veto parcial do Prefeito somente abrangerá:',
+  'pergunta_75_alternativa_1':'Palavras e expressões específicas.',
+  'pergunta_75_alternativa_2':'Texto integral de artigo, parágrafo, inciso ou alínea.',
+  'pergunta_75_alternativa_3':'Somente o caput do projeto.',
+  'pergunta_75_alternativa_4':'Apenas os anexos do projeto.',
+  'pergunta_75_resposta_correta':'Texto integral de artigo, parágrafo, inciso ou alínea.',
+  'pergunta_75_justificativa':'Conforme art. 73, §2º.',
   //----------------------------------
-  'pergunta_31':'O vereador pode licenciar-se por motivo de doença:',
-  'pergunta_31_alternativa_1':'Sem necessidade de comprovação.',
-  'pergunta_31_alternativa_2':'Mediante atestado médico comprovado.',
-  'pergunta_31_alternativa_3':'Apenas com aprovação do Prefeito.',
-  'pergunta_31_alternativa_4':'Com aval do Tribunal de Contas.',
-  'pergunta_31_resposta_correta':'Mediante atestado médico comprovado.',
-  'pergunta_31_justificativa':'A licença por moléstia deve ser comprovada por documento médico.',
-
+  'pergunta_76':'O veto do Prefeito deve ser apreciado pela Câmara em até:',
+  'pergunta_76_alternativa_1':'15 dias.',
+  'pergunta_76_alternativa_2':'20 dias.',
+  'pergunta_76_alternativa_3':'30 dias.',
+  'pergunta_76_alternativa_4':'45 dias.',
+  'pergunta_76_resposta_correta':'30 dias.',
+  'pergunta_76_justificativa':'Conforme art. 73, §4º.',
   //----------------------------------
-  'pergunta_32':'O vereador que assumir cargo público na administração direta ou indireta:',
-  'pergunta_32_alternativa_1':'Perde automaticamente o mandato.',
-  'pergunta_32_alternativa_2':'Fica licenciado enquanto durar o exercício do cargo.',
-  'pergunta_32_alternativa_3':'Permanece acumulando funções.',
-  'pergunta_32_alternativa_4':'Deve renunciar imediatamente.',
-  'pergunta_32_resposta_correta':'Fica licenciado enquanto durar o exercício do cargo.',
-  'pergunta_32_justificativa':'O vereador deve comunicar a Mesa e fica licenciado enquanto exercer função na administração pública.',
-
+  'pergunta_77':'A Câmara de Vereadores tem comissões permanentes e temporárias constituídas:',
+  'pergunta_77_alternativa_1':'Por livre escolha do Presidente.',
+  'pergunta_77_alternativa_2':'Na forma e com as atribuições do Regimento Interno.',
+  'pergunta_77_alternativa_3':'A critério do Prefeito.',
+  'pergunta_77_alternativa_4':'Somente por indicação partidária.',
+  'pergunta_77_resposta_correta':'Na forma e com as atribuições do Regimento Interno.',
+  'pergunta_77_justificativa':'Conforme art. 75 da Lei Orgânica.',
   //----------------------------------
-  'pergunta_33':'A eleição da Mesa Diretora ocorre:',
-  'pergunta_33_alternativa_1':'Na última sessão do ano legislativo.',
-  'pergunta_33_alternativa_2':'Na primeira sessão do primeiro ano da legislatura.',
-  'pergunta_33_alternativa_3':'Por votação secreta em qualquer sessão.',
-  'pergunta_33_alternativa_4':'Apenas após aprovação do Prefeito.',
-  'pergunta_33_resposta_correta':'Na primeira sessão do primeiro ano da legislatura.',
-  'pergunta_33_justificativa':'A eleição e posse da Mesa ocorrem na primeira sessão de instalação da legislatura.',
-
+  'pergunta_78':'As Comissões Parlamentares de Inquérito podem ser criadas mediante requerimento de:',
+  'pergunta_78_alternativa_1':'Um quarto dos Vereadores.',
+  'pergunta_78_alternativa_2':'Um terço dos Vereadores.',
+  'pergunta_78_alternativa_3':'Metade dos Vereadores.',
+  'pergunta_78_alternativa_4':'Dois terços dos Vereadores.',
+  'pergunta_78_resposta_correta':'Um terço dos Vereadores.',
+  'pergunta_78_justificativa':'Conforme art. 76 da Lei Orgânica.',
   //----------------------------------
-  'pergunta_34':'O Presidente da Câmara exerce, entre outras, a função de:',
-  'pergunta_34_alternativa_1':'Julgar infrações disciplinares.',
-  'pergunta_34_alternativa_2':'Representar a Câmara em juízo e fora dele.',
-  'pergunta_34_alternativa_3':'Fiscalizar o Prefeito.',
-  'pergunta_34_alternativa_4':'Substituir o Vice-Presidente.',
-  'pergunta_34_resposta_correta':'Representar a Câmara em juízo e fora dele.',
-  'pergunta_34_justificativa':'O art. 27 define como função do Presidente representar a Câmara em todas as instâncias.',
-
+  'pergunta_79':'As deliberações da Câmara são tomadas por:',
+  'pergunta_79_alternativa_1':'Maioria simples.',
+  'pergunta_79_alternativa_2':'Maioria absoluta.',
+  'pergunta_79_alternativa_3':'Dois terços dos votos.',
+  'pergunta_79_alternativa_4':'Unanimidade.',
+  'pergunta_79_resposta_correta':'Maioria simples.',
+  'pergunta_79_justificativa':'Conforme art. 77, caput.',
   //----------------------------------
-  'pergunta_35':'Durante o recesso parlamentar, o funcionamento da Câmara é assegurado por:',
-  'pergunta_35_alternativa_1':'Comissão Representativa.',
-  'pergunta_35_alternativa_2':'Comissão de Ética.',
-  'pergunta_35_alternativa_3':'Comissão Especial.',
-  'pergunta_35_alternativa_4':'Comissão de Justiça.',
-  'pergunta_35_resposta_correta':'Comissão Representativa.',
-  'pergunta_35_justificativa':'A Comissão Representativa exerce as atribuições do Legislativo durante o recesso parlamentar.',
-
+  'pergunta_80':'Dependem do voto favorável de dois terços dos Vereadores:',
+  'pergunta_80_alternativa_1':'Emendas à Lei Orgânica e rejeição do parecer prévio do Tribunal de Contas.',
+  'pergunta_80_alternativa_2':'Projetos de decreto legislativo.',
+  'pergunta_80_alternativa_3':'Leis ordinárias.',
+  'pergunta_80_alternativa_4':'Moções de aplauso.',
+  'pergunta_80_resposta_correta':'Emendas à Lei Orgânica e rejeição do parecer prévio do Tribunal de Contas.',
+  'pergunta_80_justificativa':'Conforme art. 77, §2º.',
   //----------------------------------
-  'pergunta_36':'Os prazos regimentais contam-se:',
-  'pergunta_36_alternativa_1':'Em dias corridos.',
-  'pergunta_36_alternativa_2':'Apenas em dias úteis.',
-  'pergunta_36_alternativa_3':'Somente durante o recesso.',
-  'pergunta_36_alternativa_4':'Excluindo sábados, domingos e feriados.',
-  'pergunta_36_resposta_correta':'Em dias corridos.',
-  'pergunta_36_justificativa':'Salvo disposição em contrário, os prazos contam-se em dias corridos.',
-
+  'pergunta_81':'O Presidente da Câmara só tem voto:',
+  'pergunta_81_alternativa_1':'Nas eleições da Mesa, votações secretas e em caso de empate.',
+  'pergunta_81_alternativa_2':'Somente em votações nominais.',
+  'pergunta_81_alternativa_3':'Sempre que desejar manifestar-se.',
+  'pergunta_81_alternativa_4':'Apenas em projetos de lei.',
+  'pergunta_81_resposta_correta':'Nas eleições da Mesa, votações secretas e em caso de empate.',
+  'pergunta_81_justificativa':'Conforme art. 77, §3º.',
   //----------------------------------
-  'pergunta_37':'As sessões poderão ser prorrogadas:',
-  'pergunta_37_alternativa_1':'Pelo Presidente, a pedido de vereador, por até 30 minutos.',
-  'pergunta_37_alternativa_2':'Pelo Prefeito.',
-  'pergunta_37_alternativa_3':'Somente pelo plenário por unanimidade.',
-  'pergunta_37_alternativa_4':'Por iniciativa do Secretário.',
-  'pergunta_37_resposta_correta':'Pelo Presidente, a pedido de vereador, por até 30 minutos.',
-  'pergunta_37_justificativa':'O Presidente pode prorrogar a sessão mediante solicitação e aprovação do plenário.',
-
-  //----------------------------------
-  'pergunta_38':'A votação simbólica é caracterizada por:',
-  'pergunta_38_alternativa_1':'Manifestação verbal nominal.',
-  'pergunta_38_alternativa_2':'Levantada de mãos ou permanência como se encontra.',
-  'pergunta_38_alternativa_3':'Escrutínio secreto.',
-  'pergunta_38_alternativa_4':'Utilização de urna.',
-  'pergunta_38_resposta_correta':'Levantada de mãos ou permanência como se encontra.',
-  'pergunta_38_justificativa':'Na votação simbólica, os vereadores manifestam-se por gestos ou permanência.',
-
-  //----------------------------------
-  'pergunta_39':'A votação nominal ocorre quando:',
-  'pergunta_39_alternativa_1':'Cada vereador declara seu voto publicamente.',
-  'pergunta_39_alternativa_2':'Há unanimidade no plenário.',
-  'pergunta_39_alternativa_3':'O Presidente decide sozinho.',
-  'pergunta_39_alternativa_4':'A matéria é de iniciativa popular.',
-  'pergunta_39_resposta_correta':'Cada vereador declara seu voto publicamente.',
-  'pergunta_39_justificativa':'A votação nominal é feita com chamada nominal dos vereadores e registro de voto individual.',
-
-  //----------------------------------
-  'pergunta_40':'As atas das sessões devem ser aprovadas:',
-  'pergunta_40_alternativa_1':'Na mesma sessão em que foram redigidas.',
-  'pergunta_40_alternativa_2':'Na sessão seguinte.',
-  'pergunta_40_alternativa_3':'Somente ao final do mês.',
-  'pergunta_40_alternativa_4':'Pelo Presidente.',
-  'pergunta_40_resposta_correta':'Na sessão seguinte.',
-  'pergunta_40_justificativa':'O Regimento prevê que as atas sejam lidas e aprovadas na sessão subsequente.',
-
-  //----------------------------------
-  'pergunta_41':'As sessões plenárias da Câmara são públicas, exceto:',
-  'pergunta_41_alternativa_1':'Quando houver deliberação para que sejam secretas.',
-  'pergunta_41_alternativa_2':'Durante votações simbólicas.',
-  'pergunta_41_alternativa_3':'Quando tratar de moções.',
-  'pergunta_41_alternativa_4':'Durante posse do Prefeito.',
-  'pergunta_41_resposta_correta':'Quando houver deliberação para que sejam secretas.',
-  'pergunta_41_justificativa':'Somente por deliberação da maioria absoluta é possível sessão secreta.',
-
-  //----------------------------------
-  'pergunta_42':'A tribuna livre é destinada:',
-  'pergunta_42_alternativa_1':'Aos vereadores.',
-  'pergunta_42_alternativa_2':'À participação de entidades e cidadãos previamente inscritos.',
-  'pergunta_42_alternativa_3':'Aos servidores da Câmara.',
-  'pergunta_42_alternativa_4':'Exclusivamente ao Prefeito.',
-  'pergunta_42_resposta_correta':'À participação de entidades e cidadãos previamente inscritos.',
-  'pergunta_42_justificativa':'A Tribuna Livre é espaço quinzenal destinado a entidades e cidadãos conforme regulamento.',
-
-  //----------------------------------
-  'pergunta_43':'Compete à Comissão de Ética Parlamentar:',
-  'pergunta_43_alternativa_1':'Emitir pareceres sobre proposições de lei.',
-  'pergunta_43_alternativa_2':'Apurar fatos relativos à conduta ética dos vereadores.',
-  'pergunta_43_alternativa_3':'Julgar contas do Executivo.',
-  'pergunta_43_alternativa_4':'Fiscalizar licitações.',
-  'pergunta_43_resposta_correta':'Apurar fatos relativos à conduta ética dos vereadores.',
-  'pergunta_43_justificativa':'A Comissão de Ética zela pelo decoro e apura faltas éticas de vereadores.',
-
-  //----------------------------------
-  'pergunta_44':'A destituição de membro da Mesa requer:',
-  'pergunta_44_alternativa_1':'Maioria simples dos presentes.',
-  'pergunta_44_alternativa_2':'Voto favorável de dois terços dos vereadores.',
-  'pergunta_44_alternativa_3':'Aprovação unânime.',
-  'pergunta_44_alternativa_4':'Decisão do Prefeito.',
-  'pergunta_44_resposta_correta':'Voto favorável de dois terços dos vereadores.',
-  'pergunta_44_justificativa':'O art. 24 exige dois terços para destituição de membro da Mesa.',
-
-  //----------------------------------
-  'pergunta_45':'As matérias de iniciativa exclusiva do Prefeito não podem:',
-  'pergunta_45_alternativa_1':'Receber emendas que aumentem despesa.',
-  'pergunta_45_alternativa_2':'Ser discutidas em plenário.',
-  'pergunta_45_alternativa_3':'Ser arquivadas.',
-  'pergunta_45_alternativa_4':'Receber parecer de comissão.',
-  'pergunta_45_resposta_correta':'Receber emendas que aumentem despesa.',
-  'pergunta_45_justificativa':'É vedada a apresentação de emendas que aumentem despesa em proposições de iniciativa exclusiva do Executivo.',
-
-  //----------------------------------
-  'pergunta_46':'O projeto de decreto legislativo destina-se a:',
-  'pergunta_46_alternativa_1':'Regular matérias de competência exclusiva da Câmara.',
-  'pergunta_46_alternativa_2':'Ser sancionado pelo Prefeito.',
-  'pergunta_46_alternativa_3':'Alterar a Lei Orgânica.',
-  'pergunta_46_alternativa_4':'Criar cargos públicos.',
-  'pergunta_46_resposta_correta':'Regular matérias de competência exclusiva da Câmara.',
-  'pergunta_46_justificativa':'Projetos de decreto legislativo tratam de matérias internas ou exclusivas do Legislativo.',
-
-  //----------------------------------
-  'pergunta_47':'As moções são proposições que visam:',
-  'pergunta_47_alternativa_1':'Apenas alterar leis.',
-  'pergunta_47_alternativa_2':'Expressar posicionamento da Câmara sobre determinado assunto.',
-  'pergunta_47_alternativa_3':'Criar novas comissões.',
-  'pergunta_47_alternativa_4':'Regulamentar o regimento interno.',
-  'pergunta_47_resposta_correta':'Expressar posicionamento da Câmara sobre determinado assunto.',
-  'pergunta_47_justificativa':'As moções servem para manifestar apoio, repúdio ou pesar, entre outros',
-
-
-  //----------------------------------
-  'pergunta_48':'Durante a discussão de uma proposição, o vereador pode usar a palavra:',
-  'pergunta_48_alternativa_1':'Por tempo ilimitado.',
-  'pergunta_48_alternativa_2':'Por até 10 minutos, prorrogáveis uma vez pelo Presidente.',
-  'pergunta_48_alternativa_3':'Somente mediante requerimento escrito.',
-  'pergunta_48_alternativa_4':'Apenas com autorização do Prefeito.',
-  'pergunta_48_resposta_correta':'Por até 10 minutos, prorrogáveis uma vez pelo Presidente.',
-  'pergunta_48_justificativa':'O Regimento estabelece limite de 10 minutos por vereador na discussão de cada proposição.',
-
-  //----------------------------------
-  'pergunta_49':'O prazo para o contribuinte examinar as contas apresentadas pelo Prefeito é de:',
-  'pergunta_49_alternativa_1':'30 dias.',
-  'pergunta_49_alternativa_2':'45 dias.',
-  'pergunta_49_alternativa_3':'60 dias.',
-  'pergunta_49_alternativa_4':'90 dias.',
-  'pergunta_49_resposta_correta':'60 dias.',
-  'pergunta_49_justificativa':'Após publicação de edital, o contribuinte tem 60 dias para examinar e apresentar questionamentos às contas.',
-
-  //----------------------------------
-  'pergunta_50':'Compete à Câmara Municipal, conforme o Regimento Interno:',
-  'pergunta_50_alternativa_1':'Julgar as contas do Prefeito e da Mesa da Câmara.',
-  'pergunta_50_alternativa_2':'Executar diretamente as leis municipais.',
-  'pergunta_50_alternativa_3':'Representar o Município em juízo.',
-  'pergunta_50_alternativa_4':'Fiscalizar apenas obras públicas.',
-  'pergunta_50_resposta_correta':'Julgar as contas do Prefeito e da Mesa da Câmara.',
-  'pergunta_50_justificativa':'O art. 216 e seguintes dispõem que cabe à Câmara deliberar sobre as contas do Prefeito e da própria Mesa.',
-
-
-
-  'pergunta_51':'O Poder Legislativo do Município é exercido por qual órgão?',
-  'pergunta_51_alternativa_1':'Assembleia Municipal',
-  'pergunta_51_alternativa_2':'Câmara Municipal de Vereadores',
-  'pergunta_51_alternativa_3':'Conselho Municipal',
-  'pergunta_51_alternativa_4':'Mesa Executiva',
-  'pergunta_51_resposta_correta':'Câmara Municipal de Vereadores',
-  'pergunta_51_justificativa':'Art. 40: O Poder Legislativo é exercido pela Câmara Municipal de Vereadores.',
-
-  'pergunta_52':'Qual é o número de vereadores fixado para a legislatura referida na Lei Orgânica?',
-  'pergunta_52_alternativa_1':'15 vereadores',
-  'pergunta_52_alternativa_2':'21 vereadores',
-  'pergunta_52_alternativa_3':'25 vereadores',
-  'pergunta_52_alternativa_4':'19 vereadores',
-  'pergunta_52_resposta_correta':'21 vereadores',
-  'pergunta_52_justificativa':'Parágrafo do Art. 40 fixa-se em 21 (vinte e um) Vereadores a composição numérica da Câmara.',
-
-  'pergunta_53':'Em que período anual a Câmara Municipal reunir-se-á, segundo a Lei Orgânica?',
-  'pergunta_53_alternativa_1':'1º de janeiro a 31 de dezembro',
-  'pergunta_53_alternativa_2':'1º de março a 30 de novembro',
-  'pergunta_53_alternativa_3':'1º de fevereiro a 15 de dezembro',
-  'pergunta_53_alternativa_4':'1º de abril a 30 de outubro',
-  'pergunta_53_resposta_correta':'1º de fevereiro a 15 de dezembro',
-  'pergunta_53_justificativa':'Art. 41: A Câmara reunir-se-á anualmente de 1º de fevereiro a 15 de dezembro.',
-
-  'pergunta_54':'Quando realiza-se a primeira sessão de cada legislatura para posse e eleição da Mesa?',
-  'pergunta_54_alternativa_1':'1º de fevereiro',
-  'pergunta_54_alternativa_2':'1º de janeiro',
-  'pergunta_54_alternativa_3':'15 de dezembro',
-  'pergunta_54_alternativa_4':'31 de dezembro',
-  'pergunta_54_resposta_correta':'1º de janeiro',
-  'pergunta_54_justificativa':'Art. 42: A primeira sessão de cada legislatura realizar-se-á no dia 1º de janeiro para posse e eleição da Mesa.',
-
-  'pergunta_55':'Qual é o mandato dos membros da Mesa da Câmara conforme a Lei Orgânica?',
-  'pergunta_55_alternativa_1':'6 meses',
-  'pergunta_55_alternativa_2':'2 anos',
-  'pergunta_55_alternativa_3':'1 ano',
-  'pergunta_55_alternativa_4':'4 anos',
-  'pergunta_55_resposta_correta':'1 ano',
-  'pergunta_55_justificativa':'Parágrafo do Art. 42: É de um ano o mandato dos membros da Mesa, com possibilidade de recondução por igual período.',
-
-  'pergunta_56':'Prazo para o vereador que não tomou posse na sessão de 1º de janeiro regularizar sua posse?',
-  'pergunta_56_alternativa_1':'7 dias',
-  'pergunta_56_alternativa_2':'15 dias',
-  'pergunta_56_alternativa_3':'30 dias',
-  'pergunta_56_alternativa_4':'45 dias',
-  'pergunta_56_resposta_correta':'15 dias',
-  'pergunta_56_justificativa':'Art. 43: O Vereador que não tomar posse deverá fazê-lo dentro de quinze dias do início do funcionamento da Câmara, sob pena de perda do mandato.',
-
-  'pergunta_57':'O que os Vereadores devem fazer no ato da posse e ao término do mandato?',
-  'pergunta_57_alternativa_1':'Entrega de relatório de atividades',
-  'pergunta_57_alternativa_2':'Declaração de bens',
-  'pergunta_57_alternativa_3':'Assinatura de termo de compromisso de sigilo',
-  'pergunta_57_alternativa_4':'Exibição de certidão eleitoral',
-  'pergunta_57_resposta_correta':'Declaração de bens',
-  'pergunta_57_justificativa':'Art. 44: No ato da posse e ao término do mandato, os Vereadores deverão fazer a declaração de seus bens.',
-
-  'pergunta_58':'Quem pode convocar extraordinariamente a Câmara Municipal?',
-  'pergunta_58_alternativa_1':'Prefeito, Presidente da Câmara e maioria dos Vereadores',
-  'pergunta_58_alternativa_2':'Apenas o Prefeito',
-  'pergunta_58_alternativa_3':'Apenas a Mesa',
-  'pergunta_58_alternativa_4':'O Tribunal de Contas',
-  'pergunta_58_resposta_correta':'Prefeito, Presidente da Câmara e maioria dos Vereadores',
-  'pergunta_58_justificativa':'Art. 45: A convocação extraordinária caberá ao Prefeito, ao Presidente da Câmara e à maioria de seus membros.',
-
-  'pergunta_59':'Como será comunicada a convocação extraordinária aos Vereadores?',
-  'pergunta_59_alternativa_1':'Por edital no jornal',
-  'pergunta_59_alternativa_2':'Por transmissão pública',
-  'pergunta_59_alternativa_3':'Por convocação pessoal e escrita',
-  'pergunta_59_alternativa_4':'Por email institucional',
-  'pergunta_59_resposta_correta':'Por convocação pessoal e escrita',
-  'pergunta_59_justificativa':'Art. 45, §1º: A convocação extraordinária será levada ao conhecimento dos Vereadores através de convocação pessoal e escrita.',
-
-  'pergunta_60':'Onde as sessões da Câmara deverão ser realizadas, sob pena de nulidade?',
-  'pergunta_60_alternativa_1':'Em qualquer local público',
-  'pergunta_60_alternativa_2':'Em recinto destinado ao seu funcionamento',
-  'pergunta_60_alternativa_3':'Em salão cedido pela Prefeitura',
-  'pergunta_60_alternativa_4':'Em auditório municipal',
-  'pergunta_60_resposta_correta':'Em recinto destinado ao seu funcionamento',
-  'pergunta_60_justificativa':'Art. 46: As sessões serão realizadas em recinto destinado ao seu funcionamento; as realizadas em outro local serão consideradas nulas, salvo motivo de força maior.',
-
-  'pergunta_61':'As sessões da Câmara são públicas, salvo deliberação em contrário por qual maioria?',
-  'pergunta_61_alternativa_1':'Maioria simples',
-  'pergunta_61_alternativa_2':'Maioria absoluta',
-  'pergunta_61_alternativa_3':'Dois terços dos membros',
-  'pergunta_61_alternativa_4':'Unanimidade',
-  'pergunta_61_resposta_correta':'Dois terços dos membros',
-  'pergunta_61_justificativa':'Art. 47: As sessões serão públicas, salvo deliberação em contrário tomada por dois terços, no mínimo, de seus membros.',
-
-
-
-  'pergunta_62':'Sobre a posse em cargo público, é correto afirmar que:',
-  'pergunta_62_alternativa_1':'A posse poderá ocorrer até 30 dias após a nomeação.',
-  'pergunta_62_alternativa_2':'A posse é dispensável quando o servidor já é efetivo no cargo anterior.',
-  'pergunta_62_alternativa_3':'A posse deve ocorrer no prazo máximo de 10 dias a contar da nomeação.',
-  'pergunta_62_alternativa_4':'A posse é ato administrativo interno e não depende de termo assinado.',
-  'pergunta_62_resposta_correta':'A posse deve ocorrer no prazo máximo de 10 dias a contar da nomeação.',
-  'pergunta_62_justificativa':'Conforme o regime jurídico municipal, a posse deve ocorrer no prazo de 10 dias contados da nomeação, sob pena de tornar sem efeito o ato.',
-  
-  'pergunta_63':'O estágio probatório tem como finalidade:',
-  'pergunta_63_alternativa_1':'Avaliar apenas a capacidade técnica do servidor.',
-  'pergunta_63_alternativa_2':'Verificar a aptidão e a capacidade do servidor para o cargo, como condição à estabilidade.',
-  'pergunta_63_alternativa_3':'Garantir progressão funcional automática.',
-  'pergunta_63_alternativa_4':'Assegurar direito a férias proporcionais.',
-  'pergunta_63_resposta_correta':'Verificar a aptidão e a capacidade do servidor para o cargo, como condição à estabilidade.',
-  'pergunta_63_justificativa':'O estágio probatório é o período destinado à avaliação da capacidade e do desempenho do servidor antes da aquisição da estabilidade.',
-  
-  'pergunta_64':'Durante o estágio probatório, o servidor poderá:',
-  'pergunta_64_alternativa_1':'Solicitar licença para tratar de assuntos particulares.',
-  'pergunta_64_alternativa_2':'Afastar-se para exercer mandato eletivo.',
-  'pergunta_64_alternativa_3':'Ser exonerado apenas por vontade própria.',
-  'pergunta_64_alternativa_4':'Afastar-se para estudar no exterior sem autorização.',
-  'pergunta_64_resposta_correta':'Afastar-se para exercer mandato eletivo.',
-  'pergunta_64_justificativa':'Durante o estágio probatório, o servidor pode afastar-se em hipóteses legais, como o exercício de mandato eletivo.',
-  
-  'pergunta_65':'A estabilidade é adquirida pelo servidor público após:',
-  'pergunta_65_alternativa_1':'Um ano de efetivo exercício.',
-  'pergunta_65_alternativa_2':'Dois anos de efetivo exercício.',
-  'pergunta_65_alternativa_3':'Três anos de efetivo exercício e aprovação em avaliação especial de desempenho.',
-  'pergunta_65_alternativa_4':'Quatro anos de exercício e aprovação em estágio probatório.',
-  'pergunta_65_resposta_correta':'Três anos de efetivo exercício e aprovação em avaliação especial de desempenho.',
-  'pergunta_65_justificativa':'A estabilidade é garantida após três anos de efetivo exercício e avaliação de desempenho favorável.',
-  
-  'pergunta_66':'O servidor estável só perderá o cargo em caso de:',
-  'pergunta_66_alternativa_1':'Decisão judicial transitada em julgado ou processo administrativo disciplinar.',
-  'pergunta_66_alternativa_2':'Reprovação em curso de capacitação.',
-  'pergunta_66_alternativa_3':'Decisão do superior hierárquico.',
-  'pergunta_66_alternativa_4':'Interesse público comprovado por portaria.',
-  'pergunta_66_resposta_correta':'Decisão judicial transitada em julgado ou processo administrativo disciplinar.',
-  'pergunta_66_justificativa':'O servidor estável só perde o cargo por decisão judicial transitada em julgado ou em processo administrativo com ampla defesa.',
-  
-  'pergunta_67':'A exoneração do servidor efetivo pode ocorrer:',
-  'pergunta_67_alternativa_1':'A pedido ou de ofício, quando não satisfeitas as condições do cargo.',
-  'pergunta_67_alternativa_2':'Somente a pedido do servidor.',
-  'pergunta_67_alternativa_3':'Somente após o estágio probatório.',
-  'pergunta_67_alternativa_4':'Mediante decisão do Prefeito, sem justificativa.',
-  'pergunta_67_resposta_correta':'A pedido ou de ofício, quando não satisfeitas as condições do cargo.',
-  'pergunta_67_justificativa':'A exoneração ocorre a pedido do servidor ou de ofício quando este não satisfaz as condições legais para o cargo.',
-  
-  'pergunta_68':'A demissão é aplicada ao servidor:',
-  'pergunta_68_alternativa_1':'Por conveniência administrativa.',
-  'pergunta_68_alternativa_2':'Como penalidade disciplinar prevista em lei.',
-  'pergunta_68_alternativa_3':'Por decisão exclusiva do Prefeito.',
-  'pergunta_68_alternativa_4':'Mediante pedido fundamentado do chefe imediato.',
-  'pergunta_68_resposta_correta':'Como penalidade disciplinar prevista em lei.',
-  'pergunta_68_justificativa':'A demissão é a penalidade aplicada em caso de infrações graves cometidas pelo servidor público.',
-  
-  'pergunta_69':'A readaptação é a forma de provimento que ocorre quando:',
-  'pergunta_69_alternativa_1':'O servidor é transferido para outro município.',
-  'pergunta_69_alternativa_2':'Há limitação física ou mental que exige adequação a cargo compatível.',
-  'pergunta_69_alternativa_3':'O servidor assume função comissionada.',
-  'pergunta_69_alternativa_4':'O servidor muda de regime jurídico.',
-  'pergunta_69_resposta_correta':'Há limitação física ou mental que exige adequação a cargo compatível.',
-  'pergunta_69_justificativa':'A readaptação ocorre quando o servidor sofre limitação que o impede de exercer suas funções originárias.',
-  
-  'pergunta_70':'O servidor em disponibilidade será:',
-  'pergunta_70_alternativa_1':'Exonerado automaticamente após 6 meses.',
-  'pergunta_70_alternativa_2':'Aposentado de ofício.',
-  'pergunta_70_alternativa_3':'Aproveitado em outro cargo compatível com a remuneração anterior.',
-  'pergunta_70_alternativa_4':'Transferido para outro órgão sem necessidade de autorização.',
-  'pergunta_70_resposta_correta':'Aproveitado em outro cargo compatível com a remuneração anterior.',
-  'pergunta_70_justificativa':'O servidor em disponibilidade será aproveitado em outro cargo compatível, assegurada a remuneração equivalente.',
-  
-  'pergunta_71':'A reversão ocorre quando:',
-  'pergunta_71_alternativa_1':'O servidor retorna à atividade após aposentadoria inválida.',
-  'pergunta_71_alternativa_2':'O servidor muda de cargo para outro mais compatível.',
-  'pergunta_71_alternativa_3':'O servidor é nomeado novamente após exoneração.',
-  'pergunta_71_alternativa_4':'Há mudança de regime jurídico.',
-  'pergunta_71_resposta_correta':'O servidor retorna à atividade após aposentadoria inválida.',
-  'pergunta_71_justificativa':'A reversão ocorre quando o servidor retorna à atividade após aposentadoria por invalidez que se revela insubsistente.',
-  
-  'pergunta_72':'A reintegração é o retorno do servidor:',
-  'pergunta_72_alternativa_1':'Exonerado por motivo político.',
-  'pergunta_72_alternativa_2':'Demitido injustamente, por decisão administrativa ou judicial.',
-  'pergunta_72_alternativa_3':'Afastado por interesse pessoal.',
-  'pergunta_72_alternativa_4':'Transferido para outro órgão.',
-  'pergunta_72_resposta_correta':'Demitido injustamente, por decisão administrativa ou judicial.',
-  'pergunta_72_justificativa':'A reintegração é o retorno do servidor demitido ilegalmente ao cargo anteriormente ocupado, com ressarcimento de vencimentos.',
-  
-  'pergunta_73':'O servidor pode acumular cargos públicos:',
-  'pergunta_73_alternativa_1':'Em qualquer hipótese, se houver compatibilidade de horários.',
-  'pergunta_73_alternativa_2':'Somente nos casos previstos na Constituição, com compatibilidade de horários.',
-  'pergunta_73_alternativa_3':'Quando autorizado pelo Prefeito.',
-  'pergunta_73_alternativa_4':'Quando se tratar de cargo em comissão.',
-  'pergunta_73_resposta_correta':'Somente nos casos previstos na Constituição, com compatibilidade de horários.',
-  'pergunta_73_justificativa':'A acumulação só é permitida nos casos constitucionais e se houver compatibilidade de horários.',
-  
-  'pergunta_74':'A acumulação ilícita de cargos implica:',
-  'pergunta_74_alternativa_1':'Demissão de ambos os cargos.',
-  'pergunta_74_alternativa_2':'Obrigação de optar por um dos cargos.',
-  'pergunta_74_alternativa_3':'Suspensão por 60 dias.',
-  'pergunta_74_alternativa_4':'Advertência escrita.',
-  'pergunta_74_resposta_correta':'Obrigação de optar por um dos cargos.',
-  'pergunta_74_justificativa':'Identificada a acumulação ilegal, o servidor é notificado para optar por um dos cargos sob pena de demissão.',
-  
-  'pergunta_75':'O tempo de serviço público é contado para:',
-  'pergunta_75_alternativa_1':'Aposentadoria e disponibilidade.',
-  'pergunta_75_alternativa_2':'Apenas para férias.',
-  'pergunta_75_alternativa_3':'Progressão funcional exclusivamente.',
-  'pergunta_75_alternativa_4':'Nenhuma vantagem funcional.',
-  'pergunta_75_resposta_correta':'Aposentadoria e disponibilidade.',
-  'pergunta_75_justificativa':'O tempo de serviço público é computado para fins de aposentadoria e disponibilidade.',
-  
-  'pergunta_76':'A licença para tratar de interesses particulares é concedida:',
-  'pergunta_76_alternativa_1':'Com vencimento integral.',
-  'pergunta_76_alternativa_2':'Sem remuneração, a critério da administração.',
-  'pergunta_76_alternativa_3':'Com metade da remuneração.',
-  'pergunta_76_alternativa_4':'Apenas após cinco anos de serviço.',
-  'pergunta_76_resposta_correta':'Sem remuneração, a critério da administração.',
-  'pergunta_76_justificativa':'A licença para tratar de assuntos particulares é concedida sem vencimentos e depende do interesse da administração.',
-  
-  'pergunta_77':'Durante a licença para tratar de assuntos particulares, o servidor:',
-  'pergunta_77_alternativa_1':'Continua recebendo todos os benefícios.',
-  'pergunta_77_alternativa_2':'Não conta tempo de serviço.',
-  'pergunta_77_alternativa_3':'Mantém o direito a férias.',
-  'pergunta_77_alternativa_4':'Pode exercer outro cargo público.',
-  'pergunta_77_resposta_correta':'Não conta tempo de serviço.',
-  'pergunta_77_justificativa':'Durante a licença para interesse particular, o tempo não é contado para nenhum efeito, salvo disposição legal em contrário.',
-  
-  'pergunta_78':'A licença para tratamento de saúde será concedida:',
-  'pergunta_78_alternativa_1':'Por até 60 dias consecutivos.',
-  'pergunta_78_alternativa_2':'Com remuneração, mediante inspeção médica oficial.',
-  'pergunta_78_alternativa_3':'Sem vencimentos e a critério do servidor.',
-  'pergunta_78_alternativa_4':'Apenas após três anos de serviço.',
-  'pergunta_78_resposta_correta':'Com remuneração, mediante inspeção médica oficial.',
-  'pergunta_78_justificativa':'A licença médica é concedida com remuneração, desde que comprovada por perícia médica oficial.',
-  
-  'pergunta_79':'A licença maternidade tem duração de:',
-  'pergunta_79_alternativa_1':'90 dias.',
-  'pergunta_79_alternativa_2':'120 dias.',
-  'pergunta_79_alternativa_3':'150 dias.',
-  'pergunta_79_alternativa_4':'180 dias.',
-  'pergunta_79_resposta_correta':'120 dias.',
-  'pergunta_79_justificativa':'A licença à gestante é de 120 dias, conforme o regime jurídico e a Constituição Federal.',
-  
-  'pergunta_80':'A licença paternidade é concedida pelo prazo de:',
-  'pergunta_80_alternativa_1':'3 dias consecutivos.',
-  'pergunta_80_alternativa_2':'5 dias consecutivos.',
-  'pergunta_80_alternativa_3':'7 dias consecutivos.',
-  'pergunta_80_alternativa_4':'10 dias consecutivos.',
-  'pergunta_80_resposta_correta':'5 dias consecutivos.',
-  'pergunta_80_justificativa':'A licença paternidade é concedida pelo prazo de 5 dias consecutivos, conforme a Constituição e legislação municipal.',
-  
-  'pergunta_81':'A contagem do tempo de serviço é interrompida:',
-  'pergunta_81_alternativa_1':'Durante férias.',
-  'pergunta_81_alternativa_2':'Durante afastamento para mandato eletivo.',
-  'pergunta_81_alternativa_3':'Durante licença para tratar de assuntos particulares.',
-  'pergunta_81_alternativa_4':'Durante licença por doença em pessoa da família.',
-  'pergunta_81_resposta_correta':'Durante licença para tratar de assuntos particulares.',
-  'pergunta_81_justificativa':'O tempo de serviço é interrompido durante licenças sem remuneração, como a de interesse particular.',
-  
-  'pergunta_82':'O servidor terá direito a férias anuais remuneradas de:',
-  'pergunta_82_alternativa_1':'20 dias.',
-  'pergunta_82_alternativa_2':'25 dias.',
+  'pergunta_82':'A Câmara poderá retirar da Ordem do Dia, em caso de convocação extraordinária, projeto que não tiver tramitado por:',
+  'pergunta_82_alternativa_1':'15 dias.',
+  'pergunta_82_alternativa_2':'20 dias.',
   'pergunta_82_alternativa_3':'30 dias.',
-  'pergunta_82_alternativa_4':'35 dias.',
+  'pergunta_82_alternativa_4':'45 dias.',
   'pergunta_82_resposta_correta':'30 dias.',
-  'pergunta_82_justificativa':'As férias anuais são de 30 dias, conforme previsto no regime jurídico municipal.',
-  
-  'pergunta_83':'O adicional de férias corresponde a:',
-  'pergunta_83_alternativa_1':'10% da remuneração.',
-  'pergunta_83_alternativa_2':'20% da remuneração.',
-  'pergunta_83_alternativa_3':'1/3 da remuneração.',
-  'pergunta_83_alternativa_4':'50% da remuneração.',
-  'pergunta_83_resposta_correta':'1/3 da remuneração.',
-  'pergunta_83_justificativa':'O servidor tem direito a adicional de 1/3 da remuneração por ocasião das férias, conforme a Constituição Federal.',
-  
-  'pergunta_84':'As gratificações e adicionais são devidos:',
-  'pergunta_84_alternativa_1':'Somente aos servidores efetivos.',
-  'pergunta_84_alternativa_2':'Aos servidores efetivos e comissionados, conforme lei específica.',
-  'pergunta_84_alternativa_3':'Apenas aos servidores estáveis.',
-  'pergunta_84_alternativa_4':'Somente aos servidores aposentados.',
-  'pergunta_84_resposta_correta':'Aos servidores efetivos e comissionados, conforme lei específica.',
-  'pergunta_84_justificativa':'As gratificações e adicionais são concedidos de acordo com a legislação municipal que rege cada categoria.',
-  
-  'pergunta_85':'O vencimento do cargo efetivo é irredutível, salvo:',
-  'pergunta_85_alternativa_1':'Por decisão judicial.',
-  'pergunta_85_alternativa_2':'Por interesse do servidor.',
-  'pergunta_85_alternativa_3':'Quando houver alteração de carga horária prevista em lei.',
-  'pergunta_85_alternativa_4':'Por ato do Prefeito.',
-  'pergunta_85_resposta_correta':'Quando houver alteração de carga horária prevista em lei.',
-  'pergunta_85_justificativa':'A irredutibilidade do vencimento admite exceção apenas quando houver alteração legal na jornada de trabalho.',
-  
-  'pergunta_86':'As vantagens pessoais incorporam-se à remuneração do servidor:',
-  'pergunta_86_alternativa_1':'Em qualquer hipótese.',
-  'pergunta_86_alternativa_2':'Apenas quando previstas em lei.',
-  'pergunta_86_alternativa_3':'Por decisão do chefe imediato.',
-  'pergunta_86_alternativa_4':'A critério do Prefeito.',
-  'pergunta_86_resposta_correta':'Apenas quando previstas em lei.',
-  'pergunta_86_justificativa':'Somente as vantagens expressamente previstas em lei podem ser incorporadas à remuneração.',
-  
-  'pergunta_87':'O regime jurídico assegura ao servidor o direito de petição:',
-  'pergunta_87_alternativa_1':'Somente em casos de punição disciplinar.',
-  'pergunta_87_alternativa_2':'Em defesa de direito ou contra ilegalidade.',
-  'pergunta_87_alternativa_3':'Apenas por via judicial.',
-  'pergunta_87_alternativa_4':'Mediante autorização do superior.',
-  'pergunta_87_resposta_correta':'Em defesa de direito ou contra ilegalidade.',
-  'pergunta_87_justificativa':'O direito de petição é garantido ao servidor para defesa de direitos e contra atos ilegais ou abusivos.',
-  
-  'pergunta_88':'A responsabilidade do servidor pode ser:',
-  'pergunta_88_alternativa_1':'Administrativa, civil e penal.',
-  'pergunta_88_alternativa_2':'Apenas administrativa.',
-  'pergunta_88_alternativa_3':'Somente civil.',
-  'pergunta_88_alternativa_4':'Exclusivamente penal.',
-  'pergunta_88_resposta_correta':'Administrativa, civil e penal.',
-  'pergunta_88_justificativa':'O servidor responde nas esferas administrativa, civil e penal pelos atos praticados no exercício de suas funções.',
-  
-  'pergunta_89':'A responsabilidade civil decorre de:',
-  'pergunta_89_alternativa_1':'Dano causado a particular ou à Administração.',
-  'pergunta_89_alternativa_2':'Infração disciplinar interna.',
-  'pergunta_89_alternativa_3':'Descumprimento de ordem hierárquica.',
-  'pergunta_89_alternativa_4':'Acúmulo de função pública.',
-  'pergunta_89_resposta_correta':'Dano causado a particular ou à Administração.',
-  'pergunta_89_justificativa':'O servidor é civilmente responsável por prejuízo causado a terceiros ou ao erário.',
-  
-  'pergunta_90':'A responsabilidade penal do servidor decorre de:',
-  'pergunta_90_alternativa_1':'Ato lesivo ao erário ou crime praticado no exercício da função.',
-  'pergunta_90_alternativa_2':'Descumprimento de horário.',
-  'pergunta_90_alternativa_3':'Falta leve.',
-  'pergunta_90_alternativa_4':'Reprovação em estágio probatório.',
-  'pergunta_90_resposta_correta':'Ato lesivo ao erário ou crime praticado no exercício da função.',
-  'pergunta_90_justificativa':'A responsabilidade penal decorre de crimes cometidos no exercício do cargo ou em razão dele.',
-  
-  'pergunta_91':'A responsabilidade administrativa decorre de:',
-  'pergunta_91_alternativa_1':'Infração de dever funcional previsto em lei.',
-  'pergunta_91_alternativa_2':'Danos causados ao erário apenas.',
-  'pergunta_91_alternativa_3':'Decisão judicial transitada em julgado.',
-  'pergunta_91_alternativa_4':'Pedido do superior hierárquico.',
-  'pergunta_91_resposta_correta':'Infração de dever funcional previsto em lei.',
-  'pergunta_91_justificativa':'A responsabilidade administrativa é aquela decorrente de infração aos deveres funcionais do servidor.',
-  
-  'pergunta_92':'As penalidades disciplinares aplicáveis são:',
-  'pergunta_92_alternativa_1':'Advertência, suspensão e demissão.',
-  'pergunta_92_alternativa_2':'Advertência, multa e rescisão.',
-  'pergunta_92_alternativa_3':'Suspensão, cassação e exoneração.',
-  'pergunta_92_alternativa_4':'Advertência, transferência e rescisão.',
-  'pergunta_92_resposta_correta':'Advertência, suspensão e demissão.',
-  'pergunta_92_justificativa':'São penalidades disciplinares previstas no regime jurídico: advertência, suspensão e demissão.',
-  
-  'pergunta_93':'A pena de advertência será aplicada:',
-  'pergunta_93_alternativa_1':'Por falta leve e registrada nos assentamentos funcionais.',
-  'pergunta_93_alternativa_2':'Por falta grave.',
-  'pergunta_93_alternativa_3':'Por reincidência em falta grave.',
-  'pergunta_93_alternativa_4':'Apenas após processo administrativo.',
-  'pergunta_93_resposta_correta':'Por falta leve e registrada nos assentamentos funcionais.',
-  'pergunta_93_justificativa':'A advertência é aplicada por falta leve e deve constar nos assentamentos do servidor.',
-  
-  'pergunta_94':'A suspensão será aplicada quando:',
-  'pergunta_94_alternativa_1':'Houver reincidência em falta leve ou cometimento de falta grave.',
-  'pergunta_94_alternativa_2':'O servidor faltar um dia ao serviço.',
-  'pergunta_94_alternativa_3':'O servidor atrasar-se ocasionalmente.',
-  'pergunta_94_alternativa_4':'Por qualquer infração funcional.',
-  'pergunta_94_resposta_correta':'Houver reincidência em falta leve ou cometimento de falta grave.',
-  'pergunta_94_justificativa':'A suspensão é aplicada em casos de reincidência em falta leve ou em faltas graves.',
-  
-  'pergunta_95':'A demissão será aplicada ao servidor que:',
-  'pergunta_95_alternativa_1':'Cometer improbidade administrativa.',
-  'pergunta_95_alternativa_2':'Atrasar-se por cinco dias.',
-  'pergunta_95_alternativa_3':'Recusar-se a participar de curso.',
-  'pergunta_95_alternativa_4':'Cometer infração leve.',
-  'pergunta_95_resposta_correta':'Cometer improbidade administrativa.',
-  'pergunta_95_justificativa':'A demissão é a penalidade máxima e é aplicada em casos graves, como improbidade e crime contra a administração pública.',
-  
-  'pergunta_96':'O servidor que causar prejuízo ao erário deverá:',
-  'pergunta_96_alternativa_1':'Ser apenas advertido.',
-  'pergunta_96_alternativa_2':'Ressarcir o dano, independentemente de outras penalidades.',
-  'pergunta_96_alternativa_3':'Ser transferido de cargo.',
-  'pergunta_96_alternativa_4':'Perder automaticamente a função.',
-  'pergunta_96_resposta_correta':'Ressarcir o dano, independentemente de outras penalidades.',
-  'pergunta_96_justificativa':'O servidor responde pelo ressarcimento de danos causados à Administração, além das penalidades cabíveis.',
-  
-  'pergunta_97':'O processo administrativo disciplinar assegura:',
-  'pergunta_97_alternativa_1':'Ampla defesa e contraditório.',
-  'pergunta_97_alternativa_2':'Somente direito de defesa escrita.',
-  'pergunta_97_alternativa_3':'Apenas manifestação oral.',
-  'pergunta_97_alternativa_4':'Julgamento sumário.',
-  'pergunta_97_resposta_correta':'Ampla defesa e contraditório.',
-  'pergunta_97_justificativa':'O servidor tem direito à ampla defesa e ao contraditório em qualquer processo administrativo.',
-  
-  'pergunta_98':'O prazo prescricional para a ação disciplinar começa a contar:',
-  'pergunta_98_alternativa_1':'Da data da infração.',
-  'pergunta_98_alternativa_2':'Da data do conhecimento do fato pela autoridade competente.',
-  'pergunta_98_alternativa_3':'Do término do processo administrativo.',
-  'pergunta_98_alternativa_4':'Da comunicação ao servidor.',
-  'pergunta_98_resposta_correta':'Da data do conhecimento do fato pela autoridade competente.',
-  'pergunta_98_justificativa':'A contagem do prazo prescricional inicia-se quando a autoridade competente toma ciência da infração.',
-  
-  'pergunta_99':'O servidor poderá ser afastado preventivamente:',
-  'pergunta_99_alternativa_1':'Por até 60 dias, prorrogáveis por igual período, quando necessário à apuração de infração.',
-  'pergunta_99_alternativa_2':'Por tempo indeterminado, até conclusão do processo.',
-  'pergunta_99_alternativa_3':'Por decisão judicial apenas.',
-  'pergunta_99_alternativa_4':'A critério do superior imediato.',
-  'pergunta_99_resposta_correta':'Por até 60 dias, prorrogáveis por igual período, quando necessário à apuração de infração.',
-  'pergunta_99_justificativa':'O afastamento preventivo visa garantir a lisura do processo disciplinar, sendo limitado a 60 dias prorrogáveis.',
-  
-  'pergunta_100':'O servidor responde pelos seus atos perante:',
-  'pergunta_100_alternativa_1':'Apenas a administração municipal.',
-  'pergunta_100_alternativa_2':'A administração, o Poder Judiciário e terceiros prejudicados.',
-  'pergunta_100_alternativa_3':'Somente a corregedoria.',
-  'pergunta_100_alternativa_4':'Somente o Tribunal de Contas.',
-  'pergunta_100_resposta_correta':'A administração, o Poder Judiciário e terceiros prejudicados.',
-  'pergunta_100_justificativa':'O servidor é responsável por seus atos nas esferas administrativa, civil e penal, inclusive perante terceiros prejudicados.',
-  
+  'pergunta_82_justificativa':'Conforme art. 79.',
+  //----------------------------------
+  'pergunta_83':'A remuneração do Prefeito, Vice-Prefeito e Vereadores será fixada:',
+  'pergunta_83_alternativa_1':'Pela Câmara Municipal, para vigorar na mesma legislatura.',
+  'pergunta_83_alternativa_2':'Pela Câmara Municipal, para a legislatura subsequente.',
+  'pergunta_83_alternativa_3':'Pelo Tribunal de Contas do Estado.',
+  'pergunta_83_alternativa_4':'Pelo Prefeito Municipal.',
+  'pergunta_83_resposta_correta':'Pela Câmara Municipal, para a legislatura subsequente.',
+  'pergunta_83_justificativa':'Conforme art. 80 da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_84':'A fixação da remuneração dos agentes políticos deve ocorrer em data:',
+  'pergunta_84_alternativa_1':'Posterior às eleições municipais.',
+  'pergunta_84_alternativa_2':'Anterior às eleições para os respectivos cargos.',
+  'pergunta_84_alternativa_3':'No início da legislatura.',
+  'pergunta_84_alternativa_4':'Durante o recesso parlamentar.',
+  'pergunta_84_resposta_correta':'Anterior às eleições para os respectivos cargos.',
+  'pergunta_84_justificativa':'Conforme art. 80.',
+  //----------------------------------
+  'pergunta_85':'Inexistindo previsão de atualização da remuneração, aplicar-se-á:',
+  'pergunta_85_alternativa_1':'O índice fixado pelo Prefeito.',
+  'pergunta_85_alternativa_2':'O mesmo índice concedido ao funcionalismo público municipal.',
+  'pergunta_85_alternativa_3':'A média do IPCA dos últimos 12 meses.',
+  'pergunta_85_alternativa_4':'A variação cambial do período.',
+  'pergunta_85_resposta_correta':'O mesmo índice concedido ao funcionalismo público municipal.',
+  'pergunta_85_justificativa':'Conforme art. 81, parágrafo único.',
+  //----------------------------------
+  'pergunta_86':'O controle externo da Câmara Municipal é exercido com auxílio de qual órgão?',
+  'pergunta_86_alternativa_1':'Controladoria-Geral do Município.',
+  'pergunta_86_alternativa_2':'Tribunal de Contas do Estado do Rio Grande do Sul.',
+  'pergunta_86_alternativa_3':'Ministério Público Estadual.',
+  'pergunta_86_alternativa_4':'Secretaria da Fazenda.',
+  'pergunta_86_resposta_correta':'Tribunal de Contas do Estado do Rio Grande do Sul.',
+  'pergunta_86_justificativa':'Conforme art. 83 da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_87':'As contas do Município devem ser apresentadas até quantos dias após o encerramento do exercício financeiro?',
+  'pergunta_87_alternativa_1':'30 dias.',
+  'pergunta_87_alternativa_2':'60 dias.',
+  'pergunta_87_alternativa_3':'90 dias.',
+  'pergunta_87_alternativa_4':'120 dias.',
+  'pergunta_87_resposta_correta':'90 dias.',
+  'pergunta_87_justificativa':'Conforme art. 83, §1º.',
+  //----------------------------------
+  'pergunta_88':'Se as contas não forem apresentadas no prazo, quem deverá fazê-lo em 30 dias?',
+  'pergunta_88_alternativa_1':'O Prefeito.',
+  'pergunta_88_alternativa_2':'A Comissão Permanente de Fiscalização e Controle Orçamentário.',
+  'pergunta_88_alternativa_3':'O Tribunal de Contas.',
+  'pergunta_88_alternativa_4':'A Mesa Diretora.',
+  'pergunta_88_resposta_correta':'A Comissão Permanente de Fiscalização e Controle Orçamentário.',
+  'pergunta_88_justificativa':'Conforme art. 83, §2º.',
+  //----------------------------------
+  'pergunta_89':'O contribuinte poderá examinar e questionar as contas apresentadas pelo prazo de:',
+  'pergunta_89_alternativa_1':'30 dias.',
+  'pergunta_89_alternativa_2':'45 dias.',
+  'pergunta_89_alternativa_3':'60 dias.',
+  'pergunta_89_alternativa_4':'90 dias.',
+  'pergunta_89_resposta_correta':'60 dias.',
+  'pergunta_89_justificativa':'Conforme art. 83, §3º.',
+  //----------------------------------
+  'pergunta_90':'Quem promulgará as leis com sanção tácita ou cujo veto tenha sido rejeitado e não promulgado pelo Prefeito?',
+  'pergunta_90_alternativa_1':'O Vice-Prefeito.',
+  'pergunta_90_alternativa_2':'O Presidente da Câmara.',
+  'pergunta_90_alternativa_3':'O Tribunal de Contas.',
+  'pergunta_90_alternativa_4':'O Procurador-Geral do Município.',
+  'pergunta_90_resposta_correta':'O Presidente da Câmara.',
+  'pergunta_90_justificativa':'Conforme art. 53, inciso IV.',
+  //----------------------------------
+  'pergunta_91':'As consultas referendárias e plebiscitárias serão formuladas em termos de:',
+  'pergunta_91_alternativa_1':'Aprovação ou rejeição dos atos ou matérias.',
+  'pergunta_91_alternativa_2':'Escolha entre propostas alternativas.',
+  'pergunta_91_alternativa_3':'Sorteio público.',
+  'pergunta_91_alternativa_4':'Nomeação de autoridades.',
+  'pergunta_91_resposta_correta':'Aprovação ou rejeição dos atos ou matérias.',
+  'pergunta_91_justificativa':'Conforme art. 72, parágrafo único.',
+  //----------------------------------
+  'pergunta_92':'O projeto rejeitado pela Câmara só poderá constituir objeto de novo projeto na mesma sessão legislativa mediante proposta de:',
+  'pergunta_92_alternativa_1':'Maioria absoluta dos Vereadores.',
+  'pergunta_92_alternativa_2':'Um terço dos Vereadores.',
+  'pergunta_92_alternativa_3':'Dois terços dos Vereadores.',
+  'pergunta_92_alternativa_4':'Unanimidade da Câmara.',
+  'pergunta_92_resposta_correta':'Maioria absoluta dos Vereadores.',
+  'pergunta_92_justificativa':'Conforme art. 74.',
+  //----------------------------------
+   //----------------------------------
+  'pergunta_93':'Durante o recesso, a Comissão Representativa reúne-se:',
+  'pergunta_93_alternativa_1':'Ordinariamente uma vez por semana, em dia e horário fixados no Regimento Interno.',
+  'pergunta_93_alternativa_2':'A cada quinze dias.',
+  'pergunta_93_alternativa_3':'Somente quando convocada pelo Prefeito.',
+  'pergunta_93_alternativa_4':'Mensalmente, mediante autorização da Mesa.',
+  'pergunta_93_resposta_correta':'Ordinariamente uma vez por semana, em dia e horário fixados no Regimento Interno.',
+  'pergunta_93_justificativa':'Conforme art. 63, inciso I, da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_94':'Compete à Comissão Representativa, dentre outras atribuições:',
+  'pergunta_94_alternativa_1':'Zelar pelas prerrogativas do Poder Legislativo.',
+  'pergunta_94_alternativa_2':'Nomear secretários municipais.',
+  'pergunta_94_alternativa_3':'Votar o orçamento anual.',
+  'pergunta_94_alternativa_4':'Julgar o Prefeito e o Vice-Prefeito.',
+  'pergunta_94_resposta_correta':'Zelar pelas prerrogativas do Poder Legislativo.',
+  'pergunta_94_justificativa':'Conforme art. 63, inciso II.',
+  //----------------------------------
+  'pergunta_95':'A iniciativa popular rejeitada pela Câmara poderá ser submetida a referendo se requerida por:',
+  'pergunta_95_alternativa_1':'1% do eleitorado.',
+  'pergunta_95_alternativa_2':'3% do eleitorado.',
+  'pergunta_95_alternativa_3':'5% do eleitorado que tiver votado nas últimas eleições municipais.',
+  'pergunta_95_alternativa_4':'10% do eleitorado do município.',
+  'pergunta_95_resposta_correta':'5% do eleitorado que tiver votado nas últimas eleições municipais.',
+  'pergunta_95_justificativa':'Conforme art. 71 da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_96':'As Comissões da Câmara podem receber petições, reclamações e representações de qualquer pessoa contra atos ou omissões das autoridades públicas?',
+  'pergunta_96_alternativa_1':'Sim, conforme previsto no art. 75, §2º, inciso IV.',
+  'pergunta_96_alternativa_2':'Não, essa atribuição é exclusiva do Prefeito.',
+  'pergunta_96_alternativa_3':'Apenas mediante autorização judicial.',
+  'pergunta_96_alternativa_4':'Somente quando o Regimento Interno permitir expressamente.',
+  'pergunta_96_resposta_correta':'Sim, conforme previsto no art. 75, §2º, inciso IV.',
+  'pergunta_96_justificativa':'As comissões podem receber petições e reclamações contra autoridades, segundo a Lei Orgânica.',
+  //----------------------------------
+  'pergunta_97':'Conforme o art. 78, o Presidente da Câmara deverá incluir proposição na Ordem do Dia após quantos dias de seu recebimento, se houver requerimento de Vereadores?',
+  'pergunta_97_alternativa_1':'15 dias.',
+  'pergunta_97_alternativa_2':'30 dias.',
+  'pergunta_97_alternativa_3':'45 dias.',
+  'pergunta_97_alternativa_4':'60 dias.',
+  'pergunta_97_resposta_correta':'45 dias.',
+  'pergunta_97_justificativa':'Conforme art. 78 da Lei Orgânica.',
+  //----------------------------------
+  'pergunta_98':'As leis complementares municipais tratam, entre outros temas, de:',
+  'pergunta_98_alternativa_1':'Código Tributário, Código de Obras e Plano Diretor de Desenvolvimento Integrado.',
+  'pergunta_98_alternativa_2':'Atos administrativos internos da Câmara.',
+  'pergunta_98_alternativa_3':'Regulamento das empresas públicas.',
+  'pergunta_98_alternativa_4':'Regimento Interno da Prefeitura.',
+  'pergunta_98_resposta_correta':'Código Tributário, Código de Obras e Plano Diretor de Desenvolvimento Integrado.',
+  'pergunta_98_justificativa':'Conforme art. 70, incisos I a III.',
+  //----------------------------------
+  'pergunta_99':'O quórum de dois terços é exigido, entre outras hipóteses, para:',
+  'pergunta_99_alternativa_1':'Conceder título de cidadão caxiense.',
+  'pergunta_99_alternativa_2':'Aprovar leis ordinárias.',
+  'pergunta_99_alternativa_3':'Aprovar o orçamento municipal.',
+  'pergunta_99_alternativa_4':'Convocar secretários municipais.',
+  'pergunta_99_resposta_correta':'Conceder título de cidadão caxiense.',
+  'pergunta_99_justificativa':'Conforme art. 77, §2º, alínea “c”.',
+  //----------------------------------
+  'pergunta_100':'Quando o Presidente da Câmara não promulgar a lei no prazo de 48 horas, caberá fazê-lo:',
+  'pergunta_100_alternativa_1':'Ao Vice-Presidente da Câmara.',
+  'pergunta_100_alternativa_2':'Ao Prefeito.',
+  'pergunta_100_alternativa_3':'Ao Tribunal de Contas.',
+  'pergunta_100_alternativa_4':'À Mesa Diretora.',
+  'pergunta_100_resposta_correta':'Ao Vice-Presidente da Câmara.',
+  'pergunta_100_justificativa':'Conforme art. 73, §7º da Lei Orgânica.',
 
-'pergunta_101':'De acordo com a Lei Complementar nº 3.673/91, quem é considerado servidor público municipal?',
-    'pergunta_101_alternativa_1':'Qualquer pessoa que trabalhe para o Município, mesmo sem vínculo formal.',
-    'pergunta_101_alternativa_2':'A pessoa legalmente investida em cargo público.',
-    'pergunta_101_alternativa_3':'A pessoa que exerce função pública temporária.',
-    'pergunta_101_alternativa_4':'Somente os ocupantes de cargos em comissão.',
-    'pergunta_101_resposta_correta':'A pessoa legalmente investida em cargo público.',
-    'pergunta_101_justificativa':'Segundo o art. 2º da Lei Complementar nº 3.673/91, servidor é a pessoa legalmente investida em cargo público.',
-    //----------------------------------
-    'pergunta_102':'O que é considerado cargo público, conforme o Estatuto dos Servidores Municipais?',
-    'pergunta_102_alternativa_1':'A função de confiança exercida temporariamente.',
-    'pergunta_102_alternativa_2':'O emprego de natureza celetista.',
-    'pergunta_102_alternativa_3':'O conjunto de atribuições e responsabilidades cometidas ao servidor público, criado por lei e remunerado pelos cofres municipais.',
-    'pergunta_102_alternativa_4':'O posto de trabalho designado por contrato administrativo.',
-    'pergunta_102_resposta_correta':'O conjunto de atribuições e responsabilidades cometidas ao servidor público, criado por lei e remunerado pelos cofres municipais.',
-    'pergunta_102_justificativa':'De acordo com o art. 3º da LC 3.673/91, cargo público é o criado por lei, em número certo, remunerado pelos cofres municipais.',
-    //----------------------------------
-    'pergunta_103':'A investidura em cargo público depende obrigatoriamente de:',
-    'pergunta_103_alternativa_1':'Nomeação direta pelo Prefeito.',
-    'pergunta_103_alternativa_2':'Indicação de autoridade competente.',
-    'pergunta_103_alternativa_3':'Aprovação prévia em concurso público de provas ou de provas e títulos.',
-    'pergunta_103_alternativa_4':'Curso de formação na Escola de Governo Municipal.',
-    'pergunta_103_resposta_correta':'Aprovação prévia em concurso público de provas ou de provas e títulos.',
-    'pergunta_103_justificativa':'O art. 4º da LC 3.673/91 determina que a investidura em cargo público depende de aprovação prévia em concurso público.',
-    //----------------------------------
-    'pergunta_104':'O prazo de validade de um concurso público municipal é de até:',
-    'pergunta_104_alternativa_1':'1 ano, improrrogável.',
-    'pergunta_104_alternativa_2':'2 anos, prorrogável uma vez por igual período.',
-    'pergunta_104_alternativa_3':'3 anos, prorrogável uma vez por igual período.',
-    'pergunta_104_alternativa_4':'5 anos, improrrogável.',
-    'pergunta_104_resposta_correta':'2 anos, prorrogável uma vez por igual período.',
-    'pergunta_104_justificativa':'Conforme o art. 15, III, o prazo de validade do concurso é de até dois anos, prorrogável uma vez por igual período.',
-    //----------------------------------
-    'pergunta_105':'Posse é definida como:',
-    'pergunta_105_alternativa_1':'A nomeação para cargo público.',
-    'pergunta_105_alternativa_2':'A entrada em exercício das funções.',
-    'pergunta_105_alternativa_3':'A aceitação expressa das atribuições, deveres e responsabilidades do cargo, formalizada por termo.',
-    'pergunta_105_alternativa_4':'O início das atividades laborais na repartição.',
-    'pergunta_105_resposta_correta':'A aceitação expressa das atribuições, deveres e responsabilidades do cargo, formalizada por termo.',
-    'pergunta_105_justificativa':'O art. 17 da LC 3.673/91 define posse como a aceitação expressa das atribuições do cargo, formalizada por termo.',
-    //----------------------------------
-    'pergunta_106':'O prazo para tomar posse é de quantos dias após a publicação do ato de provimento?',
-    'pergunta_106_alternativa_1':'10 dias, improrrogáveis.',
-    'pergunta_106_alternativa_2':'15 dias, prorrogáveis por mais 15 a pedido.',
-    'pergunta_106_alternativa_3':'20 dias, prorrogáveis uma vez.',
-    'pergunta_106_alternativa_4':'30 dias, sem prorrogação.',
-    'pergunta_106_resposta_correta':'15 dias, prorrogáveis por mais 15 a pedido.',
-    'pergunta_106_justificativa':'O §1º do art. 17 estabelece o prazo de 15 dias para a posse, prorrogável por igual período a requerimento.',
-    //----------------------------------
-    'pergunta_107':'O servidor se torna estável após:',
-    'pergunta_107_alternativa_1':'Dois anos de efetivo exercício.',
-    'pergunta_107_alternativa_2':'Três anos de efetivo exercício e avaliação especial de desempenho.',
-    'pergunta_107_alternativa_3':'Quatro anos de efetivo exercício e aprovação em estágio probatório.',
-    'pergunta_107_alternativa_4':'Cinco anos de serviço público contínuo.',
-    'pergunta_107_resposta_correta':'Três anos de efetivo exercício e avaliação especial de desempenho.',
-    'pergunta_107_justificativa':'Conforme art. 32 da LC 3.673/91, a estabilidade é adquirida após três anos e mediante avaliação especial.',
-    //----------------------------------
-    'pergunta_108':'Durante o estágio probatório, o servidor será avaliado, entre outros fatores, por:',
-    'pergunta_108_alternativa_1':'Assiduidade, responsabilidade e produtividade.',
-    'pergunta_108_alternativa_2':'Pontualidade, relacionamento interpessoal e iniciativa.',
-    'pergunta_108_alternativa_3':'Ambas as alternativas anteriores.',
-    'pergunta_108_alternativa_4':'Somente disciplina e eficiência.',
-    'pergunta_108_resposta_correta':'Ambas as alternativas anteriores.',
-    'pergunta_108_justificativa':'O art. 42 indica os fatores de avaliação: assiduidade, disciplina, responsabilidade, produtividade, relacionamento interpessoal, iniciativa, entre outros.',
-    //----------------------------------
-    'pergunta_109':'O servidor em estágio probatório NÃO pode:',
-    'pergunta_109_alternativa_1':'Solicitar férias regulamentares.',
-    'pergunta_109_alternativa_2':'Ser cedido ou colocado à disposição de outros órgãos públicos.',
-    'pergunta_109_alternativa_3':'Participar de cursos de capacitação.',
-    'pergunta_109_alternativa_4':'Ser avaliado em mais de um fator.',
-    'pergunta_109_resposta_correta':'Ser cedido ou colocado à disposição de outros órgãos públicos.',
-    'pergunta_109_justificativa':'O §5º do art. 45 da LC 3.673/91 veda a cessão de servidor em estágio probatório.',
-    //----------------------------------
-    'pergunta_110':'O servidor será exonerado do estágio probatório quando:',
-    'pergunta_110_alternativa_1':'Deixar de apresentar relatórios de desempenho.',
-    'pergunta_110_alternativa_2':'Não atingir a pontuação mínima exigida nos fatores de avaliação.',
-    'pergunta_110_alternativa_3':'Solicitar transferência de setor.',
-    'pergunta_110_alternativa_4':'Completar dois anos de estágio.',
-    'pergunta_110_resposta_correta':'Não atingir a pontuação mínima exigida nos fatores de avaliação.',
-    'pergunta_110_justificativa':'O art. 45-A prevê a exoneração do servidor que não atingir a pontuação mínima exigida.',
-    //----------------------------------
-    'pergunta_111':'Qual é a forma de provimento que consiste no retorno do aposentado à atividade?',
-    'pergunta_111_alternativa_1':'Reintegração',
-    'pergunta_111_alternativa_2':'Reversão',
-    'pergunta_111_alternativa_3':'Aproveitamento',
-    'pergunta_111_alternativa_4':'Recondução',
-    'pergunta_111_resposta_correta':'Reversão',
-    'pergunta_111_justificativa':'De acordo com o art. 39, reversão é o retorno do aposentado à atividade, quando verificado que não subsistem os motivos da aposentadoria.',
-    //----------------------------------
-    'pergunta_112':'Readaptação ocorre quando:',
-    'pergunta_112_alternativa_1':'O servidor muda de cargo por promoção.',
-    'pergunta_112_alternativa_2':'O servidor é transferido para outro município.',
-    'pergunta_112_alternativa_3':'O servidor é investido em cargo de igual padrão, mais compatível com sua aptidão ou vocação.',
-    'pergunta_112_alternativa_4':'O servidor é reintegrado após demissão indevida.',
-    'pergunta_112_resposta_correta':'O servidor é investido em cargo de igual padrão, mais compatível com sua aptidão ou vocação.',
-    'pergunta_112_justificativa':'O art. 34 define readaptação como a investidura do servidor em cargo compatível com sua aptidão ou vocação.',
-    //----------------------------------
-    'pergunta_113':'Reintegração é o reingresso no serviço público de servidor:',
-    'pergunta_113_alternativa_1':'Aposentado compulsoriamente.',
-    'pergunta_113_alternativa_2':'Demitido ou exonerado, com ressarcimento das vantagens do cargo.',
-    'pergunta_113_alternativa_3':'Que retornou após licença.',
-    'pergunta_113_alternativa_4':'Que foi removido de ofício.',
-    'pergunta_113_resposta_correta':'Demitido ou exonerado, com ressarcimento das vantagens do cargo.',
-    'pergunta_113_justificativa':'Segundo o art. 48, a reintegração é o reingresso do servidor demitido ou exonerado, com ressarcimento das vantagens.',
-    //----------------------------------
-    'pergunta_114':'O servidor estável só perderá o cargo:',
-    'pergunta_114_alternativa_1':'Por decisão política do Prefeito.',
-    'pergunta_114_alternativa_2':'Por decisão administrativa, sem defesa.',
-    'pergunta_114_alternativa_3':'Por sentença judicial transitada em julgado ou decisão em processo administrativo disciplinar com ampla defesa.',
-    'pergunta_114_alternativa_4':'Por decisão da chefia imediata.',
-    'pergunta_114_resposta_correta':'Por sentença judicial transitada em julgado ou decisão em processo administrativo disciplinar com ampla defesa.',
-    'pergunta_114_justificativa':'Art. 33: o servidor estável só perderá o cargo nessas hipóteses.',
-    //----------------------------------
-    'pergunta_115':'Quem tem competência para dar posse aos servidores municipais?',
-    'pergunta_115_alternativa_1':'Somente o Prefeito.',
-    'pergunta_115_alternativa_2':'O Prefeito, Secretários Municipais e dirigentes de autarquias e fundações.',
-    'pergunta_115_alternativa_3':'A Câmara Municipal.',
-    'pergunta_115_alternativa_4':'A Procuradoria-Geral do Município.',
-    'pergunta_115_resposta_correta':'O Prefeito, Secretários Municipais e dirigentes de autarquias e fundações.',
-    'pergunta_115_justificativa':'O art. 18 da LC 3.673/91 define os competentes para dar posse.',
-    //----------------------------------
-      //----------------------------------
-  'pergunta_116':'O servidor poderá afastar-se do cargo, sem perda de vencimento, para exercer mandato eletivo:',
-  'pergunta_116_alternativa_1':'Apenas se for vereador no mesmo município.',
-  'pergunta_116_alternativa_2':'Nos casos de mandato federal, estadual ou municipal, conforme previsto em lei.',
-  'pergunta_116_alternativa_3':'Somente para mandato de Prefeito.',
-  'pergunta_116_alternativa_4':'Exclusivamente para cargos federais.',
-  'pergunta_116_resposta_correta':'Nos casos de mandato federal, estadual ou municipal, conforme previsto em lei.',
-  'pergunta_116_justificativa':'A LC 3.673/91 assegura afastamento do cargo ao servidor eleito para mandato eletivo, conforme previsto na Constituição Federal.',
+
+
+  'pergunta_101': 'Sobre os conceitos básicos do Estatuto, assinale a alternativa correta:',
+  'pergunta_101_alternativa_1': 'Servidor é a pessoa legalmente investida em cargo público.',
+  'pergunta_101_alternativa_2': 'Servidor é toda pessoa que presta serviço ao Município, com ou sem vínculo jurídico.',
+  'pergunta_101_alternativa_3': 'Servidor é a pessoa contratada temporariamente para função pública.',
+  'pergunta_101_alternativa_4': 'Servidor é exclusivamente o ocupante de cargo em comissão.',
+  'pergunta_101_resposta_correta': 'Servidor é a pessoa legalmente investida em cargo público.',
+  'pergunta_101_justificativa': 'Art. 2º',
+
+
+  'pergunta_102': 'De acordo com o Estatuto, cargo público é:',
+  'pergunta_102_alternativa_1': 'O criado por lei, em número certo, remunerado pelos cofres municipais, ao qual corresponde um conjunto de atribuições e responsabilidades.',
+  'pergunta_102_alternativa_2': 'Toda função desempenhada no Município, ainda que sem criação legal.',
+  'pergunta_102_alternativa_3': 'A função temporária exercida por necessidade do serviço.',
+  'pergunta_102_alternativa_4': 'Qualquer posto de trabalho remunerado, ainda que privado.',
+  'pergunta_102_resposta_correta': 'O criado por lei, em número certo, remunerado pelos cofres municipais, ao qual corresponde um conjunto de atribuições e responsabilidades.',
+  'pergunta_102_justificativa': 'Art. 3º, caput',
+
+
+  'pergunta_103': 'A investidura em cargo público depende de:',
+  'pergunta_103_alternativa_1': 'Aprovação prévia em concurso público de provas ou de provas e títulos, ressalvadas as nomeações para cargos em comissão.',
+  'pergunta_103_alternativa_2': 'Indicação política e aprovação da Câmara Municipal.',
+  'pergunta_103_alternativa_3': 'Apenas exame psicológico.',
+  'pergunta_103_alternativa_4': 'Somente entrevista com o órgão de pessoal.',
+  'pergunta_103_resposta_correta': 'Aprovação prévia em concurso público de provas ou de provas e títulos, ressalvadas as nomeações para cargos em comissão.',
+  'pergunta_103_justificativa': 'Art. 4º',
+
+
+  'pergunta_104': 'Os cargos públicos municipais são acessíveis a:',
+  'pergunta_104_alternativa_1': 'Todos os brasileiros, preenchidos os requisitos que a lei estabelecer.',
+  'pergunta_104_alternativa_2': 'Apenas aos brasileiros natos com ensino superior.',
+  'pergunta_104_alternativa_3': 'A brasileiros e estrangeiros sem requisitos legais.',
+  'pergunta_104_alternativa_4': 'Somente aos residentes no Município há mais de 5 anos.',
+  'pergunta_104_resposta_correta': 'Todos os brasileiros, preenchidos os requisitos que a lei estabelecer.',
+  'pergunta_104_justificativa': 'Art. 5º',
+
+
+  'pergunta_105': 'Assinale a alternativa correta sobre “Quadro”:',
+  'pergunta_105_alternativa_1': 'É o conjunto dos cargos públicos municipais de provimento efetivo.',
+  'pergunta_105_alternativa_2': 'É o conjunto de cargos em comissão.',
+  'pergunta_105_alternativa_3': 'É a relação de funções gratificadas, exclusivamente.',
+  'pergunta_105_alternativa_4': 'É a soma de empregos públicos privados e municipais.',
+  'pergunta_105_resposta_correta': 'É o conjunto dos cargos públicos municipais de provimento efetivo.',
+  'pergunta_105_justificativa': 'Art. 6º, caput',
+
+
+  // --- Ingresso, Nomeação e Concurso ---
+  'pergunta_106': 'Precederão sempre o ingresso no serviço público municipal:',
+  'pergunta_106_alternativa_1': 'A inspeção de saúde e o exame psicológico, realizados pelo órgão competente do Município.',
+  'pergunta_106_alternativa_2': 'Somente a entrevista funcional.',
+  'pergunta_106_alternativa_3': 'Apenas a inspeção de saúde, facultado o exame psicológico.',
+  'pergunta_106_alternativa_4': 'Somente a apresentação de atestados particulares.',
+  'pergunta_106_resposta_correta': 'A inspeção de saúde e o exame psicológico, realizados pelo órgão competente do Município.',
+  'pergunta_106_justificativa': 'Art. 7º, caput',
+
+
+  'pergunta_107': 'A inspeção médica para ingresso é válida por:',
+  'pergunta_107_alternativa_1': 'Noventa (90) dias.',
+  'pergunta_107_alternativa_2': 'Trinta (30) dias.',
+  'pergunta_107_alternativa_3': 'Sessenta (60) dias.',
+  'pergunta_107_alternativa_4': 'Centovinte (120) dias.',
+  'pergunta_107_resposta_correta': 'Noventa (90) dias.',
+  'pergunta_107_justificativa': 'Art. 7º, § 1º',
+
+
+  'pergunta_108': 'São requisitos básicos para ingresso no serviço público, dentre outros:',
+  'pergunta_108_alternativa_1': 'Nacionalidade brasileira; gozo dos direitos políticos; quitação com as obrigações militares e eleitorais.',
+  'pergunta_108_alternativa_2': 'Somente idade mínima e ensino fundamental.',
+  'pergunta_108_alternativa_3': 'Apenas boa conduta, dispensada a saúde física e mental.',
+  'pergunta_108_alternativa_4': 'Somente aptidão física, dispensada a vocação para o cargo.',
+  'pergunta_108_resposta_correta': 'Nacionalidade brasileira; gozo dos direitos políticos; quitação com as obrigações militares e eleitorais.',
+  'pergunta_108_justificativa': 'Art. 8º, incisos I a IV',
+
+
+  'pergunta_109': 'Marque a alternativa correta sobre formas de provimento em cargo público:',
+  'pergunta_109_alternativa_1': 'Nomeação; readaptação; reversão; aproveitamento; reintegração; recondução.',
+  'pergunta_109_alternativa_2': 'Apenas nomeação e contratação temporária.',
+  'pergunta_109_alternativa_3': 'Somente concurso e remoção.',
+  'pergunta_109_alternativa_4': 'Exclusivamente nomeação e ascensão funcional.',
+  'pergunta_109_resposta_correta': 'Nomeação; readaptação; reversão; aproveitamento; reintegração; recondução.',
+  'pergunta_109_justificativa': 'Art. 11, I a VI',
+
+
+  'pergunta_110': 'A nomeação far-se-á:',
+  'pergunta_110_alternativa_1': 'Em caráter efetivo ou em comissão, conforme o caso.',
+  'pergunta_110_alternativa_2': 'Somente em caráter efetivo.',
+  'pergunta_110_alternativa_3': 'Apenas em comissão, vedada a efetividade.',
+  'pergunta_110_alternativa_4': 'Por eleição interna.',
+  'pergunta_110_resposta_correta': 'Em caráter efetivo ou em comissão, conforme o caso.',
+  'pergunta_110_justificativa': 'Art. 12, I e II',
+
+
+  'pergunta_111': 'Sobre o concurso público, assinale a correta:',
+  'pergunta_111_alternativa_1': 'O prazo de validade será de até dois (2) anos, prorrogável uma (1) vez, por igual período.',
+  'pergunta_111_alternativa_2': 'O prazo de validade será de cinco (5) anos, improrrogável.',
+  'pergunta_111_alternativa_3': 'Não há previsão de prorrogação.',
+  'pergunta_111_alternativa_4': 'Os títulos podem valer até metade dos pontos do concurso.',
+  'pergunta_111_resposta_correta': 'O prazo de validade será de até dois (2) anos, prorrogável uma (1) vez, por igual período.',
+  'pergunta_111_justificativa': 'Art. 15, III',
+
+
+  // --- Posse e Exercício ---
+  'pergunta_112': 'Posse é:',
+  'pergunta_112_alternativa_1': 'A aceitação expressa das atribuições, deveres e responsabilidades inerentes ao cargo público, formalizada com assinatura do termo.',
+  'pergunta_112_alternativa_2': 'O simples início do trabalho sem formalidades.',
+  'pergunta_112_alternativa_3': 'A publicação do edital do concurso.',
+  'pergunta_112_alternativa_4': 'A lotação em repartição diversa.',
+  'pergunta_112_resposta_correta': 'A aceitação expressa das atribuições, deveres e responsabilidades inerentes ao cargo público, formalizada com assinatura do termo.',
+  'pergunta_112_justificativa': 'Art. 17, caput',
+
+
+  'pergunta_113': 'O prazo para a posse é de:',
+  'pergunta_113_alternativa_1': 'Quinze (15) dias, prorrogáveis por mais quinze (15), a requerimento do interessado.',
+  'pergunta_113_alternativa_2': 'Dez (10) dias, improrrogáveis.',
+  'pergunta_113_alternativa_3': 'Trinta (30) dias, improrrogáveis.',
+  'pergunta_113_alternativa_4': 'Sete (7) dias, prorrogáveis por sete (7).',
+  'pergunta_113_resposta_correta': 'Quinze (15) dias, prorrogáveis por mais quinze (15), a requerimento do interessado.',
+  'pergunta_113_justificativa': 'Art. 17, § 1º',
+
+
+  'pergunta_114': 'Só haverá posse nos casos de provimento por:',
+  'pergunta_114_alternativa_1': 'Nomeação.',
+  'pergunta_114_alternativa_2': 'Readaptação.',
+  'pergunta_114_alternativa_3': 'Aproveitamento.',
+  'pergunta_114_alternativa_4': 'Reintegração.',
+  'pergunta_114_resposta_correta': 'Nomeação.',
+  'pergunta_114_justificativa': 'Art. 20, caput',
+
+
+  'pergunta_115': 'Exercício é:',
+  'pergunta_115_alternativa_1': 'O desempenho do cargo pelo servidor nele provido.',
+  'pergunta_115_alternativa_2': 'A designação para função gratificada.',
+  'pergunta_115_alternativa_3': 'A aprovação em concurso.',
+  'pergunta_115_alternativa_4': 'A avaliação do estágio probatório.',
+  'pergunta_115_resposta_correta': 'O desempenho do cargo pelo servidor nele provido.',
+  'pergunta_115_justificativa': 'Art. 21, caput',
+
+
+  'pergunta_116': 'O exercício no cargo terá início no prazo de quinze (15) dias contados:',
+  'pergunta_116_alternativa_1': 'Da data da posse ou da publicação do ato, conforme o caso.',
+  'pergunta_116_alternativa_2': 'Somente da data da posse.',
+  'pergunta_116_alternativa_3': 'Somente da data da publicação.',
+  'pergunta_116_alternativa_4': 'Da assinatura do contrato temporário.',
+  'pergunta_116_resposta_correta': 'Da data da posse ou da publicação do ato, conforme o caso.',
+  'pergunta_116_justificativa': 'Art. 22, I e II',
+
+
+  // --- Estabilidade, Estágio Probatório e Avaliação ---
+  'pergunta_117': 'São estáveis após três anos de efetivo exercício os servidores:',
+  'pergunta_117_alternativa_1': 'Nomeados para cargos de provimento efetivo em virtude de concurso público.',
+  'pergunta_117_alternativa_2': 'Em comissão há mais de 3 anos.',
+  'pergunta_117_alternativa_3': 'Temporários com mais de 2 anos.',
+  'pergunta_117_alternativa_4': 'Readaptados em qualquer cargo.',
+  'pergunta_117_resposta_correta': 'Nomeados para cargos de provimento efetivo em virtude de concurso público.',
+  'pergunta_117_justificativa': 'Art. 32, caput',
+
+
+  'pergunta_118': 'Para a aquisição da estabilidade é obrigatória:',
+  'pergunta_118_alternativa_1': 'Avaliação especial de desempenho, realizada no período de estágio probatório.',
+  'pergunta_118_alternativa_2': 'Apenas a contagem de tempo.',
+  'pergunta_118_alternativa_3': 'Um curso de formação sem avaliação.',
+  'pergunta_118_alternativa_4': 'A homologação pela Câmara, exclusivamente.',
+  'pergunta_118_resposta_correta': 'Avaliação especial de desempenho, realizada no período de estágio probatório.',
+  'pergunta_118_justificativa': 'Art. 32, § 1º',
+
+
+  'pergunta_119': 'O servidor estável só perderá o cargo:',
+  'pergunta_119_alternativa_1': 'Em virtude de sentença judicial transitada em julgado ou de decisão em processo administrativo disciplinar com contraditório e ampla defesa.',
+  'pergunta_119_alternativa_2': 'Por avaliação negativa sem defesa.',
+  'pergunta_119_alternativa_3': 'Por decisão do chefe imediato.',
+  'pergunta_119_alternativa_4': 'Por ato unilateral do órgão de pessoal.',
+  'pergunta_119_resposta_correta': 'Em virtude de sentença judicial transitada em julgado ou de decisão em processo administrativo disciplinar com contraditório e ampla defesa.',
+  'pergunta_119_justificativa': 'Art. 33',
+
+
+  'pergunta_120': 'O estágio probatório terá duração de:',
+  'pergunta_120_alternativa_1': 'Três (3) anos, com avaliação de fatores como assiduidade, pontualidade, disciplina, relacionamento interpessoal, responsabilidade, produtividade, dedicação ao serviço, eficiência e iniciativa.',
+  'pergunta_120_alternativa_2': 'Doze (12) meses, com avaliação apenas de assiduidade.',
+  'pergunta_120_alternativa_3': 'Seis (6) meses, sem avaliação formal.',
+  'pergunta_120_alternativa_4': 'Quatro (4) anos, com avaliação apenas de produtividade.',
+  'pergunta_120_resposta_correta': 'Três (3) anos, com avaliação de fatores como assiduidade, pontualidade, disciplina, relacionamento interpessoal, responsabilidade, produtividade, dedicação ao serviço, eficiência e iniciativa.',
+  'pergunta_120_justificativa': 'Art. 42, caput e incisos I a IX',
+
+
+  'pergunta_121': 'Para confirmação no cargo, o conceito final do estágio probatório deve ser:',
+  'pergunta_121_alternativa_1': 'Igual ou superior a dois terços do grau máximo, em cada um dos fatores de avaliação.',
+  'pergunta_121_alternativa_2': 'Apenas superior à média simples.',
+  'pergunta_121_alternativa_3': 'Igual a metade do grau máximo, no geral.',
+  'pergunta_121_alternativa_4': 'Livremente fixado pelo chefe imediato.',
+  'pergunta_121_resposta_correta': 'Igual ou superior a dois terços do grau máximo, em cada um dos fatores de avaliação.',
+  'pergunta_121_justificativa': 'Art. 45, § 1º',
+
+
+  'pergunta_122': 'O servidor não aprovado em estágio probatório será:',
+  'pergunta_122_alternativa_1': 'Exonerado ou reconduzido ao cargo anteriormente ocupado, se era estável.',
+  'pergunta_122_alternativa_2': 'Demissionado sem processo.',
+  'pergunta_122_alternativa_3': 'Mantido no cargo até novo concurso.',
+  'pergunta_122_alternativa_4': 'Automaticamente aposentado.',
+  'pergunta_122_resposta_correta': 'Exonerado ou reconduzido ao cargo anteriormente ocupado, se era estável.',
+  'pergunta_122_justificativa': 'Art. 45, § 3º',
+
+
+  // --- Readaptação, Reversão, Reintegração ---
+  'pergunta_123': 'Readaptação é:',
+  'pergunta_123_alternativa_1': 'A investidura do servidor em cargo de igual padrão, mais compatível com sua aptidão ou vocação.',
+  'pergunta_123_alternativa_2': 'A perda do cargo por sentença judicial.',
+  'pergunta_123_alternativa_3': 'A avaliação do estágio probatório.',
+  'pergunta_123_alternativa_4': 'A nomeação para cargo em comissão.',
+  'pergunta_123_resposta_correta': 'A investidura do servidor em cargo de igual padrão, mais compatível com sua aptidão ou vocação.',
+  'pergunta_123_justificativa': 'Art. 34, caput',
+
+
+  'pergunta_124': 'Sobre reversão, assinale a correta:',
+  'pergunta_124_alternativa_1': 'É o retorno do aposentado à atividade, verificado que não subsistem os motivos determinantes da aposentadoria, com prova de capacidade para o exercício do cargo.',
+  'pergunta_124_alternativa_2': 'É a volta do exonerado sem requisitos.',
+  'pergunta_124_alternativa_3': 'É a transformação de cargo em comissão em efetivo.',
+  'pergunta_124_alternativa_4': 'É a mudança de lotação sem formalidades.',
+  'pergunta_124_resposta_correta': 'É o retorno do aposentado à atividade, verificado que não subsistem os motivos determinantes da aposentadoria, com prova de capacidade para o exercício do cargo.',
+  'pergunta_124_justificativa': 'Art. 39, caput e § 2º',
+
+
+'pergunta_125': 'Reintegração é:',
+  'pergunta_125_alternativa_1': 'O reingresso no serviço público municipal de servidor demitido ou exonerado, com ressarcimento do prejuízo correspondente às vantagens ligadas ao cargo.',
+  'pergunta_125_alternativa_2': 'A confirmação no cargo após o estágio probatório.',
+  'pergunta_125_alternativa_3': 'A recondução por opção do servidor.',
+  'pergunta_125_alternativa_4': 'A promoção por merecimento.',
+  'pergunta_125_resposta_correta': 'O reingresso no serviço público municipal de servidor demitido ou exonerado, com ressarcimento do prejuízo correspondente às vantagens ligadas ao cargo.',
+
+
   //----------------------------------
-  'pergunta_117':'Qual é o prazo máximo de licença remunerada para tratamento de saúde de pessoa da família?',
-  'pergunta_117_alternativa_1':'30 dias.',
-  'pergunta_117_alternativa_2':'60 dias.',
-  'pergunta_117_alternativa_3':'90 dias.',
-  'pergunta_117_alternativa_4':'120 dias.',
-  'pergunta_117_resposta_correta':'90 dias.',
-  'pergunta_117_justificativa':'O art. 90 da LC 3.673/91 prevê licença de até 90 dias com vencimentos integrais, para cuidar de pessoa da família.',
+  'pergunta_126':'Acerca da reversão prevista no Estatuto dos Servidores de Caxias do Sul, assinale a alternativa correta:',
+  'pergunta_126_alternativa_1':'A reversão é o retorno do aposentado à atividade, verificado que não subsistem os motivos determinantes da aposentadoria e haja comprovação de capacidade para o exercício do cargo.',
+  'pergunta_126_alternativa_2':'A reversão é a reintegração de servidor exonerado ilegalmente, com pagamento retroativo.',
+  'pergunta_126_alternativa_3':'A reversão ocorre sempre por interesse exclusivo do servidor aposentado.',
+  'pergunta_126_alternativa_4':'A reversão somente é possível mediante aprovação em novo concurso público.',
+  'pergunta_126_resposta_correta':'A reversão é o retorno do aposentado à atividade, verificado que não subsistem os motivos determinantes da aposentadoria e haja comprovação de capacidade para o exercício do cargo.',
+  'pergunta_126_justificativa':'Art. 39, caput e §2º',
+
+
   //----------------------------------
-  'pergunta_118':'Durante a licença-gestante, a servidora faz jus a:',
-  'pergunta_118_alternativa_1':'90 dias de licença com remuneração integral.',
-  'pergunta_118_alternativa_2':'120 dias de licença com remuneração integral.',
-  'pergunta_118_alternativa_3':'150 dias de licença sem remuneração.',
-  'pergunta_118_alternativa_4':'60 dias de licença com vencimentos parciais.',
-  'pergunta_118_resposta_correta':'120 dias de licença com remuneração integral.',
-  'pergunta_118_justificativa':'Conforme o art. 95, a servidora tem direito a 120 dias de licença-maternidade, com vencimentos integrais.',
+  'pergunta_127':'De acordo com o Estatuto, a reintegração é definida como:',
+  'pergunta_127_alternativa_1':'O reingresso do servidor no serviço público após demissão ou exoneração, quando invalidado o ato, com ressarcimento de todas as vantagens.',
+  'pergunta_127_alternativa_2':'O retorno voluntário do servidor afastado por licença.',
+  'pergunta_127_alternativa_3':'A mudança de cargo por interesse da administração.',
+  'pergunta_127_alternativa_4':'A substituição temporária de servidor afastado.',
+  'pergunta_127_resposta_correta':'O reingresso do servidor no serviço público após demissão ou exoneração, quando invalidado o ato, com ressarcimento de todas as vantagens.',
+  'pergunta_127_justificativa':'Art. 40',
+
+
   //----------------------------------
-  'pergunta_119':'O servidor poderá faltar ao serviço sem prejuízo da remuneração:',
-  'pergunta_119_alternativa_1':'Por até 2 dias consecutivos por motivo de casamento.',
-  'pergunta_119_alternativa_2':'Por até 7 dias consecutivos por motivo de falecimento de cônjuge, pais, filhos ou irmãos.',
-  'pergunta_119_alternativa_3':'Por até 3 dias consecutivos por falecimento de tios e primos.',
-  'pergunta_119_alternativa_4':'Por até 10 dias consecutivos por casamento.',
-  'pergunta_119_resposta_correta':'Por até 7 dias consecutivos por motivo de falecimento de cônjuge, pais, filhos ou irmãos.',
-  'pergunta_119_justificativa':'O art. 102 assegura até 7 dias consecutivos de licença nesses casos, sem prejuízo dos vencimentos.',
+  'pergunta_128':'De acordo com o Estatuto dos Servidores, o aproveitamento ocorrerá quando:',
+  'pergunta_128_alternativa_1':'O servidor estiver em disponibilidade e houver cargo compatível com a sua situação funcional.',
+  'pergunta_128_alternativa_2':'O servidor desejar mudar de cargo por interesse pessoal.',
+  'pergunta_128_alternativa_3':'A administração extinguir cargo efetivo ocupado.',
+  'pergunta_128_alternativa_4':'O servidor for aprovado em novo concurso.',
+  'pergunta_128_resposta_correta':'O servidor estiver em disponibilidade e houver cargo compatível com a sua situação funcional.',
+  'pergunta_128_justificativa':'Art. 41',
+
+
   //----------------------------------
-  'pergunta_120':'O servidor público municipal tem o dever de:',
-  'pergunta_120_alternativa_1':'Atuar apenas sob ordens diretas do Prefeito.',
-  'pergunta_120_alternativa_2':'Cumprir ordens manifestamente ilegais.',
-  'pergunta_120_alternativa_3':'Exercer com zelo e dedicação as atribuições do cargo.',
-  'pergunta_120_alternativa_4':'Ignorar instruções de superiores hierárquicos.',
-  'pergunta_120_resposta_correta':'Exercer com zelo e dedicação as atribuições do cargo.',
-  'pergunta_120_justificativa':'Conforme o art. 113, o servidor deve exercer com zelo e dedicação as atribuições do cargo.',
+  'pergunta_129':'Nos termos do Estatuto, a recondução é o retorno do servidor ao cargo anteriormente ocupado em razão de:',
+  'pergunta_129_alternativa_1':'Inabilitação em estágio probatório relativo a outro cargo ou reintegração do anterior ocupante.',
+  'pergunta_129_alternativa_2':'Pedido pessoal do servidor estável.',
+  'pergunta_129_alternativa_3':'Transferência de ofício pela administração.',
+  'pergunta_129_alternativa_4':'Substituição temporária.',
+  'pergunta_129_resposta_correta':'Inabilitação em estágio probatório relativo a outro cargo ou reintegração do anterior ocupante.',
+  'pergunta_129_justificativa':'Art. 44',
+
+
   //----------------------------------
-  'pergunta_121':'É proibido ao servidor público municipal:',
-  'pergunta_121_alternativa_1':'Participar de concursos públicos.',
-  'pergunta_121_alternativa_2':'Aceitar representação de Estado estrangeiro sem autorização.',
-  'pergunta_121_alternativa_3':'Solicitar férias regulamentares.',
-  'pergunta_121_alternativa_4':'Usar crachá de identificação no trabalho.',
-  'pergunta_121_resposta_correta':'Aceitar representação de Estado estrangeiro sem autorização.',
-  'pergunta_121_justificativa':'O art. 115, inciso I, proíbe expressamente que o servidor aceite representação de Estado estrangeiro sem autorização.',
+  'pergunta_130':'Conforme o Estatuto, o servidor que não for aprovado no estágio probatório será:',
+  'pergunta_130_alternativa_1':'Exonerado ou, se estável, reconduzido ao cargo anteriormente ocupado.',
+  'pergunta_130_alternativa_2':'Aposentado proporcionalmente ao tempo de serviço.',
+  'pergunta_130_alternativa_3':'Mantido no cargo até nova avaliação.',
+  'pergunta_130_alternativa_4':'Substituído automaticamente por outro servidor.',
+  'pergunta_130_resposta_correta':'Exonerado ou, se estável, reconduzido ao cargo anteriormente ocupado.',
+  'pergunta_130_justificativa':'Art. 45, §3º',
+
+
   //----------------------------------
-  'pergunta_122':'O servidor responde civil, penal e administrativamente pelo exercício irregular de suas atribuições. Essa responsabilidade é:',
-  'pergunta_122_alternativa_1':'Dependente uma da outra.',
-  'pergunta_122_alternativa_2':'Independente entre si, podendo acumular-se.',
-  'pergunta_122_alternativa_3':'Apenas penal.',
-  'pergunta_122_alternativa_4':'Apenas administrativa.',
-  'pergunta_122_resposta_correta':'Independente entre si, podendo acumular-se.',
-  'pergunta_122_justificativa':'Conforme o art. 129, as sanções civis, penais e administrativas são independentes e podem acumular-se.',
+  'pergunta_131':'Segundo o Estatuto, a vacância do cargo público ocorrerá em razão de:',
+  'pergunta_131_alternativa_1':'Exoneração, demissão, promoção, readaptação, aposentadoria, posse em outro cargo inacumulável ou falecimento.',
+  'pergunta_131_alternativa_2':'Apenas exoneração e demissão.',
+  'pergunta_131_alternativa_3':'Promoção e transferência voluntária.',
+  'pergunta_131_alternativa_4':'Apenas aposentadoria.',
+  'pergunta_131_resposta_correta':'Exoneração, demissão, promoção, readaptação, aposentadoria, posse em outro cargo inacumulável ou falecimento.',
+  'pergunta_131_justificativa':'Art. 46',
+
+
   //----------------------------------
-  'pergunta_123':'A pena de advertência será aplicada:',
-  'pergunta_123_alternativa_1':'Verbalmente, por pequena falta funcional.',
-  'pergunta_123_alternativa_2':'Por escrito, quando a falta for leve e não justificar penalidade mais grave.',
-  'pergunta_123_alternativa_3':'Somente após sindicância.',
-  'pergunta_123_alternativa_4':'Apenas em caso de reincidência.',
-  'pergunta_123_resposta_correta':'Por escrito, quando a falta for leve e não justificar penalidade mais grave.',
-  'pergunta_123_justificativa':'O art. 139 define que a advertência é aplicada por escrito, em casos de pequenas faltas.',
+  'pergunta_132':'Conforme o Estatuto, a exoneração de cargo efetivo dar-se-á:',
+  'pergunta_132_alternativa_1':'A pedido do servidor ou de ofício, quando não satisfeitas as condições de estágio probatório.',
+  'pergunta_132_alternativa_2':'Somente a pedido do servidor.',
+  'pergunta_132_alternativa_3':'Apenas por decisão judicial.',
+  'pergunta_132_alternativa_4':'Por conveniência política.',
+  'pergunta_132_resposta_correta':'A pedido do servidor ou de ofício, quando não satisfeitas as condições de estágio probatório.',
+  'pergunta_132_justificativa':'Art. 47, I e II',
+
+
   //----------------------------------
-  'pergunta_124':'A pena de suspensão poderá ser convertida em multa:',
-  'pergunta_124_alternativa_1':'Quando o servidor solicitar.',
-  'pergunta_124_alternativa_2':'Quando houver conveniência para o serviço público.',
-  'pergunta_124_alternativa_3':'Mediante aprovação da Câmara Municipal.',
-  'pergunta_124_alternativa_4':'Em nenhuma hipótese.',
-  'pergunta_124_resposta_correta':'Quando houver conveniência para o serviço público.',
-  'pergunta_124_justificativa':'Conforme o art. 141, a suspensão poderá ser convertida em multa se houver conveniência para o serviço.',
+  'pergunta_133':'A demissão será aplicada como penalidade disciplinar nos casos de:',
+  'pergunta_133_alternativa_1':'Insubordinação grave, abandono de cargo, improbidade administrativa e ineficiência.',
+  'pergunta_133_alternativa_2':'Atraso ocasional e faltas justificadas.',
+  'pergunta_133_alternativa_3':'Desempenho mediano.',
+  'pergunta_133_alternativa_4':'Erro de cálculo não intencional.',
+  'pergunta_133_resposta_correta':'Insubordinação grave, abandono de cargo, improbidade administrativa e ineficiência.',
+  'pergunta_133_justificativa':'Art. 160, incisos IV, V, VI e VII',
+
+
   //----------------------------------
-  'pergunta_125':'A demissão será aplicada ao servidor que:',
-  'pergunta_125_alternativa_1':'For reincidente em faltas leves.',
-  'pergunta_125_alternativa_2':'Abandonar o cargo por mais de 30 dias consecutivos sem justificativa.',
-  'pergunta_125_alternativa_3':'Chegar atrasado mais de cinco vezes ao mês.',
-  'pergunta_125_alternativa_4':'Deixar de assinar o ponto uma vez.',
-  'pergunta_125_resposta_correta':'Abandonar o cargo por mais de 30 dias consecutivos sem justificativa.',
-  'pergunta_125_justificativa':'O art. 143 prevê a demissão em caso de abandono de cargo por mais de 30 dias consecutivos.',
+  'pergunta_134':'Sobre a acumulação de cargos, empregos e funções públicas, é correto afirmar:',
+  'pergunta_134_alternativa_1':'É vedada, salvo quando houver compatibilidade de horários e nas hipóteses constitucionais.',
+  'pergunta_134_alternativa_2':'É livre, desde que o servidor cumpra a carga horária total.',
+  'pergunta_134_alternativa_3':'É permitida apenas a acumulação de cargos em comissão.',
+  'pergunta_134_alternativa_4':'Depende de autorização legislativa específica.',
+  'pergunta_134_resposta_correta':'É vedada, salvo quando houver compatibilidade de horários e nas hipóteses constitucionais.',
+  'pergunta_134_justificativa':'Art. 51, caput',
+
+
   //----------------------------------
-  'pergunta_126':'O processo administrativo disciplinar deverá ser concluído no prazo máximo de:',
-  'pergunta_126_alternativa_1':'20 dias.',
-  'pergunta_126_alternativa_2':'30 dias.',
-  'pergunta_126_alternativa_3':'60 dias, prorrogáveis por igual período.',
-  'pergunta_126_alternativa_4':'90 dias, improrrogáveis.',
-  'pergunta_126_resposta_correta':'60 dias, prorrogáveis por igual período.',
-  'pergunta_126_justificativa':'O art. 155 estabelece o prazo de 60 dias para conclusão do processo, prorrogável por igual período.',
+  'pergunta_135':'Conforme o Estatuto, o servidor em exercício de cargo em comissão pode ser exonerado:',
+  'pergunta_135_alternativa_1':'A qualquer tempo, por conveniência da Administração.',
+  'pergunta_135_alternativa_2':'Apenas por motivo disciplinar.',
+  'pergunta_135_alternativa_3':'Somente mediante processo administrativo.',
+  'pergunta_135_alternativa_4':'Somente por decisão judicial.',
+  'pergunta_135_resposta_correta':'A qualquer tempo, por conveniência da Administração.',
+  'pergunta_135_justificativa':'Art. 50, §1º',
+
+
   //----------------------------------
-  'pergunta_127':'Durante o processo administrativo disciplinar, é assegurado ao acusado:',
-  'pergunta_127_alternativa_1':'Apenas o direito de ser ouvido uma vez.',
-  'pergunta_127_alternativa_2':'Ampla defesa e contraditório.',
-  'pergunta_127_alternativa_3':'Sigilo total do processo.',
-  'pergunta_127_alternativa_4':'Apenas acompanhamento do advogado do Município.',
-  'pergunta_127_resposta_correta':'Ampla defesa e contraditório.',
-  'pergunta_127_justificativa':'O art. 153 assegura ao acusado o direito à ampla defesa e ao contraditório.',
+  'pergunta_136':'Nos termos do Estatuto, o servidor perderá a remuneração do dia em que:',
+  'pergunta_136_alternativa_1':'Não comparecer ao serviço, salvo motivo legalmente justificado.',
+  'pergunta_136_alternativa_2':'Chegar com atraso inferior a 10 minutos.',
+  'pergunta_136_alternativa_3':'Estiver em licença prêmio.',
+  'pergunta_136_alternativa_4':'Estiver em missão oficial.',
+  'pergunta_136_resposta_correta':'Não comparecer ao serviço, salvo motivo legalmente justificado.',
+  'pergunta_136_justificativa':'Art. 61',
+
+
   //----------------------------------
-  'pergunta_128':'A revisão do processo disciplinar poderá ser requerida:',
-  'pergunta_128_alternativa_1':'A qualquer tempo, quando surgirem fatos novos.',
-  'pergunta_128_alternativa_2':'Somente até 5 anos após a decisão.',
-  'pergunta_128_alternativa_3':'Apenas pelo servidor punido.',
-  'pergunta_128_alternativa_4':'Somente com autorização do Prefeito.',
-  'pergunta_128_resposta_correta':'A qualquer tempo, quando surgirem fatos novos.',
-  'pergunta_128_justificativa':'O art. 166 permite a revisão do processo a qualquer tempo, quando houver fatos novos ou circunstâncias relevantes.',
+  'pergunta_137':'Conforme o Estatuto, o servidor somente poderá afastar-se do exercício mediante:',
+  'pergunta_137_alternativa_1':'Licença, afastamento ou dispensa previstos em lei.',
+  'pergunta_137_alternativa_2':'Autorização verbal do chefe imediato.',
+  'pergunta_137_alternativa_3':'Solicitação por e-mail.',
+  'pergunta_137_alternativa_4':'Interesse pessoal não comunicado.',
+  'pergunta_137_resposta_correta':'Licença, afastamento ou dispensa previstos em lei.',
+  'pergunta_137_justificativa':'Art. 60',
+
+
   //----------------------------------
-  'pergunta_129':'A sindicância tem por finalidade:',
-  'pergunta_129_alternativa_1':'Apenas punir o servidor.',
-  'pergunta_129_alternativa_2':'Apurar irregularidades leves ou preliminarmente verificar a existência de falta funcional.',
-  'pergunta_129_alternativa_3':'Substituir o processo disciplinar.',
-  'pergunta_129_alternativa_4':'Exonerar servidores estáveis.',
-  'pergunta_129_resposta_correta':'Apurar irregularidades leves ou preliminarmente verificar a existência de falta funcional.',
-  'pergunta_129_justificativa':'A sindicância tem caráter investigativo e visa apurar irregularidades antes da abertura de processo disciplinar.',
+  'pergunta_138':'O servidor poderá obter licença para tratar de interesses particulares:',
+  'pergunta_138_alternativa_1':'Sem remuneração, pelo prazo máximo de dois anos consecutivos.',
+  'pergunta_138_alternativa_2':'Com remuneração integral, por tempo indeterminado.',
+  'pergunta_138_alternativa_3':'Com vencimentos, por até seis meses.',
+  'pergunta_138_alternativa_4':'Sem vencimentos, limitada a 30 dias.',
+  'pergunta_138_resposta_correta':'Sem remuneração, pelo prazo máximo de dois anos consecutivos.',
+  'pergunta_138_justificativa':'Art. 88, caput',
+
+
   //----------------------------------
-  'pergunta_130':'O servidor estável poderá ser reconduzido ao cargo anterior quando:',
-  'pergunta_130_alternativa_1':'For exonerado a pedido.',
-  'pergunta_130_alternativa_2':'For inabilitado em estágio probatório de novo cargo.',
-  'pergunta_130_alternativa_3':'Sofrer penalidade de suspensão.',
-  'pergunta_130_alternativa_4':'For promovido.',
-  'pergunta_130_resposta_correta':'For inabilitado em estágio probatório de novo cargo.',
-  'pergunta_130_justificativa':'Art. 46: recondução ocorre quando o servidor é inabilitado no estágio probatório de outro cargo.',
+  'pergunta_139':'Nos termos do Estatuto, a licença para desempenho de mandato classista será concedida:',
+  'pergunta_139_alternativa_1':'Sem prejuízo da remuneração, durante o mandato.',
+  'pergunta_139_alternativa_2':'Com perda total de vencimentos.',
+  'pergunta_139_alternativa_3':'Somente após 10 anos de efetivo exercício.',
+  'pergunta_139_alternativa_4':'Com remuneração parcial.',
+  'pergunta_139_resposta_correta':'Sem prejuízo da remuneração, durante o mandato.',
+  'pergunta_139_justificativa':'Art. 92',
+
+
   //----------------------------------
-  'pergunta_131':'O servidor tem direito a férias anuais remuneradas com adicional de:',
-  'pergunta_131_alternativa_1':'10% sobre o vencimento.',
-  'pergunta_131_alternativa_2':'Um terço a mais do valor do cargo.',
-  'pergunta_131_alternativa_3':'Metade do vencimento.',
-  'pergunta_131_alternativa_4':'Sem adicional.',
-  'pergunta_131_resposta_correta':'Um terço a mais do valor do cargo.',
-  'pergunta_131_justificativa':'O art. 83 assegura férias anuais com adicional de 1/3 do vencimento.',
+  'pergunta_140':'Segundo o Estatuto, o servidor poderá gozar licença para tratamento de saúde:',
+  'pergunta_140_alternativa_1':'Mediante inspeção médica oficial e com percepção de vencimentos.',
+  'pergunta_140_alternativa_2':'Independentemente de perícia médica.',
+  'pergunta_140_alternativa_3':'Apenas com atestado particular.',
+  'pergunta_140_alternativa_4':'Com vencimentos reduzidos à metade.',
+  'pergunta_140_resposta_correta':'Mediante inspeção médica oficial e com percepção de vencimentos.',
+  'pergunta_140_justificativa':'Art. 77',
+
+
   //----------------------------------
-  'pergunta_132':'O servidor poderá acumular cargos públicos apenas quando:',
-  'pergunta_132_alternativa_1':'Ambos forem de nível médio.',
-  'pergunta_132_alternativa_2':'Houver compatibilidade de horários e previsão legal.',
-  'pergunta_132_alternativa_3':'For autorizado pelo Prefeito.',
-  'pergunta_132_alternativa_4':'Um dos cargos for em comissão.',
-  'pergunta_132_resposta_correta':'Houver compatibilidade de horários e previsão legal.',
-  'pergunta_132_justificativa':'Art. 78: é permitida a acumulação nas hipóteses constitucionais, com compatibilidade de horários.',
+  'pergunta_141':'De acordo com o Estatuto, a licença à gestante será concedida:',
+  'pergunta_141_alternativa_1':'Sem prejuízo do cargo e da remuneração, com duração de 120 dias.',
+  'pergunta_141_alternativa_2':'Com perda parcial da remuneração.',
+  'pergunta_141_alternativa_3':'Apenas 60 dias, sem vencimentos.',
+  'pergunta_141_alternativa_4':'Somente a servidoras concursadas há mais de 10 anos.',
+  'pergunta_141_resposta_correta':'Sem prejuízo do cargo e da remuneração, com duração de 120 dias.',
+  'pergunta_141_justificativa':'Art. 81',
+
+
   //----------------------------------
-  'pergunta_133':'O tempo de serviço público prestado ao Município será contado para:',
-  'pergunta_133_alternativa_1':'Somente para aposentadoria.',
-  'pergunta_133_alternativa_2':'Todos os efeitos legais, salvo disposição em contrário.',
-  'pergunta_133_alternativa_3':'Apenas para promoção.',
-  'pergunta_133_alternativa_4':'Somente para férias e licença-prêmio.',
-  'pergunta_133_resposta_correta':'Todos os efeitos legais, salvo disposição em contrário.',
-  'pergunta_133_justificativa':'O art. 81 dispõe que o tempo de serviço público é contado para todos os efeitos legais.',
+  'pergunta_142':'Conforme o Estatuto, o servidor fará jus a férias anuais remuneradas:',
+  'pergunta_142_alternativa_1':'Com acréscimo de um terço da remuneração.',
+  'pergunta_142_alternativa_2':'Sem qualquer acréscimo.',
+  'pergunta_142_alternativa_3':'Com metade da remuneração.',
+  'pergunta_142_alternativa_4':'Com vencimentos reduzidos.',
+  'pergunta_142_resposta_correta':'Com acréscimo de um terço da remuneração.',
+  'pergunta_142_justificativa':'Art. 100, §2º',
+
+
   //----------------------------------
-  'pergunta_134':'Qual é o prazo para o servidor entrar em exercício após a posse?',
-  'pergunta_134_alternativa_1':'5 dias.',
-  'pergunta_134_alternativa_2':'10 dias.',
-  'pergunta_134_alternativa_3':'15 dias.',
-  'pergunta_134_alternativa_4':'20 dias.',
-  'pergunta_134_resposta_correta':'10 dias.',
-  'pergunta_134_justificativa':'Conforme o art. 20, o servidor deve entrar em exercício no prazo de até 10 dias após a posse.',
+  'pergunta_143':'De acordo com o Estatuto, o servidor em férias poderá interrompê-las:',
+  'pergunta_143_alternativa_1':'Por necessidade do serviço e a pedido, devidamente autorizado.',
+  'pergunta_143_alternativa_2':'Somente por decisão judicial.',
+  'pergunta_143_alternativa_3':'A qualquer tempo, por iniciativa própria.',
+  'pergunta_143_alternativa_4':'Por motivo particular, sem autorização.',
+  'pergunta_143_resposta_correta':'Por necessidade do serviço e a pedido, devidamente autorizado.',
+  'pergunta_143_justificativa':'Art. 101',
+
+
   //----------------------------------
-  'pergunta_135':'O servidor poderá ser removido:',
-  'pergunta_135_alternativa_1':'Apenas a pedido.',
-  'pergunta_135_alternativa_2':'De ofício ou a pedido, conforme o interesse do serviço.',
-  'pergunta_135_alternativa_3':'Somente com autorização do Prefeito.',
-  'pergunta_135_alternativa_4':'Apenas para outro município.',
-  'pergunta_135_resposta_correta':'De ofício ou a pedido, conforme o interesse do serviço.',
-  'pergunta_135_justificativa':'O art. 50 define que a remoção pode ocorrer de ofício ou a pedido, de acordo com a conveniência administrativa.',
+  'pergunta_144':'A contagem de tempo de serviço compreenderá, dentre outros, o período de:',
+  'pergunta_144_alternativa_1':'Exercício, férias, licenças e afastamentos considerados de efetivo exercício.',
+  'pergunta_144_alternativa_2':'Apenas tempo efetivamente trabalhado.',
+  'pergunta_144_alternativa_3':'Somente o tempo de cargo efetivo.',
+  'pergunta_144_alternativa_4':'Período de estágio probatório e nada mais.',
+  'pergunta_144_resposta_correta':'Exercício, férias, licenças e afastamentos considerados de efetivo exercício.',
+  'pergunta_144_justificativa':'Art. 113',
+
+
   //----------------------------------
-  'pergunta_136':'O servidor poderá obter licença para tratar de interesses particulares:',
-  'pergunta_136_alternativa_1':'Por até 90 dias, com vencimento.',
-  'pergunta_136_alternativa_2':'Por até 2 anos, sem remuneração.',
-  'pergunta_136_alternativa_3':'Por prazo indeterminado, com vencimento.',
-  'pergunta_136_alternativa_4':'Apenas durante férias coletivas.',
-  'pergunta_136_resposta_correta':'Por até 2 anos, sem remuneração.',
-  'pergunta_136_justificativa':'O art. 99 prevê licença de até dois anos, sem vencimentos, para tratar de assuntos particulares.',
+  'pergunta_145':'O tempo de serviço público federal, estadual ou municipal será:',
+  'pergunta_145_alternativa_1':'Computado para todos os efeitos legais, quando houver reciprocidade legal.',
+  'pergunta_145_alternativa_2':'Desconsiderado totalmente.',
+  'pergunta_145_alternativa_3':'Contado apenas para aposentadoria.',
+  'pergunta_145_alternativa_4':'Computado apenas se prestado em cargo comissionado.',
+  'pergunta_145_resposta_correta':'Computado para todos os efeitos legais, quando houver reciprocidade legal.',
+  'pergunta_145_justificativa':'Art. 115',
+
+
   //----------------------------------
-  'pergunta_137':'Qual é a penalidade aplicável ao servidor que praticar usura?',
-  'pergunta_137_alternativa_1':'Advertência.',
-  'pergunta_137_alternativa_2':'Suspensão.',
-  'pergunta_137_alternativa_3':'Demissão.',
-  'pergunta_137_alternativa_4':'Multa.',
-  'pergunta_137_resposta_correta':'Demissão.',
-  'pergunta_137_justificativa':'O art. 115, III, proíbe a prática de usura, sendo punida com demissão em caso de comprovação.',
+  'pergunta_146':'O servidor que acumular cargos indevidamente estará sujeito a:',
+  'pergunta_146_alternativa_1':'Demissão de todos, exceto do de menor remuneração.',
+  'pergunta_146_alternativa_2':'Advertência apenas.',
+  'pergunta_146_alternativa_3':'Suspensão de 30 dias.',
+  'pergunta_146_alternativa_4':'Multa correspondente a 50% dos vencimentos.',
+  'pergunta_146_resposta_correta':'Demissão de todos, exceto do de menor remuneração.',
+  'pergunta_146_justificativa':'Art. 52, §3º',
+
+
   //----------------------------------
-  'pergunta_138':'É direito do servidor público municipal:',
-  'pergunta_138_alternativa_1':'Receber vencimento inferior ao salário mínimo.',
-  'pergunta_138_alternativa_2':'Perceber vencimento fixado em lei, nunca inferior ao salário mínimo.',
-  'pergunta_138_alternativa_3':'Apenas salário base, sem adicionais.',
-  'pergunta_138_alternativa_4':'Somente gratificações.',
-  'pergunta_138_resposta_correta':'Perceber vencimento fixado em lei, nunca inferior ao salário mínimo.',
-  'pergunta_138_justificativa':'O art. 76 garante vencimento nunca inferior ao salário mínimo.',
+  'pergunta_147':'De acordo com o Estatuto, constitui dever do servidor:',
+  'pergunta_147_alternativa_1':'Cumprir as ordens superiores, exceto quando manifestamente ilegais.',
+  'pergunta_147_alternativa_2':'Cumprir ordens superiores, ainda que ilegais.',
+  'pergunta_147_alternativa_3':'Apenas as ordens que desejar.',
+  'pergunta_147_alternativa_4':'Negar-se a cumprir ordens verbais.',
+  'pergunta_147_resposta_correta':'Cumprir as ordens superiores, exceto quando manifestamente ilegais.',
+  'pergunta_147_justificativa':'Art. 156, VIII',
+
+
   //----------------------------------
-  'pergunta_139':'O servidor que sofrer acidente em serviço terá direito a:',
-  'pergunta_139_alternativa_1':'Licença especial com vencimentos integrais.',
-  'pergunta_139_alternativa_2':'Licença sem vencimentos.',
-  'pergunta_139_alternativa_3':'Apenas auxílio-doença.',
-  'pergunta_139_alternativa_4':'Suspensão do contrato.',
-  'pergunta_139_resposta_correta':'Licença especial com vencimentos integrais.',
-  'pergunta_139_justificativa':'O art. 97 prevê licença especial com vencimentos integrais em caso de acidente em serviço.',
+  'pergunta_148':'Conforme o Estatuto, é proibido ao servidor público municipal:',
+  'pergunta_148_alternativa_1':'Retirar, sem prévia autorização, qualquer documento ou bem da repartição.',
+  'pergunta_148_alternativa_2':'Opinar sobre assuntos administrativos.',
+  'pergunta_148_alternativa_3':'Solicitar licença para tratamento de saúde.',
+  'pergunta_148_alternativa_4':'Fazer críticas construtivas ao serviço.',
+  'pergunta_148_resposta_correta':'Retirar, sem prévia autorização, qualquer documento ou bem da repartição.',
+  'pergunta_148_justificativa':'Art. 157, II',
+
+
   //----------------------------------
-  'pergunta_140':'Qual é o efeito da absolvição criminal sobre a responsabilidade administrativa do servidor?',
-  'pergunta_140_alternativa_1':'Afasta toda responsabilidade administrativa.',
-  'pergunta_140_alternativa_2':'Afasta apenas quando negar a existência do fato ou sua autoria.',
-  'pergunta_140_alternativa_3':'Não produz qualquer efeito.',
-  'pergunta_140_alternativa_4':'Depende de autorização judicial.',
-  'pergunta_140_resposta_correta':'Afasta apenas quando negar a existência do fato ou sua autoria.',
-  'pergunta_140_justificativa':'Conforme o art. 130, a absolvição criminal afasta a responsabilidade administrativa somente quando negar o fato ou autoria.',
+  'pergunta_149':'Nos termos do Estatuto, a penalidade de advertência será aplicada:',
+  'pergunta_149_alternativa_1':'Por escrito, nos casos de negligência leve.',
+  'pergunta_149_alternativa_2':'Verbalmente, sem registro.',
+  'pergunta_149_alternativa_3':'Somente por reincidência grave.',
+  'pergunta_149_alternativa_4':'Com suspensão automática.',
+  'pergunta_149_resposta_correta':'Por escrito, nos casos de negligência leve.',
+  'pergunta_149_justificativa':'Art. 158, I',
   //----------------------------------
-  'pergunta_141':'Qual o prazo máximo de afastamento por suspensão?',
-  'pergunta_141_alternativa_1':'15 dias.',
-  'pergunta_141_alternativa_2':'30 dias.',
-  'pergunta_141_alternativa_3':'60 dias.',
-  'pergunta_141_alternativa_4':'90 dias.',
-  'pergunta_141_resposta_correta':'60 dias.',
-  'pergunta_141_justificativa':'O art. 141 estabelece que a suspensão não pode exceder 60 dias consecutivos.',
+  'pergunta_150':'De acordo com o Estatuto dos Servidores Públicos do Município de Caxias do Sul, a penalidade de suspensão não poderá exceder:',
+  'pergunta_150_alternativa_1':'Sessenta (60) dias consecutivos, perdendo o servidor todos os direitos e vantagens decorrentes do exercício do cargo.',
+  'pergunta_150_alternativa_2':'Trinta (30) dias consecutivos, sem perda de vencimentos.',
+  'pergunta_150_alternativa_3':'Noventa (90) dias, podendo ser prorrogada a critério da chefia.',
+  'pergunta_150_alternativa_4':'Cinquenta (50) dias, com redução de vencimentos à metade.',
+  'pergunta_150_resposta_correta':'Sessenta (60) dias consecutivos, perdendo o servidor todos os direitos e vantagens decorrentes do exercício do cargo.',
+  'pergunta_150_justificativa':'Art. 255, caput, Lei Complementar nº 3.673/1991',
+
+
+  'pergunta_151':'Segundo a LC 241, a previdência social dos servidores efetivos tem por finalidade:',
+  'pergunta_151_alternativa_1':'Assegurar o pagamento dos proventos de aposentadoria e de pensão, observados os requisitos legais.',
+  'pergunta_151_alternativa_2':'Garantir apenas auxílio-doença e salário-família aos servidores efetivos.',
+  'pergunta_151_alternativa_3':'Assegurar exclusivamente aposentadoria por idade aos servidores efetivos.',
+  'pergunta_151_alternativa_4':'Conceder benefícios por convênios com outros entes, em substituição ao regime próprio.',
+  'pergunta_151_resposta_correta':'Assegurar o pagamento dos proventos de aposentadoria e de pensão, observados os requisitos legais.',
+  'pergunta_151_justificativa':'Art. 2º',
+
+
   //----------------------------------
-  'pergunta_142':'Quem pode determinar a instauração de sindicância?',
-  'pergunta_142_alternativa_1':'Somente o Prefeito.',
-  'pergunta_142_alternativa_2':'A autoridade que tiver conhecimento da irregularidade.',
-  'pergunta_142_alternativa_3':'Apenas o chefe imediato do servidor.',
-  'pergunta_142_alternativa_4':'A Câmara de Vereadores.',
-  'pergunta_142_resposta_correta':'A autoridade que tiver conhecimento da irregularidade.',
-  'pergunta_142_justificativa':'O art. 150 determina que a autoridade que tomar conhecimento de irregularidade deve promover imediata apuração.',
+  'pergunta_152':'Sobre o financiamento do regime próprio estabelecido na LC 241, assinale a correta:',
+  'pergunta_152_alternativa_1':'É custeado por recursos do Município e por contribuições dos servidores ativos, inativos e pensionistas vinculados a cargos efetivos.',
+  'pergunta_152_alternativa_2':'É custeado exclusivamente por transferências da União.',
+  'pergunta_152_alternativa_3':'É custeado apenas pelas contribuições dos servidores ativos.',
+  'pergunta_152_alternativa_4':'Dispensa contribuições, sendo mantido por taxas municipais específicas.',
+  'pergunta_152_resposta_correta':'É custeado por recursos do Município e por contribuições dos servidores ativos, inativos e pensionistas vinculados a cargos efetivos.',
+  'pergunta_152_justificativa':'Art. 1º, II',
+
+
   //----------------------------------
-  'pergunta_143':'O servidor poderá requerer revisão de processo disciplinar por meio de:',
-  'pergunta_143_alternativa_1':'Pedido escrito fundamentado, dirigido à autoridade competente.',
-  'pergunta_143_alternativa_2':'Comunicação verbal ao chefe imediato.',
-  'pergunta_143_alternativa_3':'Representação sindical.',
-  'pergunta_143_alternativa_4':'Decisão judicial sumária.',
-  'pergunta_143_resposta_correta':'Pedido escrito fundamentado, dirigido à autoridade competente.',
-  'pergunta_143_justificativa':'A revisão depende de requerimento formal e fundamentado, conforme art. 166.',
+  'pergunta_153':'É vedado ao regime próprio previsto na LC 241:',
+  'pergunta_153_alternativa_1':'Pagar benefícios mediante convênios ou consórcios com Estados e Municípios.',
+  'pergunta_153_alternativa_2':'Manter registro contábil individualizado das contribuições.',
+  'pergunta_153_alternativa_3':'Garantir acesso dos segurados às informações relativas à gestão.',
+  'pergunta_153_alternativa_4':'Submeter-se a inspeções e auditorias dos órgãos de controle.',
+  'pergunta_153_resposta_correta':'Pagar benefícios mediante convênios ou consórcios com Estados e Municípios.',
+  'pergunta_153_justificativa':'Art. 1º, III',
+
+
   //----------------------------------
-  'pergunta_144':'É vedado ao servidor público municipal:',
-  'pergunta_144_alternativa_1':'Cometer a estranhos encargos que lhe competirem.',
-  'pergunta_144_alternativa_2':'Cumprir ordens de superiores hierárquicos.',
-  'pergunta_144_alternativa_3':'Atuar com eficiência no serviço.',
-  'pergunta_144_alternativa_4':'Usar uniforme funcional.',
-  'pergunta_144_resposta_correta':'Cometer a estranhos encargos que lhe competirem.',
-  'pergunta_144_justificativa':'O art. 115, I, proíbe ao servidor cometer a pessoas estranhas à repartição encargos que lhe competirem.',
+  'pergunta_154':'As contribuições do empregador e do pessoal ativo, inativo e pensionistas vinculados ao regime:',
+  'pergunta_154_alternativa_1':'Destinam-se ao pagamento de aposentadorias e pensões, podendo cobrir despesas administrativas até o limite legal.',
+  'pergunta_154_alternativa_2':'Podem custear quaisquer despesas de pessoal do Município.',
+  'pergunta_154_alternativa_3':'Podem financiar obras públicas.',
+  'pergunta_154_alternativa_4':'Podem ser livremente utilizadas para assistência à saúde.',
+  'pergunta_154_resposta_correta':'Destinam-se ao pagamento de aposentadorias e pensões, podendo cobrir despesas administrativas até o limite legal.',
+  'pergunta_154_justificativa':'Art. 2º, §1º',
+
+
   //----------------------------------
-  'pergunta_145':'O servidor poderá ser aposentado:',
-  'pergunta_145_alternativa_1':'Por invalidez permanente.',
-  'pergunta_145_alternativa_2':'A pedido, por tempo de contribuição.',
-  'pergunta_145_alternativa_3':'Compulsoriamente aos 75 anos.',
-  'pergunta_145_alternativa_4':'Todas as alternativas estão corretas.',
-  'pergunta_145_resposta_correta':'Todas as alternativas estão corretas.',
-  'pergunta_145_justificativa':'A LC 3.673/91 prevê as hipóteses de aposentadoria: por invalidez, por tempo de contribuição e compulsória aos 75 anos.',
+  'pergunta_155':'Salário-de-contribuição compreende a remuneração do mês e a gratificação natalina, excluídas, entre outras, as parcelas:',
+  'pergunta_155_alternativa_1':'Ajuda de custo e diárias; salário-família; adicional de 1/3 de férias; função gratificada ou cargo em comissão.',
+  'pergunta_155_alternativa_2':'Vencimento básico; gratificação natalina.',
+  'pergunta_155_alternativa_3':'Horas extras e vencimento básico.',
+  'pergunta_155_alternativa_4':'Adicional de tempo de serviço e vencimento básico.',
+  'pergunta_155_resposta_correta':'Ajuda de custo e diárias; salário-família; adicional de 1/3 de férias; função gratificada ou cargo em comissão.',
+  'pergunta_155_justificativa':'Art. 4º, VII',
+
+
   //----------------------------------
-  'pergunta_146':'É dever do servidor público:',
-  'pergunta_146_alternativa_1':'Cumprir as ordens legais de seus superiores hierárquicos.',
-  'pergunta_146_alternativa_2':'Agir conforme seu interesse particular.',
-  'pergunta_146_alternativa_3':'Omitir-se em caso de irregularidades.',
-  'pergunta_146_alternativa_4':'Recusar ordens legais.',
-  'pergunta_146_resposta_correta':'Cumprir as ordens legais de seus superiores hierárquicos.',
-  'pergunta_146_justificativa':'Conforme o art. 113, é dever do servidor cumprir ordens legais de superiores.',
+  'pergunta_156':'As exclusões do inciso VII do art. 4º não se aplicam ao servidor que:',
+  'pergunta_156_alternativa_1':'Tenha incorporado ou preenchido os requisitos à incorporação das parcelas até a entrada em vigor da EC 103/2019, nos termos da lei.',
+  'pergunta_156_alternativa_2':'Esteja em licença sem remuneração.',
+  'pergunta_156_alternativa_3':'Exerça exclusivamente cargo em comissão.',
+  'pergunta_156_alternativa_4':'Seja temporário vinculado ao RGPS.',
+  'pergunta_156_resposta_correta':'Tenha incorporado ou preenchido os requisitos à incorporação das parcelas até a entrada em vigor da EC 103/2019, nos termos da lei.',
+  'pergunta_156_justificativa':'Art. 4º-A',
+
+
   //----------------------------------
-  'pergunta_147':'A licença para desempenho de mandato classista poderá ser concedida:',
-  'pergunta_147_alternativa_1':'Por até 2 anos, sem remuneração.',
-  'pergunta_147_alternativa_2':'Com remuneração, enquanto durar o mandato.',
-  'pergunta_147_alternativa_3':'Por até 4 anos, com vencimentos.',
-  'pergunta_147_alternativa_4':'Apenas aos dirigentes de entidades religiosas.',
-  'pergunta_147_resposta_correta':'Com remuneração, enquanto durar o mandato.',
-  'pergunta_147_justificativa':'A LC 3.673/91 prevê licença com vencimentos para exercício de mandato classista.',
+  'pergunta_157':'A opção de incluir parcelas remuneratórias temporárias no salário de contribuição é:',
+  'pergunta_157_alternativa_1':'Em caráter irretratável, com efeitos financeiros definidos em lei.',
+  'pergunta_157_alternativa_2':'Retratável a cada 12 meses.',
+  'pergunta_157_alternativa_3':'Válida apenas para uma parcela escolhida.',
+  'pergunta_157_alternativa_4':'Sem eficácia sobre parcelas futuras.',
+  'pergunta_157_resposta_correta':'Em caráter irretratável, com efeitos financeiros definidos em lei.',
+  'pergunta_157_justificativa':'Art. 4º-B',
+
+
   //----------------------------------
-  'pergunta_148':'O servidor público que causar dano à Administração deverá:',
-  'pergunta_148_alternativa_1':'Responder civil, penal e administrativamente.',
-  'pergunta_148_alternativa_2':'Apenas ser advertido.',
-  'pergunta_148_alternativa_3':'Restituir o dano, mas sem responsabilidade penal.',
-  'pergunta_148_alternativa_4':'Ficar isento de penalidade se for servidor estável.',
-  'pergunta_148_resposta_correta':'Responder civil, penal e administrativamente.',
-  'pergunta_148_justificativa':'Conforme o art. 129, o servidor responde por dano causado à Administração em todas essas esferas.',
+  'pergunta_158':'São segurados obrigatórios do regime próprio municipal:',
+  'pergunta_158_alternativa_1':'Servidores ocupantes de cargo efetivo, ativos, inativos e pensionistas, dos órgãos da administração direta, autárquica e fundacional e da Câmara de Vereadores.',
+  'pergunta_158_alternativa_2':'Apenas servidores em comissão.',
+  'pergunta_158_alternativa_3':'Somente servidores efetivos do Executivo, excluídos os do Legislativo.',
+  'pergunta_158_alternativa_4':'Apenas aposentados do RGPS.',
+  'pergunta_158_resposta_correta':'Servidores ocupantes de cargo efetivo, ativos, inativos e pensionistas, dos órgãos da administração direta, autárquica e fundacional e da Câmara de Vereadores.',
+  'pergunta_158_justificativa':'Art. 6º',
+
+
   //----------------------------------
-  'pergunta_149':'A cassação de aposentadoria será aplicada quando:',
-  'pergunta_149_alternativa_1':'O servidor praticar falta grave antes da aposentadoria.',
-  'pergunta_149_alternativa_2':'O servidor acumular licenças.',
-  'pergunta_149_alternativa_3':'Aposentadoria for indevida por erro administrativo.',
-  'pergunta_149_alternativa_4':'Em caso de promoção indevida.',
-  'pergunta_149_resposta_correta':'O servidor praticar falta grave antes da aposentadoria.',
-  'pergunta_149_justificativa':'O art. 144 prevê cassação da aposentadoria se o servidor cometeu falta grave no exercício do cargo.',
+  'pergunta_159':'Servidores em licença sem remuneração ou colocados à disposição sem ônus para o Município:',
+  'pergunta_159_alternativa_1':'Podem permanecer vinculados ao regime, recolhendo integralmente as contribuições do segurado e patronal por conta própria.',
+  'pergunta_159_alternativa_2':'Devem ser desligados do regime.',
+  'pergunta_159_alternativa_3':'Permanecem vinculados sem recolhimento.',
+  'pergunta_159_alternativa_4':'Ficam automaticamente vinculados ao RGPS.',
+  'pergunta_159_resposta_correta':'Podem permanecer vinculados ao regime, recolhendo integralmente as contribuições do segurado e patronal por conta própria.',
+  'pergunta_159_justificativa':'Art. 7º',
+
+
   //----------------------------------
-  'pergunta_150':'De acordo com a LC 3.673/91, o servidor será demitido se:',
-  'pergunta_150_alternativa_1':'Cometer insubordinação grave ou reiterada.',
-  'pergunta_150_alternativa_2':'Cometer ofensa física em serviço.',
-  'pergunta_150_alternativa_3':'Abandonar o cargo por mais de 30 dias.',
-  'pergunta_150_alternativa_4':'Todas as alternativas estão corretas.',
-  'pergunta_150_resposta_correta':'Todas as alternativas estão corretas.',
-  'pergunta_150_justificativa':'O art. 143 lista todas essas hipóteses como passíveis de demissão.',
+  'pergunta_160':'Quem ocupa exclusivamente cargo em comissão, emprego público ou contrato temporário:',
+  'pergunta_160_alternativa_1':'Vincula-se ao RGPS, segundo suas leis e regulamentos.',
+  'pergunta_160_alternativa_2':'É segurado obrigatório do regime próprio municipal.',
+  'pergunta_160_alternativa_3':'Pode escolher livremente o regime.',
+  'pergunta_160_alternativa_4':'Vincula-se a regime próprio estadual.',
+  'pergunta_160_resposta_correta':'Vincula-se ao RGPS, segundo suas leis e regulamentos.',
+  'pergunta_160_justificativa':'Art. 2º, §2º',
+
+
   //----------------------------------
+  'pergunta_161':'Para cálculo de proventos pela média, consideram-se as maiores remunerações correspondentes a:',
+  'pergunta_161_alternativa_1':'80% de todo o período contributivo desde 07/1994, ou desde o início da contribuição se posterior.',
+  'pergunta_161_alternativa_2':'100% de todo o período contributivo desde 07/1991.',
+  'pergunta_161_alternativa_3':'60% das menores remunerações desde 07/1994.',
+  'pergunta_161_alternativa_4':'Apenas as últimas 36 remunerações.',
+  'pergunta_161_resposta_correta':'80% de todo o período contributivo desde 07/1994, ou desde o início da contribuição se posterior.',
+  'pergunta_161_justificativa':'Art. 3º, caput',
+
+
+  //----------------------------------
+  'pergunta_162':'Por ocasião da concessão, os proventos calculados pela média:',
+  'pergunta_162_alternativa_1':'Não podem ser inferiores ao salário-mínimo nem exceder a remuneração do cargo efetivo.',
+  'pergunta_162_alternativa_2':'Podem ser inferiores ao salário-mínimo.',
+  'pergunta_162_alternativa_3':'Podem exceder a remuneração do cargo, se houver vantagens pessoais.',
+  'pergunta_162_alternativa_4':'Devem ser iguais à última remuneração.',
+  'pergunta_162_resposta_correta':'Não podem ser inferiores ao salário-mínimo nem exceder a remuneração do cargo efetivo.',
+  'pergunta_162_justificativa':'Art. 3º, §5º',
+
+
+  //----------------------------------
+  'pergunta_163':'Quanto ao rol de benefícios assegurados pelo regime, a LC 241 dispõe que, ao segurado, são devidos:',
+  'pergunta_163_alternativa_1':'Aposentadoria por incapacidade, aposentadoria voluntária, aposentadoria compulsória, aposentadoria especial e gratificação natalina.',
+  'pergunta_163_alternativa_2':'Apenas aposentadoria por idade.',
+  'pergunta_163_alternativa_3':'Salário-família e salário-maternidade.',
+  'pergunta_163_alternativa_4':'Auxílio-reclusão e auxílio-natalidade.',
+  'pergunta_163_resposta_correta':'Aposentadoria por incapacidade, aposentadoria voluntária, aposentadoria compulsória, aposentadoria especial e gratificação natalina.',
+  'pergunta_163_justificativa':'Art. 14, I',
+
+
+  //----------------------------------
+  'pergunta_164':'Para os dependentes, o benefício previsto na LC 241 é:',
+  'pergunta_164_alternativa_1':'Pensão por morte do segurado.',
+  'pergunta_164_alternativa_2':'Salário-família.',
+  'pergunta_164_alternativa_3':'Auxílio-natalidade.',
+  'pergunta_164_alternativa_4':'Auxílio-doença.',
+  'pergunta_164_resposta_correta':'Pensão por morte do segurado.',
+  'pergunta_164_justificativa':'Art. 14, II',
+
+
+  //----------------------------------
+  'pergunta_165':'A aposentadoria por incapacidade será sempre precedida de:',
+  'pergunta_165_alternativa_1':'Licença para tratamento de saúde de, no mínimo, 24 meses.',
+  'pergunta_165_alternativa_2':'Licença prêmio de 12 meses.',
+  'pergunta_165_alternativa_3':'Licença interesse particular de 24 meses.',
+  'pergunta_165_alternativa_4':'Readaptação de 6 meses.',
+  'pergunta_165_resposta_correta':'Licença para tratamento de saúde de, no mínimo, 24 meses.',
+  'pergunta_165_justificativa':'Art. 20, §1º',
+
+
+  //----------------------------------
+  'pergunta_166':'É vedada a concessão de aposentadoria por incapacidade sem:',
+  'pergunta_166_alternativa_1':'Prévia confirmação em perícia biopsicossocial a cargo do órgão competente e homologação prevista em lei.',
+  'pergunta_166_alternativa_2':'Relatório do chefe imediato.',
+  'pergunta_166_alternativa_3':'Decisão do Tribunal de Contas.',
+  'pergunta_166_alternativa_4':'Laudo psicológico apenas.',
+  'pergunta_166_resposta_correta':'Prévia confirmação em perícia biopsicossocial a cargo do órgão competente e homologação prevista em lei.',
+  'pergunta_166_justificativa':'Art. 20, §3º',
+
+
+  //----------------------------------
+  'pergunta_167':'Os proventos da aposentadoria por incapacidade serão integrais quando decorrentes de:',
+  'pergunta_167_alternativa_1':'Acidente em serviço, moléstia profissional ou doença grave especificada em lei.',
+  'pergunta_167_alternativa_2':'Qualquer doença comum.',
+  'pergunta_167_alternativa_3':'Tempo de contribuição insuficiente.',
+  'pergunta_167_alternativa_4':'Opção do servidor.',
+  'pergunta_167_resposta_correta':'Acidente em serviço, moléstia profissional ou doença grave especificada em lei.',
+  'pergunta_167_justificativa':'Art. 21',
+
+
+  //----------------------------------
+  'pergunta_168':'A verificação periódica da incapacidade do aposentado por incapacidade será realizada:',
+  'pergunta_168_alternativa_1':'A cada dois anos, por perícia biopsicossocial, até completar 70 anos, ou sempre que convocado.',
+  'pergunta_168_alternativa_2':'A cada cinco anos, por médico assistente.',
+  'pergunta_168_alternativa_3':'Somente por junta administrativa, sem perícia.',
+  'pergunta_168_alternativa_4':'Apenas mediante requerimento do interessado.',
+  'pergunta_168_resposta_correta':'A cada dois anos, por perícia biopsicossocial, até completar 70 anos, ou sempre que convocado.',
+  'pergunta_168_justificativa':'Art. 22, caput',
+
+
+  //----------------------------------
+  'pergunta_169':'O retorno à atividade do aposentado por incapacidade ocorrerá quando:',
+  'pergunta_169_alternativa_1':'A perícia declarar insubsistentes os motivos da aposentadoria, após homologação, com comunicação ao ente empregador.',
+  'pergunta_169_alternativa_2':'Houver pedido do servidor, sem perícia.',
+  'pergunta_169_alternativa_3':'Por ato do Legislativo, sem exame pericial.',
+  'pergunta_169_alternativa_4':'Decorridos cinco anos automaticamente.',
+  'pergunta_169_resposta_correta':'A perícia declarar insubsistentes os motivos da aposentadoria, após homologação, com comunicação ao ente empregador.',
+  'pergunta_169_justificativa':'Art. 22, §3º',
+
+
+  //----------------------------------
+  'pergunta_170':'Para aposentadoria voluntária, exige-se, dentre outros requisitos:',
+  'pergunta_170_alternativa_1':'10 anos de efetivo exercício no serviço público e 5 anos no cargo efetivo.',
+  'pergunta_170_alternativa_2':'5 anos de serviço público e 2 anos no cargo.',
+  'pergunta_170_alternativa_3':'Apenas idade mínima.',
+  'pergunta_170_alternativa_4':'Apenas tempo de contribuição.',
+  'pergunta_170_resposta_correta':'10 anos de efetivo exercício no serviço público e 5 anos no cargo efetivo.',
+  'pergunta_170_justificativa':'Art. 23, caput',
+
+
+  //----------------------------------
+  'pergunta_171':'Para professores, os requisitos de idade e tempo de contribuição serão reduzidos em 5 anos quando houver:',
+  'pergunta_171_alternativa_1':'Exercício exclusivo em educação básica (docência, direção, coordenação e assessoramento pedagógico).',
+  'pergunta_171_alternativa_2':'Exercício em qualquer função administrativa da educação.',
+  'pergunta_171_alternativa_3':'Docência em ensino superior.',
+  'pergunta_171_alternativa_4':'Cursos livres de capacitação.',
+  'pergunta_171_resposta_correta':'Exercício exclusivo em educação básica (docência, direção, coordenação e assessoramento pedagógico).',
+  'pergunta_171_justificativa':'Art. 23, §1º',
+
+
+  //----------------------------------
+  'pergunta_172':'É assegurado abono de permanência ao servidor que:',
+  'pergunta_172_alternativa_1':'Tendo completado os requisitos da aposentadoria voluntária, optar por permanecer em atividade até a compulsória.',
+  'pergunta_172_alternativa_2':'Completar 5 anos de serviço.',
+  'pergunta_172_alternativa_3':'Exercer função em comissão.',
+  'pergunta_172_alternativa_4':'Pedir licença sem remuneração.',
+  'pergunta_172_resposta_correta':'Tendo completado os requisitos da aposentadoria voluntária, optar por permanecer em atividade até a compulsória.',
+  'pergunta_172_justificativa':'Art. 23, §2º',
+
+
+  //----------------------------------
+  'pergunta_173':'A aposentadoria especial será devida ao segurado que se enquadrar:',
+  'pergunta_173_alternativa_1':'Nas situações e condições previstas na legislação federal aplicável, vedados critérios diferenciados salvo os previstos em leis complementares federais.',
+  'pergunta_173_alternativa_2':'Por ato discricionário, a qualquer servidor.',
+  'pergunta_173_alternativa_3':'Apenas a quem exerce direção escolar.',
+  'pergunta_173_alternativa_4':'Mediante acordo coletivo.',
+  'pergunta_173_resposta_correta':'Nas situações e condições previstas na legislação federal aplicável, vedados critérios diferenciados salvo os previstos em leis complementares federais.',
+  'pergunta_173_justificativa':'Art. 25 e parágrafo único',
+
+
+  //----------------------------------
+  'pergunta_174':'A aposentadoria compulsória será automática, com proventos proporcionais. A idade prevista é:',
+  'pergunta_174_alternativa_1':'70 anos.',
+  'pergunta_174_alternativa_2':'75 anos.',
+  'pergunta_174_alternativa_3':'65 anos.',
+  'pergunta_174_alternativa_4':'72 anos.',
+  'pergunta_174_resposta_correta':'70 anos.',
+  'pergunta_174_justificativa':'Art. 26',
+
+
+  //----------------------------------
+  'pergunta_175':'A pensão por morte será devida a partir:',
+  'pergunta_175_alternativa_1':'Do óbito, se requerida até 90 dias; após esse prazo, da data do requerimento.',
+  'pergunta_175_alternativa_2':'Do trânsito em julgado judicial.',
+  'pergunta_175_alternativa_3':'Do óbito, independentemente de requerimento.',
+  'pergunta_175_alternativa_4':'Da publicação em Diário Oficial.',
+  'pergunta_175_resposta_correta':'Do óbito, se requerida até 90 dias; após esse prazo, da data do requerimento.',
+  'pergunta_175_justificativa':'Art. 27',
+
+
+  //----------------------------------
+  'pergunta_176':'O valor da pensão por morte corresponderá:',
+  'pergunta_176_alternativa_1':'À totalidade dos proventos (se aposentado) ou da remuneração do cargo efetivo (se em atividade) até o teto do RGPS, acrescida de 70% da parcela excedente.',
+  'pergunta_176_alternativa_2':'A 50% da última remuneração, sem acréscimos.',
+  'pergunta_176_alternativa_3':'À média de 60% das contribuições.',
+  'pergunta_176_alternativa_4':'Ao salário-mínimo, qualquer que seja a remuneração.',
+  'pergunta_176_resposta_correta':'À totalidade dos proventos (se aposentado) ou da remuneração do cargo efetivo (se em atividade) até o teto do RGPS, acrescida de 70% da parcela excedente.',
+  'pergunta_176_justificativa':'Art. 28, I e II',
+
+
+  //----------------------------------
+  'pergunta_177':'A pensão poderá ser concedida por morte presumida, em caráter provisório, nas hipóteses de:',
+  'pergunta_177_alternativa_1':'Declaração de autoridade judiciária; ou desaparecimento por acidente, desastre ou catástrofe, mediante prova hábil.',
+  'pergunta_177_alternativa_2':'Relato verbal de familiares.',
+  'pergunta_177_alternativa_3':'Boletim de ocorrência sem outras provas.',
+  'pergunta_177_alternativa_4':'Comunicação do empregador, sem decisão judicial quando não houver prova do evento.',
+  'pergunta_177_resposta_correta':'Declaração de autoridade judiciária; ou desaparecimento por acidente, desastre ou catástrofe, mediante prova hábil.',
+  'pergunta_177_justificativa':'Art. 29',
+
+
+  //----------------------------------
+  'pergunta_178':'Extingue-se o direito à pensão, entre outras hipóteses:',
+  'pergunta_178_alternativa_1':'Para o filho, aos 21 anos de idade ou se emancipado, salvo se inválido.',
+  'pergunta_178_alternativa_2':'Para o filho, somente aos 25 anos.',
+  'pergunta_178_alternativa_3':'Para o cônjuge, apenas com novo casamento.',
+  'pergunta_178_alternativa_4':'Apenas com a morte do dependente.',
+  'pergunta_178_resposta_correta':'Para o filho, aos 21 anos de idade ou se emancipado, salvo se inválido.',
+  'pergunta_178_justificativa':'Art. 30, I',
+
+
+  //----------------------------------
+  'pergunta_179':'Nas médias de aposentadoria, as remunerações consideradas não poderão ser:',
+  'pergunta_179_alternativa_1':'Inferiores ao salário-mínimo nem superiores ao limite máximo do salário de contribuição nos períodos vinculados ao RGPS.',
+  'pergunta_179_alternativa_2':'Superiores à última remuneração do cargo.',
+  'pergunta_179_alternativa_3':'Atualizadas mês a mês.',
+  'pergunta_179_alternativa_4':'Comprovadas por documentos públicos.',
+  'pergunta_179_resposta_correta':'Inferiores ao salário-mínimo nem superiores ao limite máximo do salário de contribuição nos períodos vinculados ao RGPS.',
+  'pergunta_179_justificativa':'Art. 3º, §4º',
+
+
+  //----------------------------------
+  'pergunta_180':'Entre os critérios do art. 1º para organização do regime, consta:',
+  'pergunta_180_alternativa_1':'Identificação e consolidação, em demonstrativos, de todas as despesas com inativos e pensionistas.',
+  'pergunta_180_alternativa_2':'Dispensa de auditoria atuarial.',
+  'pergunta_180_alternativa_3':'Cobertura de benefícios a comissionados sem vínculo efetivo.',
+  'pergunta_180_alternativa_4':'Sigilo absoluto sobre a gestão.',
+  'pergunta_180_resposta_correta':'Identificação e consolidação, em demonstrativos, de todas as despesas com inativos e pensionistas.',
+  'pergunta_180_justificativa':'Art. 1º, VI',
+
+
+  //----------------------------------
+  'pergunta_181':'Para a LC 241, “segurado” é:',
+  'pergunta_181_alternativa_1':'A pessoa investida em cargo público efetivo municipal e os aposentados de cargo efetivo.',
+  'pergunta_181_alternativa_2':'Qualquer comissionado.',
+  'pergunta_181_alternativa_3':'Apenas o pensionista.',
+  'pergunta_181_alternativa_4':'Todo servidor do Município, independentemente de vínculo.',
+  'pergunta_181_resposta_correta':'A pessoa investida em cargo público efetivo municipal e os aposentados de cargo efetivo.',
+  'pergunta_181_justificativa':'Art. 4º, II',
+
+
+  //----------------------------------
+  'pergunta_182':'Equiparam-se a filho, mediante declaração e comprovação de dependência econômica:',
+  'pergunta_182_alternativa_1':'O enteado e o menor tutelado.',
+  'pergunta_182_alternativa_2':'Somente o enteado.',
+  'pergunta_182_alternativa_3':'Somente o tutelado maior de 21 anos.',
+  'pergunta_182_alternativa_4':'Nenhum dependente por equiparação.',
+  'pergunta_182_resposta_correta':'O enteado e o menor tutelado.',
+  'pergunta_182_justificativa':'Art. 9º, §5º',
+
+
+  //----------------------------------
+  'pergunta_183':'A duração da pensão ao cônjuge/companheiro, quando cumpridas as carências legais, será de 15 anos se a idade do pensionista, na data do óbito, estiver entre:',
+  'pergunta_183_alternativa_1':'30 e 40 anos.',
+  'pergunta_183_alternativa_2':'21 e 26 anos.',
+  'pergunta_183_alternativa_3':'27 e 29 anos.',
+  'pergunta_183_alternativa_4':'41 e 43 anos.',
+  'pergunta_183_resposta_correta':'30 e 40 anos.',
+  'pergunta_183_justificativa':'Art. 9º, §2º',
+
+
+  //----------------------------------
+  'pergunta_184':'O cônjuge/companheiro não terá direito à pensão se o casamento/união tiver menos de 2 anos, salvo se:',
+  'pergunta_184_alternativa_1':'O óbito decorrer de acidente posterior ao casamento/união, ou se for considerado incapaz e insuscetível de reabilitação por doença/acidente após o casamento/união.',
+  'pergunta_184_alternativa_2':'Houver dependência econômica presumida.',
+  'pergunta_184_alternativa_3':'Existir filho em comum maior de 21 anos.',
+  'pergunta_184_alternativa_4':'O segurado tiver mais de 10 anos de contribuição.',
+  'pergunta_184_resposta_correta':'O óbito decorrer de acidente posterior ao casamento/união, ou se for considerado incapaz e insuscetível de reabilitação por doença/acidente após o casamento/união.',
+  'pergunta_184_justificativa':'Art. 9º, §2º',
+
+
+  //----------------------------------
+  'pergunta_185':'Se o cônjuge/companheiro for considerado incapaz e insuscetível de reabilitação, por doença ou acidente, terá direito à pensão:',
+  'pergunta_185_alternativa_1':'Vitalícia, observado o disposto na lei.',
+  'pergunta_185_alternativa_2':'Por 3 anos.',
+  'pergunta_185_alternativa_3':'Por 6 anos.',
+  'pergunta_185_alternativa_4':'Por 10 anos.',
+  'pergunta_185_resposta_correta':'Vitalícia, observado o disposto na lei.',
+  'pergunta_185_justificativa':'Art. 9º, §2º',
+
+
+  //----------------------------------
+  'pergunta_186':'A concessão de pensão aos beneficiários prioritários:',
+  'pergunta_186_alternativa_1':'Exclui os beneficiários das classes seguintes.',
+  'pergunta_186_alternativa_2':'Não exclui os pais em nenhuma hipótese.',
+  'pergunta_186_alternativa_3':'Suspende automaticamente as pensões dos filhos.',
+  'pergunta_186_alternativa_4':'Concede prioridade aos pais sobre o cônjuge.',
+  'pergunta_186_resposta_correta':'Exclui os beneficiários das classes seguintes.',
+  'pergunta_186_justificativa':'Art. 9º, §1º e Art. 10',
+
+
+  //----------------------------------
+  'pergunta_187':'Havendo vários titulares à pensão, o valor será distribuído:',
+  'pergunta_187_alternativa_1':'Em partes iguais entre os beneficiários habilitados, ressalvada hipótese legal específica.',
+  'pergunta_187_alternativa_2':'Preferencialmente ao cônjuge, excluindo os demais.',
+  'pergunta_187_alternativa_3':'Conforme a ordem de idade.',
+  'pergunta_187_alternativa_4':'Metade ao cônjuge e metade aos filhos, sempre.',
+  'pergunta_187_resposta_correta':'Em partes iguais entre os beneficiários habilitados, ressalvada hipótese legal específica.',
+  'pergunta_187_justificativa':'Art. 9º, §6º',
+
+
+  //----------------------------------
+  'pergunta_188':'Ressalvadas aposentadorias de cargos acumuláveis, a LC 241 veda:',
+  'pergunta_188_alternativa_1':'A percepção de mais de uma aposentadoria à conta do RPPS do art. 40 da CF.',
+  'pergunta_188_alternativa_2':'A cumulação de pensão com aposentadoria em qualquer hipótese.',
+  'pergunta_188_alternativa_3':'A aposentadoria compulsória.',
+  'pergunta_188_alternativa_4':'A aposentadoria especial.',
+  'pergunta_188_resposta_correta':'A percepção de mais de uma aposentadoria à conta do RPPS do art. 40 da CF.',
+  'pergunta_188_justificativa':'Art. 15',
+
+
+  //----------------------------------
+  'pergunta_189':'A inscrição do segurado obrigatório dar-se-á:',
+  'pergunta_189_alternativa_1':'Na data de início do exercício do cargo efetivo.',
+  'pergunta_189_alternativa_2':'Após o estágio probatório.',
+  'pergunta_189_alternativa_3':'Somente após 90 dias.',
+  'pergunta_189_alternativa_4':'Mediante requerimento do servidor.',
+  'pergunta_189_resposta_correta':'Na data de início do exercício do cargo efetivo.',
+  'pergunta_189_justificativa':'Art. 8º',
+
+
+  //----------------------------------
+  'pergunta_190':'A inscrição do dependente será efetuada:',
+  'pergunta_190_alternativa_1':'Mediante requerimento do segurado, na forma do regulamento.',
+  'pergunta_190_alternativa_2':'De ofício, pela Administração.',
+  'pergunta_190_alternativa_3':'Apenas por decisão judicial.',
+  'pergunta_190_alternativa_4':'Pelo sindicato.',
+  'pergunta_190_resposta_correta':'Mediante requerimento do segurado, na forma do regulamento.',
+  'pergunta_190_justificativa':'Art. 12',
+
+
+  //----------------------------------
+  'pergunta_191':'Perde a qualidade de beneficiário quem:',
+  'pergunta_191_alternativa_1':'Falecer; cessar a invalidez; ou, sendo filho, casar-se, emancipar-se ou atingir a idade-limite legal.',
+  'pergunta_191_alternativa_2':'Apenas por decisão administrativa.',
+  'pergunta_191_alternativa_3':'Somente por decisão judicial.',
+  'pergunta_191_alternativa_4':'Quando o instituidor se aposentar.',
+  'pergunta_191_resposta_correta':'Falecer; cessar a invalidez; ou, sendo filho, casar-se, emancipar-se ou atingir a idade-limite legal.',
+  'pergunta_191_justificativa':'Art. 13',
+
+
+  //----------------------------------
+  'pergunta_192':'A perícia biopsicossocial é composta por:',
+  'pergunta_192_alternativa_1':'Profissionais de saúde necessários, incluindo médicos, psicólogos e assistentes sociais.',
+  'pergunta_192_alternativa_2':'Apenas médico perito.',
+  'pergunta_192_alternativa_3':'Médico e advogado.',
+  'pergunta_192_alternativa_4':'Somente assistente social.',
+  'pergunta_192_resposta_correta':'Profissionais de saúde necessários, incluindo médicos, psicólogos e assistentes sociais.',
+  'pergunta_192_justificativa':'Art. 20, §4º',
+
+
+  //----------------------------------
+  'pergunta_193':'Para a média de proventos, as remunerações consideradas terão seus valores:',
+  'pergunta_193_alternativa_1':'Atualizados mês a mês pelo índice aplicado aos salários de contribuição do RGPS.',
+  'pergunta_193_alternativa_2':'Congelados desde 07/1994.',
+  'pergunta_193_alternativa_3':'Corrigidos apenas anualmente, sem índice.',
+  'pergunta_193_alternativa_4':'Não sofrem atualização.',
+  'pergunta_193_resposta_correta':'Atualizados mês a mês pelo índice aplicado aos salários de contribuição do RGPS.',
+  'pergunta_193_justificativa':'Art. 3º, §1º',
+
+
+  //----------------------------------
+  'pergunta_194':'A base de cálculo da média inclui a remuneração nas competências a partir de julho de 1994 em que não tenha havido contribuição para o RPPS, quando o servidor estava no cargo efetivo:',
+  'pergunta_194_alternativa_1':'Certo.',
+  'pergunta_194_alternativa_2':'Errado.',
+  'pergunta_194_alternativa_3':'Certo, apenas para comissionados.',
+  'pergunta_194_alternativa_4':'Errado, por ser sempre a última remuneração.',
+  'pergunta_194_resposta_correta':'Certo.',
+  'pergunta_194_justificativa':'Art. 3º, §2º',
+
+
+  //----------------------------------
+  'pergunta_195':'A comprovação das remunerações para cálculo do benefício pode ocorrer por:',
+  'pergunta_195_alternativa_1':'Documento do regime ao qual esteve vinculado ou, na falta, outro documento público, passível de confirmação.',
+  'pergunta_195_alternativa_2':'Declaração verbal do servidor.',
+  'pergunta_195_alternativa_3':'Somente contracheques dos últimos 12 meses.',
+  'pergunta_195_alternativa_4':'Qualquer documento particular, sem confirmação.',
+  'pergunta_195_resposta_correta':'Documento do regime ao qual esteve vinculado ou, na falta, outro documento público, passível de confirmação.',
+  'pergunta_195_justificativa':'Art. 3º, §3º',
+
+
+  //----------------------------------
+  'pergunta_196':'Integram as exclusões do salário-de-contribuição, conforme a LC 241:',
+  'pergunta_196_alternativa_1':'Auxílio por diferença de caixa; adicional noturno; gratificações de insalubridade, penosidade e periculosidade; função gratificada ou cargo em comissão.',
+  'pergunta_196_alternativa_2':'Vencimento básico e gratificação natalina.',
+  'pergunta_196_alternativa_3':'Abono de permanência e vencimento básico.',
+  'pergunta_196_alternativa_4':'Horas extras e vencimento básico.',
+  'pergunta_196_resposta_correta':'Auxílio por diferença de caixa; adicional noturno; gratificações de insalubridade, penosidade e periculosidade; função gratificada ou cargo em comissão.',
+  'pergunta_196_justificativa':'Art. 4º, VII',
+
+
+  //----------------------------------
+  'pergunta_197':'A pensão ao cônjuge divorciado, separado judicialmente ou de fato depende de:',
+  'pergunta_197_alternativa_1':'Percepção de pensão alimentícia estabelecida judicialmente.',
+  'pergunta_197_alternativa_2':'Apenas comprovação de vínculo anterior, sem alimentos.',
+  'pergunta_197_alternativa_3':'União estável após o divórcio.',
+  'pergunta_197_alternativa_4':'Declaração do instituidor sem decisão judicial.',
+  'pergunta_197_resposta_correta':'Percepção de pensão alimentícia estabelecida judicialmente.',
+  'pergunta_197_justificativa':'Art. 9º, II',
+
+
+  //----------------------------------
+  'pergunta_198':'A distribuição do valor da pensão entre dependentes será:',
+  'pergunta_198_alternativa_1':'Em partes iguais, ressalvada a hipótese de pensão alimentícia judicial.',
+  'pergunta_198_alternativa_2':'Preferencial ao beneficiário mais idoso.',
+  'pergunta_198_alternativa_3':'Majoritária ao cônjuge (70%).',
+  'pergunta_198_alternativa_4':'Definida discricionariamente pelo gestor.',
+  'pergunta_198_resposta_correta':'Em partes iguais, ressalvada a hipótese de pensão alimentícia judicial.',
+  'pergunta_198_justificativa':'Art. 9º, §6º e Art. 28, parágrafo único',
+
+
+  //----------------------------------
+  'pergunta_199':'A existência de dependentes de uma classe exclui do direito à pensão os dependentes das classes seguintes.',
+  'pergunta_199_alternativa_1':'Certo.',
+  'pergunta_199_alternativa_2':'Errado.',
+  'pergunta_199_alternativa_3':'Certo, apenas para filhos.',
+  'pergunta_199_alternativa_4':'Errado, pois sempre há cumulação.',
+  'pergunta_199_resposta_correta':'Certo.',
+  'pergunta_199_justificativa':'Art. 10',
+
+
+  //----------------------------------
+  'pergunta_200':'É instituído o Fundo de Aposentadoria e Pensão do Servidor – FAPS –, cuja administração compete:',
+  'pergunta_200_alternativa_1':'Ao IPAM de Caxias do Sul, como órgão gestor do regime próprio.',
+  'pergunta_200_alternativa_2':'À Secretaria Municipal da Fazenda.',
+  'pergunta_200_alternativa_3':'À Câmara Municipal, em gestão compartilhada com o Executivo.',
+  'pergunta_200_alternativa_4':'Ao Tesouro Nacional.',
+  'pergunta_200_resposta_correta':'Ao IPAM de Caxias do Sul, como órgão gestor do regime próprio.',
+  'pergunta_200_justificativa':'Art. 5º'
 
     
 }
-
+ 

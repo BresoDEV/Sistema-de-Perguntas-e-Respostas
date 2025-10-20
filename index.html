@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>V 2</title>
+        <title>V 3</title>
     </head>
     <style>
       *{
@@ -107,6 +107,10 @@
         font-size: 30vw;
         margin: 0;
        }
+       .fonte-amarela{
+        color: #c7c76e;
+        background-color: #333;
+       }
     </style>
     <body>
 
@@ -160,7 +164,7 @@
             <br>
             <button id="bt2">Apagar Respostas Erradas</button>
             <hr>
-            <input id="inpt" type="number" min="1" max="350">
+            <input id="inpt" type="number" min="1" max="200">
             <br>
             <button id="bt3">Mudar Pergunta</button>
             <br> 
@@ -206,7 +210,7 @@
 
 
       //Salva as perguntas que foram respondidas erradas, pra exiir no final
-      function salvarPerguntas(p,respostaSelecionada,respostaCerta){
+      function salvarPerguntas(p,respostaSelecionada,respostaCerta,_justificativa){
 
         var arraia;
 
@@ -215,6 +219,7 @@
             'pergunta1':p,
             'selecionada1':respostaSelecionada,
             'correta1':respostaCerta,
+            'justificativa1':_justificativa,
           }
           localStorage.setItem('respostasErradas', JSON.stringify(arraia))
         }
@@ -229,6 +234,7 @@
           arraia['pergunta'+ultimo] = p;
           arraia['selecionada'+ultimo] = respostaSelecionada;
           arraia['correta'+ultimo] = respostaCerta;
+          arraia['justificativa'+ultimo] = _justificativa;
 
           localStorage.setItem('respostasErradas', JSON.stringify(arraia))
         }
@@ -320,6 +326,7 @@
           s += '<p>Pergunta: ' + arraia['pergunta'+__] + '</p>';
           s += '<p>Assinalada: <font class="fonte-errada">' + arraia['selecionada'+__] + '</font></p>';
           s += '<p>Correta: <font class="fonte-certa">' + arraia['correta'+__] + '</font></p>';
+          s += '<p>Justificativa: <font class="fonte-amarela">' + arraia['justificativa'+__] + '</font></p>';
           
           __++
         }
@@ -382,7 +389,8 @@
               _exibir('proxima')
               _exibir('finalizar')
  
-              localStorage.setItem('pontuacao',pontuacao) 
+              index++;
+              salvarProgresso()
             }
             else{
               erradas++
@@ -395,11 +403,12 @@
               salvarPerguntas(
                 getID('pergunta').innerHTML,
                 getID('alternativa1').innerHTML,
-                perguntas['pergunta_'+index+'_resposta_correta']
+                perguntas['pergunta_'+index+'_resposta_correta'],
+                perguntas['pergunta_'+index+'_justificativa']
                 )
  
-              localStorage.setItem('erradas',erradas)
-
+                index++;
+              salvarProgresso()
             }
 
           });
@@ -414,8 +423,8 @@
               _exibir('proxima')
               _exibir('finalizar')
  
-              localStorage.setItem('pontuacao',pontuacao)
-              
+              index++;
+              salvarProgresso()
             }
             else{
               erradas++
@@ -428,11 +437,12 @@
               salvarPerguntas(
                 getID('pergunta').innerHTML,
                 getID('alternativa2').innerHTML,
-                perguntas['pergunta_'+index+'_resposta_correta']
+                perguntas['pergunta_'+index+'_resposta_correta'],
+                perguntas['pergunta_'+index+'_justificativa']
                 )
  
-              localStorage.setItem('erradas',erradas)
-
+                index++;
+              salvarProgresso()
             }
 
           });
@@ -447,8 +457,8 @@
               _exibir('proxima')
               _exibir('finalizar')
  
-              localStorage.setItem('pontuacao',pontuacao) 
-
+              index++;
+              salvarProgresso()
             }
             else{
               erradas++
@@ -461,11 +471,12 @@
               salvarPerguntas(
                 getID('pergunta').innerHTML,
                 getID('alternativa3').innerHTML,
-                perguntas['pergunta_'+index+'_resposta_correta']
+                perguntas['pergunta_'+index+'_resposta_correta'],
+                perguntas['pergunta_'+index+'_justificativa']
                 )
                  
-              localStorage.setItem('erradas',erradas)
-
+                index++;
+              salvarProgresso()
             }
 
           });
@@ -480,8 +491,8 @@
               _exibir('proxima')
               _exibir('finalizar')
                
-              localStorage.setItem('pontuacao',pontuacao) 
-
+              index++;
+              salvarProgresso()
             }
             else{
               erradas++
@@ -494,10 +505,12 @@
               salvarPerguntas(
                 getID('pergunta').innerHTML,
                 getID('alternativa4').innerHTML,
-                perguntas['pergunta_'+index+'_resposta_correta']
+                perguntas['pergunta_'+index+'_resposta_correta'],
+                perguntas['pergunta_'+index+'_justificativa']
                 )
  
-              localStorage.setItem('erradas',erradas)
+              index++;
+              salvarProgresso()
             }
 
           });
@@ -510,13 +523,16 @@
       }
 
 
-      addClick('proxima',()=>{
-        index++;
-
-        
+      function salvarProgresso(){
         localStorage.setItem('index',index)
         localStorage.setItem('pontuacao',pontuacao)
         localStorage.setItem('erradas',erradas)
+      }
+
+      addClick('proxima',()=>{
+        
+
+        salvarProgresso()
 
         window.location.href = 'index.html?index='+index+'&pontuacao='+pontuacao+'&erradas='+erradas
       })
