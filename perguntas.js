@@ -8,7 +8,7 @@ const perguntas = {
   'pergunta_1_resposta_correta':'Elaborar, apreciar, votar, modificar e revogar leis municipais.',
   'pergunta_1_justificativa':'O artigo 5º, §1º da Resolução 244/A estabelece que a função legislativa consiste na elaboração, apreciação, votação, modificação e revogação de leis de competência municipal.',
 
-  //----------------------------------
+  //-----------------------------------
   // 2
   'pergunta_2':'A função de fiscalização financeira e controle externo da Câmara é exercida:',
   'pergunta_2_alternativa_1':'Sem auxílio de qualquer órgão externo.',
