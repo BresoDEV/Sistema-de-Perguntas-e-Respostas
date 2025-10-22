@@ -77,8 +77,8 @@ const perguntas = {
 'pergunta_10_alternativa_3':'A substituição do Prefeito é feita pelo vereador mais votado.',
 'pergunta_10_alternativa_4':'O Prefeito substituído perde automaticamente o mandato.',
 'pergunta_10_resposta_correta':'O Presidente da Câmara substitui o Prefeito em caso de impedimento e sucede em caso de vacância.',
-'pergunta_10_justificativa':'Art. 65 – Dispõe sobre a substituição e sucessão do Prefeito.'
-}
+'pergunta_10_justificativa':'Art. 65 – Dispõe sobre a substituição e sucessão do Prefeito.',
+
 'pergunta_11':'Julgue as assertivas sobre o processo legislativo municipal:\nI – O processo legislativo compreende a elaboração de emendas à Lei Orgânica, leis complementares, leis ordinárias, decretos legislativos e resoluções.\nII – Indicações e requerimentos fazem parte formal do processo legislativo.\nIII – As emendas à Lei Orgânica seguem rito específico dentro do processo legislativo.',
 'pergunta_11_alternativa_1':'C – C – C',
 'pergunta_11_alternativa_2':'C – C – E',
@@ -158,6 +158,7 @@ const perguntas = {
 'pergunta_20_alternativa_4':'Presidente da Câmara → Vice-Presidente → Prefeito.',
 'pergunta_20_resposta_correta':'Prefeito → Presidente da Câmara → Vice-Presidente.',
 'pergunta_20_justificativa':'Art. 73, §7º — Se o Prefeito não promulgar em 48h, o Presidente da Câmara o fará; se este não o fizer, caberá ao Vice-Presidente.'
+,
 'pergunta_21':'Julgue as assertivas sobre a composição das Comissões da Câmara:\nI – As Comissões Permanentes e Temporárias serão constituídas conforme o Regimento Interno.\nII – Na formação das comissões não se assegura a representação proporcional dos partidos.\nIII – As comissões podem realizar audiências públicas com entidades da sociedade civil.',
 'pergunta_21_alternativa_1':'C – C – C',
 'pergunta_21_alternativa_2':'C – E – C',
@@ -317,6 +318,8 @@ const perguntas = {
 'pergunta_40_alternativa_4':'Não podem receber reclamações da população.',
 'pergunta_40_resposta_correta':'Não podem receber reclamações da população.',
 'pergunta_40_justificativa':'Art. 75 — As comissões podem receber petições e representações de qualquer pessoa.'
+
+,
 'pergunta_41':'Julgue as assertivas sobre as Comissões Parlamentares de Inquérito:\nI – São criadas por requerimento de um terço dos vereadores.\nII – Possuem poderes de investigação próprios das autoridades judiciais.\nIII – Suas conclusões têm efeito de decisão judicial.',
 'pergunta_41_alternativa_1':'C – C – C',
 'pergunta_41_alternativa_2':'C – C – E',
@@ -476,6 +479,7 @@ const perguntas = {
 'pergunta_60_alternativa_4':'Projetos rejeitados não podem ser reintroduzidos automaticamente.',
 'pergunta_60_resposta_correta':'É proibida em legislaturas diferentes.',
 'pergunta_60_justificativa':'Art. 74 — A vedação aplica-se apenas à mesma sessão legislativa.'
+,
 
 'pergunta_61':'Julgue as assertivas sobre o julgamento das contas do Prefeito:\nI – As contas serão apresentadas até 90 dias após o encerramento do exercício financeiro.\nII – O parecer prévio do Tribunal de Contas pode ser rejeitado por dois terços dos vereadores.\nIII – O julgamento deve ocorrer até o final da sessão legislativa seguinte ao recebimento das contas.',
 'pergunta_61_alternativa_1':'C – C – C',
@@ -636,6 +640,7 @@ const perguntas = {
 'pergunta_80_alternativa_4':'É automática se houver divergência técnica.',
 'pergunta_80_resposta_correta':'Depende do voto de dois terços dos vereadores.',
 'pergunta_80_justificativa':'Art. 81 — O parecer do TCE só pode ser rejeitado por decisão de dois terços da Câmara.'
+,
 'pergunta_81':'Julgue as assertivas sobre a iniciativa das leis:\nI – A iniciativa cabe a qualquer vereador, ao Prefeito ou ao eleitorado.\nII – A proposta popular deve ser subscrita por, no mínimo, 5% do eleitorado do Município.\nIII – O projeto de iniciativa popular deve ser apreciado no prazo máximo de 120 dias.',
 'pergunta_81_alternativa_1':'C – C – C',
 'pergunta_81_alternativa_2':'C – C – E',
@@ -795,7 +800,7 @@ const perguntas = {
 'pergunta_100_alternativa_4':'São editadas sem necessidade de autorização legislativa.',
 'pergunta_100_resposta_correta':'São elaboradas pelo Prefeito, por autorização da Câmara, em matéria específica.',
 'pergunta_100_justificativa':'Art. 71 — As leis delegadas são elaboradas pelo Prefeito mediante autorização da Câmara.'
-
+,
 'pergunta_101':'Julgue as assertivas sobre as emendas à Lei Orgânica:\nI – Podem ser propostas por um terço dos vereadores, pelo Prefeito ou por iniciativa popular.\nII – Devem ser discutidas e votadas em dois turnos.\nIII – São aprovadas por dois terços dos vereadores.',
 'pergunta_101_alternativa_1':'C – C – C',
 'pergunta_101_alternativa_2':'C – C – E',
@@ -955,6 +960,7 @@ const perguntas = {
 'pergunta_120_alternativa_4':'C – E – C',
 'pergunta_120_resposta_correta':'C – C – E',
 'pergunta_120_justificativa':'Art. 79 — As contas de todos os órgãos, inclusive da Câmara, são fiscalizadas pelo TCE.'
+,
 'pergunta_121':'Julgue as assertivas quanto à finalidade da previdência dos servidores municipais:\nI – Visa garantir proventos de aposentadoria e pensão.\nII – Inclui cobertura de invalidez e morte, inclusive por acidente em serviço.\nIII – Pode destinar até 5% da receita total às despesas administrativas.',
 'pergunta_121_alternativa_1':'C – C – E',
 'pergunta_121_alternativa_2':'C – E – C',
@@ -1114,6 +1120,7 @@ const perguntas = {
 'pergunta_140_alternativa_4':'Só é cabível após 36 meses de licença médica.',
 'pergunta_140_resposta_correta':'É devida ao servidor considerado incapaz para o exercício de suas funções.',
 'pergunta_140_justificativa':'Art. 20 — A aposentadoria por invalidez depende de exame médico e incapacidade total.'
+,
 'pergunta_141':'Julgue as assertivas sobre a aposentadoria por invalidez:\nI – Sempre é precedida de licença para tratamento de saúde de no mínimo 12 meses.\nII – Exige exame médico-pericial homologado pelo Presidente do IPAM.\nIII – Pode ser concedida a servidor com incapacidade parcial para o cargo.',
 'pergunta_141_alternativa_1':'E – C – E',
 'pergunta_141_alternativa_2':'C – C – E',
@@ -1432,6 +1439,7 @@ const perguntas = {
 'pergunta_180_alternativa_4':'Conselho Deliberativo e Prefeito Municipal.',
 'pergunta_180_resposta_correta':'Presidente do IPAM, Diretoria Executiva, Conselho Deliberativo e Conselho Fiscal.',
 'pergunta_180_justificativa':'Art. 45 — Define a composição da administração do FAPS.'
+,
 'pergunta_181':'Julgue as assertivas sobre as atribuições do Presidente do IPAM:\nI – Representa judicial e extrajudicialmente o FAPS.\nII – Expede resoluções, portarias e ordens de serviço.\nIII – Deve convocar o Conselho Deliberativo para deliberar sobre atos que envolvam alterações na legislação, patrimônio e administração.',
 'pergunta_181_alternativa_1':'C – C – C',
 'pergunta_181_alternativa_2':'C – C – E',
@@ -1591,6 +1599,7 @@ const perguntas = {
 'pergunta_200_alternativa_4':'É exercida pela Diretoria Financeira do FAPS.',
 'pergunta_200_resposta_correta':'Compete ao Instituto de Previdência e Assistência Municipal – IPAM.',
 'pergunta_200_justificativa':'Art. 62 — O IPAM representa o FAPS judicial e extrajudicialmente.'
+,
 'pergunta_221':'Se o servidor não tomar posse dentro do prazo legal, a consequência será:',
 'pergunta_221_alternativa_1':'Exoneração automática.',
 'pergunta_221_alternativa_2':'Suspensão do ato de nomeação.',
@@ -1750,7 +1759,7 @@ const perguntas = {
 'pergunta_240_alternativa_4':'É a remoção para outro órgão público.',
 'pergunta_240_resposta_correta':'É a cessação da ocupação de cargo público, tornando-o disponível para novo provimento.',
 'pergunta_240_justificativa':'Art. 29 — Define vacância como a liberação do cargo para novo provimento.'
-
+,
 'pergunta_241':'Assinale a alternativa incorreta sobre a licença por aborto ou natimorto:',
 'pergunta_241_alternativa_1':'No caso de natimorto, a servidora será submetida a exame após 30 dias.',
 'pergunta_241_alternativa_2':'No caso de aborto, a servidora tem direito a 30 dias de licença.',
