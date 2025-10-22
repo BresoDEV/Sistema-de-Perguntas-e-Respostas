@@ -1790,9 +1790,7 @@ const perguntas = {
 'pergunta_245_alternativa_4':'Informar o endereço apenas se estiver em licença remunerada.',
 'pergunta_245_resposta_correta':'Informar previamente seu endereço ao chefe imediato.',
 'pergunta_245_justificativa':'📘 Base legal: Art. 192 — “O servidor poderá gozar licença onde lhe convier, ficando obrigado a comunicar previamente o endereço ao chefe imediato.”',
-};
 
-const perguntas = {
 'pergunta_246':'Assinale a alternativa correta sobre a licença para concorrer a cargo eletivo:',
 'pergunta_246_alternativa_1':'A licença começa no registro da candidatura e termina no dia do pleito.',
 'pergunta_246_alternativa_2':'A licença é concedida a partir do requerimento e se estende por dez dias após o pleito.',
@@ -1952,8 +1950,7 @@ const perguntas = {
 'pergunta_265_alternativa_4':'Procurador-Geral não pode receber delegação.',
 'pergunta_265_resposta_correta':'Prefeito pode aplicar qualquer penalidade; Secretários, até suspensão/multa, limitada a 30 dias.',
 'pergunta_265_justificativa':'📘 Base legal: Art. 264, I–II; parágrafo único — Secretários até 30 dias; Prefeito, todas as penalidades.',
-};
-const perguntas = {
+
 'pergunta_266':'Configura abandono de cargo quando o servidor não comparece, sem permissão legal, por:',
 'pergunta_266_alternativa_1':'15 dias consecutivos.',
 'pergunta_266_alternativa_2':'20 dias consecutivos.',
@@ -2081,8 +2078,7 @@ const perguntas = {
 'pergunta_281_alternativa_4':'Ficará afastado sem vencimentos.',
 'pergunta_281_resposta_correta':'Ficará impedido de exercer atividades que envolvam responsabilidade técnico-profissional.',
 'pergunta_281_justificativa':'📘 Base legal: Art. 339 da LC nº 3.673/1991 — “O servidor sujeito a fiscalização de órgão profissional ficará impedido de exercer as atividades técnico-profissionais enquanto perdurar a suspensão.”',
-};
-const perguntas = {
+
 'pergunta_282':'São isentos de taxas os requerimentos e certidões que, na esfera administrativa, interessem:',
 'pergunta_282_alternativa_1':'Apenas aos servidores ativos.',
 'pergunta_282_alternativa_2':'Apenas aos aposentados.',
@@ -2242,8 +2238,7 @@ const perguntas = {
 'pergunta_301_alternativa_4':'90 dias.',
 'pergunta_301_resposta_correta':'60 dias.',
 'pergunta_301_justificativa':'📘 Base legal: Art. 306 — “O pedido de revisão será julgado no prazo máximo de 60 dias, após exame pelo órgão central de pessoal.”',
-};
-const perguntas = {
+
 'pergunta_302':'Os prazos previstos na Lei Complementar nº 3.673/1991 são contados em:',
 'pergunta_302_alternativa_1':'Dias úteis, incluindo o início e excluindo o fim.',
 'pergunta_302_alternativa_2':'Dias corridos, excluindo o início e incluindo o vencimento.',
