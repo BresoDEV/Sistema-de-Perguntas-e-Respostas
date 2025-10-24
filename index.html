@@ -116,6 +116,8 @@
 
       <div id="topo" class="topo"></div>
 
+        
+           
         <div id="pergunta" class="pergunta">
             1: Qual a cor do cavalo branco de Napoleão?
         </div>
@@ -136,6 +138,9 @@
         </details>
         <br>
 
+        
+        <button id="pular">Pular</button>
+        
         <button id="proxima">Próxima</button>
         <button id="finalizar" class="finzalizar">Finalizar</button>
     </body>
@@ -314,6 +319,8 @@
           window.location.href = 'index.html?index=1&pontuacao=0&erradas=0'
         })
 
+
+          
         //--------------------------------
         _exibir('details') 
         
@@ -531,12 +538,21 @@
 
       addClick('proxima',()=>{
         
-
+index++
         salvarProgresso()
 
         window.location.href = 'index.html?index='+index+'&pontuacao='+pontuacao+'&erradas='+erradas
       })
 
+        
+addClick('pular',()=>{
+        
+
+        salvarProgresso()
+
+        window.location.href = 'index.html?index='+index+'&pontuacao='+pontuacao+'&erradas='+erradas
+      })
+        
       
       function buscarAlternativaCorreta(resposta){
         
@@ -610,3 +626,4 @@
       console.log('erradas: '+erradas) 
     </script>
 </html>
+
