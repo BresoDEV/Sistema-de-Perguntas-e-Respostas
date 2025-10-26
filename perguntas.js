@@ -296,7 +296,7 @@ const perguntas = {
 'pergunta_37_alternativa_4':'As Sessões Solenes poderão ser convocadas apenas por requerimento da Mesa Diretora, independentemente de número mínimo de assinaturas.',
 'pergunta_37_resposta_correta':'As Sessões Solenes destinam-se à concessão de títulos, comemoração de datas históricas e homenagens a entidades e personalidades ilustres.',
 'pergunta_37_justificativa':'Base legal: Regimento Interno da Câmara Municipal de Caxias do Sul – Art. 133. As Sessões Solenes têm por objetivo conceder títulos, comemorar datas históricas e homenagear entidades e personalidades ilustres. Segundo o §1º, podem ser convocadas pelo Presidente ou por requerimento de 1/3 dos vereadores, com aprovação por maioria absoluta, e o §2º determina que são realizadas preferencialmente às quartas-feiras.'
-
+,
 'pergunta_38':'De acordo com o art. 237 do Regimento Interno da Câmara Municipal de Caxias do Sul, analise as afirmativas a seguir: \n\nI – O Projeto de Resolução que vise alterar, reformar ou substituir o Regimento Interno só será admitido quando proposto por maioria absoluta dos vereadores, pela Mesa, pela Comissão de Constituição, Justiça e Legislação ou por Comissão Especial. \nII – A aprovação de um Projeto de Resolução que altere o Regimento Interno exige o voto favorável da maioria absoluta dos vereadores. \nIII – É vedada a apresentação de Projeto de Resolução que altere o Regimento por iniciativa de bancada partidária. \nIV – O Projeto de Resolução que trate da alteração do Regimento Interno será aprovado por 2/3 dos vereadores. \n\nAssinale a alternativa correta:',
 'pergunta_38_alternativa_1':'V – V – V – F.',
 'pergunta_38_alternativa_2':'V – F – F – V.',
@@ -2129,7 +2129,7 @@ const perguntas = {
     'pergunta_266_alternativa_4':'Não pode agravar a penalidade.',
     'pergunta_266_resposta_correta':'Suspende automaticamente os efeitos da pena.',
     'pergunta_266_justificativa':'📘 Base legal: Art. 305, caput e §3º — "A revisão não tem efeito suspensivo e da revisão não poderá resultar agravamento da penalidade."',
-    const perguntas = {
+    
 'pergunta_267':'Analise as afirmativas a seguir, conforme os arts. 75 e 76 do Regimento Interno da Câmara Municipal de Caxias do Sul:\n\nI – As Frentes Parlamentares são associações suprapartidárias de vereadores, voltadas à atuação conjunta em temas de interesse comum.\nII – A proposição de criação de uma Frente Parlamentar deve indicar sua finalidade e tempo de duração, que não corre durante o recesso parlamentar.\nIII – As Frentes Parlamentares são constituídas por requerimento de 1/3 dos vereadores e aprovadas por maioria simples.\nIV – A Frente Parlamentar poderá ser criada por iniciativa exclusiva da Mesa Diretora, dispensada a votação do Plenário.\n\nAssinale a alternativa correta:',
 'pergunta_267_alternativa_1':'V – V – V – F',
 'pergunta_267_alternativa_2':'F – V – V – V',
@@ -2321,4 +2321,4 @@ const perguntas = {
 'pergunta_290_resposta_correta':'V – V – V – V',
 'pergunta_290_justificativa':'Base legal: Art. 191. O vereador fala em pé, salvo exceções; só pode ser interrompido por aparte; o registro encerra após o discurso; e o Presidente pode convidar o vereador a retirar-se em caso de perturbação.'
 
-};
+}
